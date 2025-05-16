@@ -1,18 +1,33 @@
-﻿# Verbs
+﻿# 📖 Verbs
 
-In French, verbs are **conjugated to match the subject pronoun** based on:
+Verbs are action words that are conjugated to match the subject pronoun in French. Conjugation depends on the subject,
+tense, and verb group (regular or irregular).
 
-1. The **subject** (who is doing the action)
-2. The **tense** (present, past, future, etc.)
-3. The **verb group** (regular -er, -ir, -re, or irregular)
+Examples:
 
----
+- **Je parle français.** (I speak French.)
+- **Elle a un livre.** (She has a book.)
+- **Nous allons à l’école.** (We go to school.)
 
-## 🔤 Regular Verb Conjugation – Present Tense
+## 🗂️ In This Section
 
-Regular verbs in French are categorized into three groups based on their endings:
+- [🔤 Regular Verbs](#-regular-verbs)
+    - [–er Verbs](#-er-verbs-eg-parler--to-speak)
+    - [–ir Verbs](#-ir-verbs-eg-finir--to-finish)
+    - [–re Verbs](#-re-verbs-eg-vendre--to-sell)
+- [⚠️ Irregular Verbs](#-irregular-verbs)
+    - [Être (to be)](#être-to-be)
+    - [Avoir (to have)](#avoir-to-have)
+    - [Aller (to go)](#aller-to-go)
+- [⏳ Other Tenses](#-other-tenses)
+- [👥 Verbs with Object Pronouns](#-verbs-with-object-pronouns)
+- [🔁 More Examples](#-more-examples)
 
-### Regular **-er** Verb: *parler* (to speak)
+## 🔤 Regular Verbs
+
+Regular verbs in French are categorized into three groups based on their endings: **-er**, **-ir**, and **-re**.
+
+### -er Verbs (e.g., *parler* – to speak)
 
 | Pronoun   | Conjugation | Example      |
 |:----------|:------------|:-------------|
@@ -23,7 +38,7 @@ Regular verbs in French are categorized into three groups based on their endings
 | vous      | parlez      | Vous parlez  |
 | ils/elles | parlent     | Ils parlent  |
 
-### Regular **-ir** Verb: *finir* (to finish)
+### -ir Verbs (e.g., *finir* – to finish)
 
 | Pronoun   | Conjugation | Example         |
 |:----------|:------------|:----------------|
@@ -34,7 +49,7 @@ Regular verbs in French are categorized into three groups based on their endings
 | vous      | finissez    | Vous finissez   |
 | ils/elles | finissent   | Elles finissent |
 
-### Regular **-re** Verb: *vendre* (to sell)
+### -re Verbs (e.g., *vendre* – to sell)
 
 | Pronoun   | Conjugation | Example      |
 |:----------|:------------|:-------------|
@@ -45,11 +60,9 @@ Regular verbs in French are categorized into three groups based on their endings
 | vous      | vendez      | Vous vendez  |
 | ils/elles | vendent     | Ils vendent  |
 
----
-
 ## ⚠️ Irregular Verbs
 
-Some verbs are irregular and do not follow the standard conjugation patterns. Here are a few common irregular verbs:
+Some verbs do not follow regular patterns. Here are a few common irregular verbs:
 
 ### *Être* (to be)
 
@@ -84,55 +97,44 @@ Some verbs are irregular and do not follow the standard conjugation patterns. He
 | vous      | allez       | Vous allez rire    |
 | ils/elles | vont        | Ils vont partir    |
 
----
-
 ## ⏳ Other Tenses
 
-| Tense         | Example with *parler*                              |
-|:--------------|:---------------------------------------------------|
-| Present       | Je parle = I speak / am speaking                   |
-| Passé composé | J’ai parlé = I spoke / have spoken                 |
-| Imparfait     | Je parlais = I was speaking / used to speak        |
-| Futur simple  | Je parlerai = I will speak                         |
-| Conditionnel  | Je parlerais = I would speak                       |
-| Subjonctif    | Il faut que je parle = It's necessary that I speak |
+French verbs are conjugated in various tenses. Here are some key examples with *parler*:
 
----
+| Tense         | Example                                     |
+|:--------------|:--------------------------------------------|
+| Présent       | Je parle = I speak / am speaking            |
+| Passé composé | J’ai parlé = I spoke / have spoken          |
+| Imparfait     | Je parlais = I was speaking / used to speak |
+| Futur simple  | Je parlerai = I will speak                  |
+| Conditionnel  | Je parlerais = I would speak                |
+| Subjonctif    | Il faut que je parle = ...that I speak      |
 
-## How Verbs Are Conjugated with Object Pronouns
+## 👥 Verbs with Object Pronouns
 
-In French, **verbs are always conjugated to agree with the subject**, **not** the object or indirect object pronouns (
-like *me, te, lui*).
+In French, verbs are always conjugated to agree with the subject, not the object or indirect object pronouns (like *me,
+te, lui*).
 
-Take the example:
-
+Example:
 > **Tu me manques**  
-> → "I miss you" (literally: **You are missing to me**)
+> ("I miss you" – literally: You are missing to me)
 
-### ✅ Explanation:
-
-- **Subject** = **tu** → that's who the verb conjugates with.
-- **Verb** = **manques** (from *manquer*) → conjugated in the **tu** form.
+- **Subject** = **tu** (who the verb agrees with)
+- **Verb** = **manques** (conjugated for tu)
 - **me** = indirect object ("to me")
 
-Even though *me* comes before the verb, it does **not** affect how the verb is conjugated.
+Even if an object pronoun comes before the verb, it does **not** affect the verb's conjugation.
 
----
+:::tip
+Always conjugate the verb based on the **subject pronoun** (je, tu, il, etc.), even if the sentence has objects (me,
+te, lui...) before the verb.
+:::
 
-### 🧠 Rule of Thumb:
+## 🔁 More Examples
 
-> Always conjugate the verb based on the **subject pronoun** (je, tu, il, etc.), even if the sentence has objects (me,
-> te, lui...) before the verb.
-
----
-
-### 🔁 More Examples:
-
-| French               | Literal Meaning       | Who is the subject? | Verb form  |
-|----------------------|-----------------------|---------------------|------------|
-| Tu me manques        | You are missing to me | tu                  | manques    |
-| Elle me regarde      | She is watching me    | elle                | regarde    |
-| Il nous parle        | He is speaking to us  | il                  | parle      |
-| Vous leur téléphonez | You are calling them  | vous                | téléphonez |
-
----
+| French               | Literal Meaning       | Subject | Verb form  |
+|----------------------|-----------------------|---------|------------|
+| Tu me manques        | You are missing to me | tu      | manques    |
+| Elle me regarde      | She is watching me    | elle    | regarde    |
+| Il nous parle        | He is speaking to us  | il      | parle      |
+| Vous leur téléphonez | You are calling them  | vous    | téléphonez |

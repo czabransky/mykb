@@ -5,13 +5,24 @@ Adjectives are words that describe or modify nouns. In French, adjectives must a
 
 ---
 
-## 📌 Adjective Order
+## 📌 Descriptive Adjectives
 
+Descriptive adjectives provide information about the noun they modify. They can describe qualities, characteristics, or
+states of being. In French, adjectives usually follow the noun they modify, but there are exceptions.
 Some adjectives typically precede the noun they modify, particularly those relating to **beauty**, **age**, **number**,
 **goodness**, and **size** (BAGS). These are often short and common adjectives. Other adjectives that can also come
 before the noun include those indicating **quantity** and descriptive terms.
 
-### Common Adjectives Before the Noun
+### Normal Adjective Placement
+
+Adjectives usually come **after** the noun they modify.
+
+- **un livre intéressant** (an interesting book)
+- **une maison rouge** (a red house)
+
+### Adjective Placement Exceptions
+
+This is not an exhaustive list, but here are some common adjectives that typically come **before** the noun:
 
 - **grand** (big, tall)
 - **petit** (small)
@@ -33,6 +44,7 @@ before the noun include those indicating **quantity** and descriptive terms.
 
 ## 🔵 Possessive Adjectives
 
+A possessive adjective indicates ownership or possession, and they agree with the noun they modify.
 Possessive adjectives always come **before** the noun they accompany and never appear alone.
 
 ### Singular Possessive Adjectives

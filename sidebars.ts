@@ -16,6 +16,7 @@ const sidebars: SidebarsConfig = {
                 'french/grammar/adjectives',
                 'french/grammar/pronouns',
                 'french/grammar/verbs',
+                'french/grammar/adverbs',
             ],
         },
     ]
