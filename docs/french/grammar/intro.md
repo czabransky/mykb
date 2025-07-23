@@ -6,26 +6,41 @@ this resource will cover essential topics to enhance your understanding of the F
 
 ## Topics Covered
 
-### 1. **Articles**
+### [Nouns](./nouns.md)
 
-Learn about the different types of articles in French, including **definite**, **indefinite**, and **partitive**
-articles. Understand how they agree with nouns in gender and number, and explore special cases like negative sentences
-and expressions of quantity.
+Learn about gender, number, and pluralization of French nouns, as well as common patterns and exceptions.
 
-### 2. **Adjectives**
+### [Articles](./articles.md)
 
-Discover how adjectives in French agree with the nouns they modify in gender and number. This section also covers
-adjective order, possessive adjectives, and their usage in various contexts.
+Understand the use of definite, indefinite, and partitive articles, and how they agree with nouns.
 
-### 3. **Pronouns**
+### [Adjectives](./adjectives.md)
 
-Explore the various types of pronouns in French, such as subject, object, reflexive, and possessive pronouns. Learn how
-to use them correctly to replace nouns and avoid repetition.
+Discover how adjectives agree with nouns in gender and number, their placement, and possessive adjectives.
 
-### 4. **Verbs**
+### [Numbers](./numbers.md)
 
-Master the basics of French verbs, including conjugation patterns for regular and irregular verbs. This section also
-introduces verb tenses and moods, helping you express actions and states effectively.
+Explore cardinal and ordinal numbers, counting, and related expressions.
+
+### [Pronouns](./pronouns.md)
+
+Explore subject, object, reflexive, and stressed pronouns, and how to use them to replace nouns.
+
+### [Verbs](./verbs.md)
+
+Master verb conjugation patterns, regular and irregular verbs, tenses, and moods.
+
+### [Negation](./negation.md)
+
+Learn how to form negative sentences using ne...pas and other negative structures.
+
+### [Prepositions](./prepositions.md)
+
+Understand how prepositions link words and phrases, including prepositions of place, time, and direction.
+
+### [Adverbs](./adverbs.md)
+
+Learn how adverbs modify verbs, adjectives, or other adverbs, including types and formation.
 
 ---
 

@@ -1,89 +1,130 @@
-﻿# Adjectives
+﻿# 📚 Adjectives
 
-Adjectives are words that describe or modify nouns. In French, adjectives must agree with the noun they modify in
-**gender** and **number**.
+Adjectives are words that describe or modify nouns. In French, adjectives must agree with the noun they modify in *
+*gender** and **number**.
 
 ---
 
-## 📌 Descriptive Adjectives
+## 🗂️ In This Section
 
-Descriptive adjectives provide information about the noun they modify. They can describe qualities, characteristics, or
-states of being. In French, adjectives usually follow the noun they modify, but there are exceptions.
-Some adjectives typically precede the noun they modify, particularly those relating to **beauty**, **age**, **number**,
-**goodness**, and **size** (BAGS). These are often short and common adjectives. Other adjectives that can also come
-before the noun include those indicating **quantity** and descriptive terms.
+- [Definition & Overview](#definition--overview)
+- [Agreement of Adjectives](#agreement-of-adjectives)
+- [Placement of Adjectives](#placement-of-adjectives)
+- [Common Patterns & Exceptions](#common-patterns--exceptions)
+- [Usage Notes & Pitfalls](#usage-notes--pitfalls)
+- [Example Sentences](#example-sentences)
+- [Practice & Exercises](#practice--exercises)
+- [Cross-References](#cross-references)
 
-### Normal Adjective Placement
+---
 
-Adjectives usually come **after** the noun they modify.
+## Definition & Overview
+
+An **adjective** (*un adjectif*) describes a quality or characteristic of a noun. In French, adjectives change form to
+match the gender (masculine/feminine) and number (singular/plural) of the noun they describe.
+
+---
+
+## Agreement of Adjectives
+
+Adjectives must agree in gender and number with the noun they modify.
+
+| Noun (Gender/Number) | Adjective (Form) | Example (French)          | English Translation  |
+|----------------------|------------------|---------------------------|----------------------|
+| Masculine singular   | -                | un livre intéressant      | an interesting book  |
+| Feminine singular    | +e               | une maison intéressante   | an interesting house |
+| Masculine plural     | +s               | des livres intéressants   | interesting books    |
+| Feminine plural      | +es              | des maisons intéressantes | interesting houses   |
+
+Some adjectives have irregular forms. For example:
+
+| Masculine | Feminine | Example (French) | English Translation |
+|-----------|----------|------------------|---------------------|
+| beau      | belle    | un beau jardin   | a beautiful garden  |
+| vieux     | vieille  | une vieille rue  | an old street       |
+
+---
+
+## Placement of Adjectives
+
+Most adjectives come **after** the noun they modify.
 
 - **un livre intéressant** (an interesting book)
 - **une maison rouge** (a red house)
 
-### Adjective Placement Exceptions
+Some common adjectives come **before** the noun, especially those relating to **beauty, age, goodness, and size (BAGS)
+**:
 
-This is not an exhaustive list, but here are some common adjectives that typically come **before** the noun:
-
-- **grand** (big, tall)
-- **petit** (small)
-- **bon** (good)
-- **mauvais** (bad)
-- **meilleur** (better)
-- **jeune** (young)
-- **vieux** (old)
-- **autre** (other)
-- **beau** (beautiful)
-- **faux** (false, fake)
-- **gros** (large, fat)
-- **haut** (high, tall)
-- **joli** (pretty)
-- **même** (same)
-- **nouveau** (new)
+| Adjective | Meaning   | Example (French)   | English Translation |
+|-----------|-----------|--------------------|---------------------|
+| beau      | beautiful | un beau jour       | a beautiful day     |
+| petit     | small     | une petite voiture | a small car         |
+| jeune     | young     | un jeune homme     | a young man         |
+| bon       | good      | un bon repas       | a good meal         |
+| grand     | big/tall  | une grande maison  | a big house         |
 
 ---
 
-## 🔵 Possessive Adjectives
+## Common Patterns & Exceptions
 
-A possessive adjective indicates ownership or possession, and they agree with the noun they modify.
-Possessive adjectives always come **before** the noun they accompany and never appear alone.
-
-### Singular Possessive Adjectives
-
-| Gender/Number | Masculine Noun Example      | Feminine Noun Example    |
-|:--------------|:----------------------------|:-------------------------|
-| 1st Person    | mon frère (my brother)      | ma mère (my mother)      |
-| 2nd Person    | ton frère (your brother)    | ta mère (your mother)    |
-| 3rd Person    | son frère (his/her brother) | sa mère (his/her mother) |
-
-:::caution
-When a feminine noun begins with a vowel or a silent 'h', use **mon**, **ton**, or **son** instead of **ma**, **ta**, or
-**sa**.
-
-- **mon ami** (my friend), **ton ami** (your friend), **son ami** (his/her friend)
-- **mon amie** (my friend), **ton amie** (your friend), **son amie** (his/her friend)
-- **mon amie intéressante** (my interesting friend), ...
-- **ma petite amie** (my girlfriend), ...
-  :::
-
-### Plural Possessive Adjectives
-
-| Gender/Number | Example                       |
-|:--------------|:------------------------------|
-| All Genders   | mes parents (my parents)      |
-|               | tes parents (your parents)    |
-|               | ses parents (his/her parents) |
+- Some adjectives have irregular feminine or plural forms (e.g., **blanc → blanche**, **fou → folle**).
+- Adjectives of nationality are not capitalized in French.
+- Some adjectives change meaning depending on their position (e.g., **ancien**: *une ancienne école* = a former school,
+  *une école ancienne* = an old school).
 
 ---
 
-## 🟢 Possessive Adjectives for Multiple Owners
+## Usage Notes & Pitfalls
 
-When referring to something owned by multiple people, use **notre**, **votre**, or **leur**. For plural objects or
-relationships, use **nos**, **vos**, or **leurs**.
+- Always check the gender and number of the noun before choosing the adjective form.
+- Some adjectives have completely irregular forms and must be memorized.
+- Adjectives that precede the noun are often short and common, but always check for exceptions.
 
-### Examples
+---
 
-| Singular Owners          | Plural Owners                 |
-|:-------------------------|:------------------------------|
-| notre père (our father)  | nos copains (our friends)     |
-| votre mère (your mother) | vos copines (your friends)    |
-| leur père (their father) | leurs copains (their friends) |
+## Example Sentences
+
+- **Le chat noir dort sur le canapé.**  
+  (The black cat sleeps on the sofa.)
+- **J’ai une grande maison blanche.**  
+  (I have a big white house.)
+- **Les enfants heureux jouent dans le jardin.**  
+  (The happy children play in the garden.)
+- **C’est un vieux livre intéressant.**  
+  (It’s an interesting old book.)
+- **Elle porte une robe rouge élégante.**  
+  (She is wearing an elegant red dress.)
+
+---
+
+## Practice & Exercises
+
+1. **Make the adjective agree:**  
+   Change the adjective to agree with the noun.
+    - une voiture (vert)
+    - des maisons (ancien)
+    - un homme (heureux)
+    - des filles (sportif)
+
+2. **Place the adjective correctly:**  
+   Insert the adjective in the correct position.
+    - un livre (intéressant)
+    - une (petit) fille
+    - une robe (bleu)
+    - un (vieux) arbre
+
+3. **Translate to French:**
+    - a beautiful city
+    - the old houses
+    - a happy child
+    - the big red apples
+
+---
+
+## Cross-References
+
+- [Nouns](./nouns.md): Adjectives must agree with the nouns they describe.
+- [Articles](./articles.md): Articles precede adjectives and nouns.
+- [Pronouns](./pronouns.md): Sometimes replace nouns and adjectives in sentences.
+
+---

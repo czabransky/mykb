@@ -88,6 +88,12 @@ const config: Config = {
                     position: 'left',
                     label: 'French',
                 },
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'chineseSidebar',
+                    position: 'left',
+                    label: 'Chinese',
+                },
                 {to: '/blog', label: 'Blog', position: 'left'},
             ],
         },

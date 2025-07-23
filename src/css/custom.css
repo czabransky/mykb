@@ -4,38 +4,156 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* Infima variables using oklch and a gradient background */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+}
+
+[data-theme='light'] {
+
+    -bg-color-h: 240;
+    --bg-color-l: 0.99;
+    --bg-color: oklch(0.97 0.01 240);
+    --bg-color-dark: oklch(0.95 0.01 240);
+    --bg-color-light: oklch(0.99 0.00 240);
+    --bg-color-lighter: oklch(0.95 0.00 240);
+
+    --text-color: oklch(0.18 0.01 240);
+    --text-color-dark: oklch(0.70 0.02 240);
+    --text-color-darker: oklch(0.60 0.02 240);
+    --text-color-darkest: oklch(0.50 0.02 240);
+
+    --ifm-color-primary: oklch(0.55 0.18 240);
+    --ifm-color-primary-dark: oklch(0.50 0.18 240);
+    --ifm-color-primary-darker: oklch(0.45 0.18 240);
+    --ifm-color-primary-darkest: oklch(0.38 0.18 240);
+    --ifm-color-primary-light: oklch(0.60 0.18 240);
+    --ifm-color-primary-lighter: oklch(0.68 0.18 240);
+    --ifm-color-primary-lightest: oklch(0.80 0.18 240);
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: oklch(0.90 0.02 240 / 0.3);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #a1add3;
-  --ifm-color-primary-dark: #8897c7;
-  --ifm-color-primary-darker: #7b8cc1;
-  --ifm-color-primary-darkest: #556baf;
-  --ifm-color-primary-light: #bac3df;
-  --ifm-color-primary-lighter: #c7cee5;
-  --ifm-color-primary-lightest: #edeff7;
+
+    --bg-color-h: 145;
+    --bg-color-l: 0.18;
+    --bg-color: oklch(0.18 0.02 145);
+    --bg-color-dark: oklch(0.25 0.02 145);
+    --bg-color-light: oklch(0.22 0.02 145);
+    --bg-color-lighter: oklch(0.28 0.02 145);
+
+    --text-color: oklch(0.93 0.02 240);
+    --text-color-dark: oklch(0.75 0.02 240);
+    --text-color-darker: oklch(0.65 0.02 240);
+    --text-color-darkest: oklch(0.55 0.02 240);
+
+    --ifm-color-primary: oklch(0.75 0.10 265);
+    --ifm-color-primary-dark: oklch(0.68 0.10 265);
+    --ifm-color-primary-darker: oklch(0.60 0.10 265);
+    --ifm-color-primary-darkest: oklch(0.48 0.10 265);
+    --ifm-color-primary-light: oklch(0.82 0.10 265);
+    --ifm-color-primary-lighter: oklch(0.88 0.10 265);
+    --ifm-color-primary-lightest: oklch(0.95 0.10 265);
+    --docusaurus-highlighted-code-line-bg: oklch(0.38 0.02 265 / 0.3);
+}
+
+html[data-theme='light'],
+html[data-theme='dark'] {
+    --ifm-color-content: var(--text-color);
+    --ifm-color-content-secondary: var(--text-color-darker);
+    --ifm-background-color: var(--bg-color);
+    --ifm-background-surface-color: var(--bg-color-light);
+    --ifm-background-surface-color-light: var(--bg-color-lighter);
+    --ifm-color-primary-contrast-background: var(--bg-color-lignt);
+}
+
+[data-theme='dark'] hr {
+    border: none;
+    border-top: 1.5px solid oklch(0.38 0.02 265); /* matches your dark bg palette */
+    margin: 2em 0;
+}
+
+button {
+    background: var(--ifm-color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em 1.2em;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px oklch(0.85 0.02 145 / 0.08);
+}
+
+button:disabled {
+    background: oklch(0.50 0 0);
+    color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+button:not(:disabled):hover,
+button:not(:disabled):focus {
+    background: var(--ifm-color-primary-dark);
+    outline: none;
+}
+
+kbd {
+    display: block;
+    padding: 0.15em 0.5em;
+    font-size: 0.95em;
+    font-family: inherit;
+    color: #222;
+    background: oklch(0.97 0.02 145); /* very light background, fits both themes */
+    border-radius: 4px;
+    margin: 0 0.1em;
+    vertical-align: middle;
+    transition: border-color 0.2s;
 }
 
 .markdown {
-    h1:first-child  { --ifm-h1-font-size: 32px; }
-    h2              { --ifm-h2-font-size: 24px; }
-    h3              { --ifm-h3-font-size: 20px; }
+    h1:first-child {
+        --ifm-h1-font-size: 32px;
+    }
+
+    h2 {
+        --ifm-h2-font-size: 24px;
+    }
+
+    h3 {
+        --ifm-h3-font-size: 20px;
+    }
+}
+
+
+.markdown {
+    h1:first-child {
+        --ifm-h1-font-size: 32px;
+    }
+
+    h2 {
+        --ifm-h2-font-size: 24px;
+    }
+
+    h3 {
+        --ifm-h3-font-size: 20px;
+    }
 }
 
 [class*='docMainContainer'] {
     > [class*='container'] {
         margin-left: 24px;
-        max-width: 2440px;
+        max-width: 1920px;
     }
 }
+
+.centered-viewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh; /* adjust as needed */
+    width: 100%;
+}
+

@@ -1,0 +1,89 @@
+﻿.container {
+    max-width: 600px;
+}
+
+.flashCardViewer {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.navButton {
+    justify-self: center;
+    align-self: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: var(--ifm-color-primary);
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: background 0.2s;
+    padding: 0;
+}
+
+.navButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.navButton:hover:not(:disabled) {
+    background: #e0e0e0;
+}
+
+.flashCard {
+    min-width: 200px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: var(--background, var(--ifm-background-surface-color));
+    margin: 1rem 0;
+}
+
+.flashCardQuestion {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.flashCardAnswer {
+    font-size: 1.0rem;
+    text-align: center;
+    min-height: 1.5em; /* Reserve space for answer */
+    margin-bottom: 1rem;
+    visibility: hidden;
+}
+
+.flashCardIndex {
+    font-size: 0.95rem;
+    color: var(--ifm-color-content-secondary);
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.flashCard.flipped .flashCardAnswer {
+    visibility: visible;
+}
+
+.instructions {
+    grid-template-columns: auto;
+    grid-column: 1 / -1;
+    align-items: center;
+    border-top: 0.5px solid;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--ifm-color-content-secondary);
+    padding-top: 1rem;
+    padding-bottom: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}

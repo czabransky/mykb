@@ -1,0 +1,15 @@
+﻿.card {
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    padding: 1.2em;
+    background: var(--background, var(--ifm-background-surface-color));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.cardTitle {
+    margin-top: 0;
+}
+
+.cardContent {
+    margin-bottom: 0;
+}

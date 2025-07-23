@@ -12,11 +12,20 @@ const sidebars: SidebarsConfig = {
             collapsed: false,
             items: [
                 'french/grammar/intro',
+                'french/grammar/nouns',
                 'french/grammar/articles',
                 'french/grammar/adjectives',
-                'french/grammar/pronouns',
-                'french/grammar/verbs',
-                'french/grammar/adverbs',
+            ],
+        },
+    ],
+    chineseSidebar: [
+        {
+            type: 'category',
+            label: 'Journey to Chinese',
+            collapsible: false,
+            collapsed: false,
+            items: [
+                'chinese/day1'
             ],
         },
     ]

@@ -1,0 +1,25 @@
+﻿.ttsRoot {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ttsButton {
+    /* Add button styles if needed */
+}
+
+.ttsSpinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-top: 2px solid #333;
+    border-radius: 50%;
+    display: inline-block;
+    animation: tts-spin 1s linear infinite;
+}
+
+@keyframes tts-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

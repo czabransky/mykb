@@ -1,0 +1,85 @@
+﻿import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+import Card from '@site/src/components/core/card'
+import CardGrid from '@site/src/components/core/card-grid'
+import PhraseCard from '@site/src/components/core/phrase-card'
+import CharacterGrid from '@site/src/components/core/character-grid'
+import FlashCardViewer from '@site/src/components/core/flash-card-viewer'
+
+# Day 1
+
+<Tabs>
+  <TabItem value="lesson" label="Lesson">
+
+## Characters in this Lesson
+
+<CharacterGrid characters={[
+{ char: "你", pinyin: "nǐ", english: "you" },
+{ char: "好", pinyin: "hǎo", english: "good" },
+{ char: "早", pinyin: "zǎo", english: "morning/early" },
+{ char: "上", pinyin: "shàng", english: "up" },
+{ char: "久", pinyin: "jiǔ", english: "long (time)" },
+{ char: "不", pinyin: "bù", english: "not" },
+{ char: "见", pinyin: "jiàn", english: "see" },
+{ char: "再", pinyin: "zài", english: "again" },
+{ char: "拜", pinyin: "bài", english: "bye" },
+{ char: "我", pinyin: "wǒ", english: "I/me" },
+{ char: "先", pinyin: "xiān", english: "first" },
+{ char: "走", pinyin: "zǒu", english: "walk/go" },
+{ char: "了", pinyin: "le", english: "(particle)" },
+{ char: "慢", pinyin: "màn", english: "slow" },
+{ char: "晚", pinyin: "wǎn", english: "evening/late" },
+{ char: "安", pinyin: "ān", english: "peace" }
+]} />
+
+---
+
+## How to Say Hello
+
+    <CardGrid columns={4}>
+        <PhraseCard pinyin="nǐ hǎo" chinese="你好" english="Hello" />
+        <PhraseCard pinyin="zǎo" chinese="早" english="Good morning" />
+        <PhraseCard pinyin="zǎoshang hǎo" chinese="早上好" english="Good morning (formal)" />
+        <PhraseCard pinyin="hǎojiǔ bùjiàn" chinese="好久不见" english="Long time no see" />
+    </CardGrid>
+
+---
+
+## How to Say Goodbye
+
+<CardGrid columns={4}>
+        <PhraseCard pinyin="zàijiàn" chinese="再见" english="Goodbye" />
+        <PhraseCard pinyin="bàibài" chinese="拜拜" english="Bye bye" />
+        <PhraseCard pinyin="wǒ xiān zǒu le" chinese="我先走了" english="I'll head off first" />
+        <PhraseCard pinyin="màn zǒu" chinese="慢走" english="Take care" />
+        <PhraseCard pinyin="wǎn ān" chinese="晚安" english="Good night!" />
+</CardGrid>
+
+    </TabItem>
+    <TabItem value="flashcards" label="Flashcards">
+
+<div className="centered-viewer">
+        <FlashCardViewer
+        cards={[
+        { question: "你", answer: "nǐ" },
+        { question: "好", answer: "hǎo" },
+        { question: "早", answer: "zǎo" },
+        { question: "上", answer: "shàng" },
+        { question: "久", answer: "jiǔ" },
+        { question: "不", answer: "bù" },
+        { question: "见", answer: "jiàn" },
+        { question: "再", answer: "zài" },
+        { question: "拜", answer: "bài" },
+        { question: "我", answer: "wǒ" },
+        { question: "先", answer: "xiān" },
+        { question: "走", answer: "zǒu" },
+        { question: "了", answer: "le" },
+        { question: "慢", answer: "màn" },
+        { question: "晚", answer: "wǎn" },
+        { question: "安", answer: "ān" }
+        ]}
+        />
+</div>
+    </TabItem>
+
+</Tabs>
