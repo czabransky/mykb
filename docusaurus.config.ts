@@ -76,25 +76,13 @@ const config: Config = {
                 src: 'img/logo.svg',
             },
             items: [
-                {
-                    type: 'docSidebar',
-                    sidebarId: 'foodSidebar',
-                    position: 'left',
-                    label: 'Food',
-                },
-                {
-                    type: 'docSidebar',
-                    sidebarId: 'frenchSidebar',
-                    position: 'left',
-                    label: 'French',
-                },
+
                 {
                     type: 'docSidebar',
                     sidebarId: 'chineseSidebar',
                     position: 'left',
                     label: 'Chinese',
                 },
-                {to: '/blog', label: 'Blog', position: 'left'},
             ],
         },
         footer: {
