@@ -19,17 +19,20 @@ export default function CharacterGrid({characters = []}: CharacterGridProps) {
                 const href =
                     link ||
                     `https://www.archchinese.com/chinese_english_dictionary.html?find=${encodeURIComponent(char)}`;
+                const handleClick = () => {
+                    window.open(href, '_blank', 'noopener,noreferrer');
+                };
                 return (
-                    <div className={styles.card} key={char}>
-                        <a
-                            href={href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={styles.char}
-                            title={english}
-                        >
-                            {char}
-                        </a>
+                    <div
+                        className={styles.card}
+                        key={char}
+                        title={english}
+                        role="link"
+                        tabIndex={0}
+                        onClick={handleClick}
+                        style={{cursor: 'pointer'}}
+                    >
+                        <span className={styles.char}>{char}</span>
                         <div className={styles.pinyin}>{pinyin}</div>
                         <div className={styles.english}>{english}</div>
                     </div>

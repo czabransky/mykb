@@ -19,7 +19,8 @@
 }
 
 .card:hover {
-    box-shadow: 0 2px 8px oklch(0.85 0.02 145 / 0.10);
+    box-shadow: 0 2px 8px oklch(0.85 0.02 145 / 0.10),
+    0 0 0 2px color-mix(in oklab, var(--ifm-color-primary) 60%, oklch(0.85 0.02 145 / 0.10) 40%);
 }
 
 .char {

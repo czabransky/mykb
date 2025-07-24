@@ -1,4 +1,4 @@
-﻿import React, {ReactNode, useEffect } from 'react';
+﻿import React, {ReactNode, useEffect} from 'react';
 import {FaArrowLeft, FaArrowRight} from 'react-icons/fa'
 import Card from '@site/src/components/core/card';
 import styles from './flash-card-viewer.module.css';
@@ -29,7 +29,7 @@ export default function FlashCardViewer({cards}: FlashCardViewerProps): ReactNod
     useEffect(() => {
         setShuffledCards(shuffleArray(cards));
     }, [cards]);
-    
+
     const handleFlip = () => setFlipped(f => !f);
 
     const handleNext = () => {
@@ -41,11 +41,11 @@ export default function FlashCardViewer({cards}: FlashCardViewerProps): ReactNod
         setCurrentIndex((prev) => (prev - 1 + cards.length) % cards.length);
         setFlipped(false);
     };
-    
+
     if (shuffledCards.length === 0) {
         return <div>No cards available.</div>;
     }
-    
+
     return (
         <div
             className={styles.container}
@@ -96,7 +96,7 @@ export default function FlashCardViewer({cards}: FlashCardViewerProps): ReactNod
                     <FaArrowRight/>
                 </button>
                 <div className={styles.instructions}>
-                    <span>press space to reveal</span>
+                    <span>tap or press space to reveal</span>
                 </div>
             </Card>
         </div>
