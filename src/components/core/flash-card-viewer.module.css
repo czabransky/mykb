@@ -1,5 +1,5 @@
 ﻿.container {
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .flashCardViewer {
@@ -78,7 +78,7 @@
     grid-template-columns: auto;
     grid-column: 1 / -1;
     align-items: center;
-    border-top: 0.5px solid;
+    border-top: 0.5px solid oklch(0.38 0.02 265);
     text-align: center;
     font-size: 0.95rem;
     color: var(--ifm-color-content-secondary);

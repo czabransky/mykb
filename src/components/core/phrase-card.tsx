@@ -6,7 +6,7 @@ import styles from './phrase-card.module.css';
 function pinyinToFileName(pinyin: string) {
     return pinyin
         .normalize('NFD')
-        .replace(/[\u0300-\u036f\s]/g, '')
+        .replace(/[\u0300-\u036f\s。？]/g, '')
         .toLowerCase();
 }
 
@@ -16,7 +16,7 @@ type ChinesePhraseCardProps = {
     chinese: React.ReactNode;
 };
 
-export default function PhraseCard({ english, pinyin, chinese }: ChinesePhraseCardProps) {
+export default function PhraseCard({english, pinyin, chinese}: ChinesePhraseCardProps) {
     const fileName = pinyinToFileName(pinyin);
     const audioPath = `/mykb/audio/${fileName}.mp3`;
 
@@ -26,7 +26,7 @@ export default function PhraseCard({ english, pinyin, chinese }: ChinesePhraseCa
                 <div className={styles.chinese}>{chinese}</div>
                 <div className={styles.pinyinRow}>
                     <span className={styles.pinyin}>{pinyin}</span>
-                    <TextToSpeech lang="zh-CN" fallbackSrc={audioPath} />
+                    <TextToSpeech lang="zh-CN" fallbackSrc={audioPath}/>
                 </div>
                 <div className={styles.englishFooter}>{english}</div>
             </div>

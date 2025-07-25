@@ -25,7 +25,8 @@ const sidebars: SidebarsConfig = {
             collapsible: false,
             collapsed: false,
             items: [
-                'chinese/day1'
+                'chinese/day1',
+                'chinese/day2'
             ],
         },
     ]

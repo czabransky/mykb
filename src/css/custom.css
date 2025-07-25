@@ -38,10 +38,10 @@
 
     --bg-color-h: 145;
     --bg-color-l: 0.18;
-    --bg-color: oklch(0.18 0.02 145);
-    --bg-color-dark: oklch(0.25 0.02 145);
-    --bg-color-light: oklch(0.22 0.02 145);
-    --bg-color-lighter: oklch(0.28 0.02 145);
+    --bg-color: oklch(0.18 0.02 240);
+    --bg-color-dark: oklch(0.25 0.02 240);
+    --bg-color-light: oklch(0.22 0.02 240);
+    --bg-color-lighter: oklch(0.28 0.02 240);
 
     --text-color: oklch(0.93 0.02 240);
     --text-color-dark: oklch(0.75 0.02 240);
@@ -74,6 +74,19 @@ html[data-theme='dark'] {
     margin: 2em 0;
 }
 
+[class*='docMainContainer'] {
+    > [class*='container'] {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1920px;
+    }
+}
+
+.theme-doc-toc-desktop {
+    display: none !important;
+}
+
+
 button {
     background: var(--ifm-color-primary);
     color: #fff;
@@ -100,19 +113,6 @@ button:not(:disabled):focus {
     outline: none;
 }
 
-kbd {
-    display: block;
-    padding: 0.15em 0.5em;
-    font-size: 0.95em;
-    font-family: inherit;
-    color: #222;
-    background: oklch(0.97 0.02 145); /* very light background, fits both themes */
-    border-radius: 4px;
-    margin: 0 0.1em;
-    vertical-align: middle;
-    transition: border-color 0.2s;
-}
-
 .markdown {
     h1:first-child {
         --ifm-h1-font-size: 32px;
@@ -139,13 +139,6 @@ kbd {
 
     h3 {
         --ifm-h3-font-size: 20px;
-    }
-}
-
-[class*='docMainContainer'] {
-    > [class*='container'] {
-        margin-left: 24px;
-        max-width: 1920px;
     }
 }
 

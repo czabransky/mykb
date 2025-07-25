@@ -3,6 +3,9 @@
     grid-template-columns: repeat(var(--columns, 3), minmax(220px, 1fr));
     gap: 16px;
     width: 100%;
+    align-items: stretch; /* Ensure all cards in a row have equal height */
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 @media (max-width: 900px) {

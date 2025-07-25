@@ -25,6 +25,7 @@ export default function TextToSpeech({text, lang = 'zh-CN', fallbackSrc}: TextTo
         }
         if (loading) return; // Prevent multiple clicks while loading
         setAudioSrc(fallbackSrc);
+        console.log(`Fetching TTS audio for: ${text} (${lang}). Fallback: ${fallbackSrc}`);
         setShouldPlay(true);
         setLoading(true);
     };

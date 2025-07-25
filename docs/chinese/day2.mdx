@@ -1,0 +1,81 @@
+﻿import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+import Card from '@site/src/components/core/card'
+import CardGrid from '@site/src/components/core/card-grid'
+import PhraseCard from '@site/src/components/core/phrase-card'
+import CharacterGrid from '@site/src/components/core/character-grid'
+import FlashCardViewer from '@site/src/components/core/flash-card-viewer'
+
+# Day 2
+
+<Tabs>
+<TabItem value="lesson" label="Lesson">
+
+## Characters in this Lesson
+
+<CharacterGrid characters={[
+{ char: "的", pinyin: "de", english: "(possessive/particle)" },
+{ char: "这", pinyin: "zhè", english: "this" },
+{ char: "个", pinyin: "ge", english: "(measure word)" },
+{ char: "谢", pinyin: "xiè", english: "thank" },
+{ char: "请", pinyin: "qǐng", english: "please" },
+{ char: "问", pinyin: "wèn", english: "ask" },
+{ char: "多", pinyin: "duō", english: "many/much" },
+{ char: "少", pinyin: "shǎo", english: "few/little" },
+{ char: "钱", pinyin: "qián", english: "money" },
+{ char: "会", pinyin: "huì", english: "can/know how" },
+{ char: "说", pinyin: "shuō", english: "speak" },
+{ char: "英", pinyin: "Yīng", english: "English" },
+{ char: "文", pinyin: "wén", english: "language" },
+{ char: "吗", pinyin: "ma", english: "(question particle)" },
+{ char: "给", pinyin: "gěi", english: "give" }
+]}/>
+
+---
+
+## Common Phrases
+
+    <CardGrid columns={3}>
+        <PhraseCard pinyin="hǎo de" chinese="好的" english="Okay" />
+       <PhraseCard pinyin="zhè ge" chinese="这个" english="This" />
+       <PhraseCard pinyin="xièxie" chinese="谢谢" english="Thanks" />
+    </CardGrid>
+
+---
+
+## Asking Questions Politely
+
+    <CardGrid columns={3}>
+        <PhraseCard pinyin="qǐngwèn" chinese="请问" english="Please may I ask..." />
+        <PhraseCard pinyin="qǐngwèn zhè ge duōshǎo qián？" chinese="请问这个多少钱？" english="May I ask how much this is?" />
+        <PhraseCard pinyin="qǐngwèn nǐ huì shuō Yīngwén ma？" chinese="请问你会说英文吗？" english="May I ask if you speak English?" />
+        <PhraseCard pinyin="qǐng gěi wǒ zhè ge" chinese="请给我这个。" english="Please can you give me this." />
+    </CardGrid>
+
+---
+
+</TabItem>
+<TabItem value="flashcards" label="Flashcards">
+    <div className="centered-viewer">
+            <FlashCardViewer
+            cards={[
+                { question: "的", answer: "de" },
+                { question: "这", answer: "zhè" },
+                { question: "个", answer: "ge" },
+                { question: "谢", answer: "xiè" },
+                { question: "请", answer: "qǐng" },
+                { question: "问", answer: "wèn" },
+                { question: "多", answer: "duō" },
+                { question: "少", answer: "shǎo" },
+                { question: "钱", answer: "qián" },
+                { question: "会", answer: "huì" },
+                { question: "说", answer: "shuō" },
+                { question: "英", answer: "Yīng" },
+                { question: "文", answer: "wén" },
+                { question: "吗", answer: "ma" },
+                { question: "给", answer: "gěi" }
+
+            ]} />
+    </div>
+</TabItem>
+</Tabs>
