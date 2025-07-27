@@ -3,10 +3,10 @@ import Card from './card';
 import TextToSpeech from './text-to-speech';
 import styles from './phrase-card.module.css';
 
-function pinyinToFileName(pinyin: string) {
-    return pinyin
+function getFileName(text: string) {
+    return text
         .normalize('NFD')
-        .replace(/[\u0300-\u036f\s。？]/g, '')
+        .replace(/[\s。？]/g, '')
         .toLowerCase();
 }
 
@@ -17,7 +17,7 @@ type ChinesePhraseCardProps = {
 };
 
 export default function PhraseCard({english, pinyin, chinese}: ChinesePhraseCardProps) {
-    const fileName = pinyinToFileName(pinyin);
+    const fileName = getFileName(chinese);
     const audioPath = `/mykb/audio/${fileName}.mp3`;
 
     return (
