@@ -16,8 +16,17 @@ type ChinesePhraseCardProps = {
     chinese: React.ReactNode;
 };
 
+function getChineseText(chinese: React.ReactNode): string {
+    if (typeof chinese === 'string') return chinese;
+    if (React.isValidElement(chinese) && typeof chinese.props.children === 'string') {
+        return chinese.props.children;
+    }
+    return '';
+}
+
 export default function PhraseCard({english, pinyin, chinese}: ChinesePhraseCardProps) {
-    const fileName = getFileName(chinese);
+    const chineseText = getChineseText(chinese);
+    const fileName = getFileName(chineseText);
     const audioPath = `/mykb/audio/${fileName}.mp3`;
 
     return (

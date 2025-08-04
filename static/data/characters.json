@@ -1,0 +1,161 @@
+﻿{
+  "day1": [
+    {
+      "chinese": "你",
+      "pinyin": "nǐ",
+      "english": "you"
+    },
+    {
+      "chinese": "好",
+      "pinyin": "hǎo",
+      "english": "good"
+    },
+    {
+      "chinese": "早",
+      "pinyin": "zǎo",
+      "english": "morning/early"
+    },
+    {
+      "chinese": "上",
+      "pinyin": "shàng",
+      "english": "up"
+    },
+    {
+      "chinese": "久",
+      "pinyin": "jiǔ",
+      "english": "long (time)"
+    },
+    {
+      "chinese": "不",
+      "pinyin": "bù",
+      "english": "not"
+    },
+    {
+      "chinese": "见",
+      "pinyin": "jiàn",
+      "english": "see"
+    },
+    {
+      "chinese": "再",
+      "pinyin": "zài",
+      "english": "again"
+    },
+    {
+      "chinese": "拜",
+      "pinyin": "bài",
+      "english": "bye"
+    },
+    {
+      "chinese": "我",
+      "pinyin": "wǒ",
+      "english": "I/me"
+    },
+    {
+      "chinese": "先",
+      "pinyin": "xiān",
+      "english": "first"
+    },
+    {
+      "chinese": "走",
+      "pinyin": "zǒu",
+      "english": "walk/go"
+    },
+    {
+      "chinese": "了",
+      "pinyin": "le",
+      "english": "(particle)"
+    },
+    {
+      "chinese": "慢",
+      "pinyin": "màn",
+      "english": "slow"
+    },
+    {
+      "chinese": "晚",
+      "pinyin": "wǎn",
+      "english": "evening/late"
+    },
+    {
+      "chinese": "安",
+      "pinyin": "ān",
+      "english": "peace"
+    }
+  ],
+  "day2": [
+    {
+      "chinese": "的",
+      "pinyin": "de",
+      "english": "(possessive particle)"
+    },
+    {
+      "chinese": "这",
+      "pinyin": "zhè",
+      "english": "this"
+    },
+    {
+      "chinese": "个",
+      "pinyin": "ge",
+      "english": "(general measure word)"
+    },
+    {
+      "chinese": "谢",
+      "pinyin": "xiè",
+      "english": "thank"
+    },
+    {
+      "chinese": "请",
+      "pinyin": "qǐng",
+      "english": "please"
+    },
+    {
+      "chinese": "问",
+      "pinyin": "wèn",
+      "english": "ask"
+    },
+    {
+      "chinese": "多",
+      "pinyin": "duō",
+      "english": "many/much"
+    },
+    {
+      "chinese": "少",
+      "pinyin": "shǎo",
+      "english": "few/little"
+    },
+    {
+      "chinese": "钱",
+      "pinyin": "qián",
+      "english": "money"
+    },
+    {
+      "chinese": "会",
+      "pinyin": "huì",
+      "english": "can/know how"
+    },
+    {
+      "chinese": "说",
+      "pinyin": "shuō",
+      "english": "speak/say"
+    },
+    {
+      "chinese": "英",
+      "pinyin": "Yīng",
+      "english": "English (abbr.)"
+    },
+    {
+      "chinese": "文",
+      "pinyin": "wén",
+      "english": "language/script"
+    },
+    {
+      "chinese": "吗",
+      "pinyin": "ma",
+      "english": "(question particle)"
+    },
+    {
+      "chinese": "给",
+      "pinyin": "gěi",
+      "english": "give"
+    }
+  ]
+}
