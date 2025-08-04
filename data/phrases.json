@@ -1,0 +1,86 @@
+﻿{
+  "day1": [
+    {
+      "chinese": "你好",
+      "pinyin": "nǐ hǎo",
+      "english": "Hello"
+    },
+    {
+      "chinese": "早",
+      "pinyin": "zǎo",
+      "english": "Good morning"
+    },
+    {
+      "chinese": "早上好",
+      "pinyin": "zǎoshang hǎo",
+      "english": "Good morning (formal)"
+    },
+    {
+      "chinese": "好久不见",
+      "pinyin": "hǎojiǔ bùjiàn",
+      "english": "Long time no see"
+    },
+    {
+      "chinese": "再见",
+      "pinyin": "zàijiàn",
+      "english": "Goodbye"
+    },
+    {
+      "chinese": "拜拜",
+      "pinyin": "bàibài",
+      "english": "Bye bye"
+    },
+    {
+      "chinese": "我先走了",
+      "pinyin": "wǒ xiān zǒu le",
+      "english": "I'll head off first"
+    },
+    {
+      "chinese": "慢走",
+      "pinyin": "màn zǒu",
+      "english": "Take care"
+    },
+    {
+      "chinese": "晚安",
+      "pinyin": "wǎn ān",
+      "english": "Good night!"
+    }
+  ],
+  "day2": [
+    {
+      "chinese": "好的",
+      "pinyin": "hǎo de",
+      "english": "Okay"
+    },
+    {
+      "chinese": "这个",
+      "pinyin": "zhè ge",
+      "english": "This"
+    },
+    {
+      "chinese": "谢谢",
+      "pinyin": "xièxie",
+      "english": "Thanks"
+    },
+    {
+      "chinese": "请问",
+      "pinyin": "qǐngwèn",
+      "english": "Please may I ask..."
+    },
+    {
+      "chinese": "请问这个多少钱？",
+      "pinyin": "qǐngwèn zhè ge duōshǎo qián？",
+      "english": "May I ask how much this is?"
+    },
+    {
+      "chinese": "请问你会说英文吗？",
+      "pinyin": "qǐngwèn nǐ huì shuō Yīngwén ma？",
+      "english": "May I ask if you speak English?"
+    },
+    {
+      "chinese": "请给我这个。",
+      "pinyin": "qǐng gěi wǒ zhè ge",
+      "english": "Please can you give me this."
+    }
+  ]
+}
