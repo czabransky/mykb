@@ -7,75 +7,132 @@
 /* Infima variables using oklch and a gradient background */
 :root {
 
-}
+    /* Support for system color scheme preference */
+    color-scheme: light dark;
 
-[data-theme='light'] {
+    /* Base colors - light theme for light, dark theme for dark */
+    --bg-color: light-dark(oklch(0.97 0.01 240), oklch(0.18 0.02 240));
+    --bg-color-dark: light-dark(oklch(0.95 0.01 240), oklch(0.25 0.02 240));
+    --bg-color-light: light-dark(oklch(0.99 0.00 240), oklch(0.22 0.02 240));
+    --bg-color-lighter: light-dark(oklch(0.95 0.00 240), oklch(0.28 0.02 240));
 
-    -bg-color-h: 240;
-    --bg-color-l: 0.99;
-    --bg-color: oklch(0.97 0.01 240);
-    --bg-color-dark: oklch(0.95 0.01 240);
-    --bg-color-light: oklch(0.99 0.00 240);
-    --bg-color-lighter: oklch(0.95 0.00 240);
+    --text-color: light-dark(oklch(0.18 0.01 240), oklch(0.93 0.02 240));
+    --text-color-dark: light-dark(oklch(0.70 0.02 240), oklch(0.75 0.02 240));
+    --text-color-darker: light-dark(oklch(0.60 0.02 240), oklch(0.65 0.02 240));
+    --text-color-darkest: light-dark(oklch(0.50 0.02 240), oklch(0.55 0.02 240));
 
-    --text-color: oklch(0.18 0.01 240);
-    --text-color-dark: oklch(0.70 0.02 240);
-    --text-color-darker: oklch(0.60 0.02 240);
-    --text-color-darkest: oklch(0.50 0.02 240);
+    /* Primary color base */
+    --primary-base: light-dark(oklch(0.55 0.18 240), oklch(0.75 0.10 265));
 
-    --ifm-color-primary: oklch(0.55 0.18 240);
-    --ifm-color-primary-dark: oklch(0.50 0.18 240);
-    --ifm-color-primary-darker: oklch(0.45 0.18 240);
-    --ifm-color-primary-darkest: oklch(0.38 0.18 240);
-    --ifm-color-primary-light: oklch(0.60 0.18 240);
-    --ifm-color-primary-lighter: oklch(0.68 0.18 240);
-    --ifm-color-primary-lightest: oklch(0.80 0.18 240);
+    /* Semantic color tokens */
+    --color-primary: var(--primary-base);
+    --color-primary-dark: oklch(from var(--primary-base) calc(l - 0.05) c h);
+    --color-primary-darker: oklch(from var(--primary-base) calc(l - 0.10) c h);
+    --color-surface: var(--bg-color-light);
+    --color-surface-light: var(--bg-color-lighter);
+    --color-text: var(--text-color);
+    --color-text-secondary: var(--text-color-darker);
+    --color-sucess: oklch(from var(--ifm-color-primary) calc(l + 0.20) 0.15 120);
+    --color-warning: oklch(from var(--ifm-color-primary) calc(l + 0.30) 0.15 90);
+    --color-error: oklch(from var(--ifm-color-primary) calc(l + 0.20) 0.20 40);
+
+    --color-hr-background: light-dark(oklch(0.85 0.01 240), oklch(0.38 0.02 265));
+
+    /* Semantic spacing tokens */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+    --spacing-2xl: 2rem;
+    --spacing-3xl: 3rem;
+    --spacing-4xl: 4rem;
+
+    /* Border radius tokens */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-full: 50%;
+
+    /* Shadow tokens */
+    --shadow-sm: 0 1px 4px oklch(from var(--bg-color) calc(l + 0.67) 0.02 240 / 0.04);
+    --shadow-md: 0 2px 8px oklch(from var(--bg-color) calc(l + 0.67) 0.02 240 / 0.04);
+    --shadow-lg: 0 2px 8px oklch(from var(--bg-color) calc(l + 0.67) 0.02 240 / 0.10);
+
+    /* Border tokens */
+    --border-subtle: 1px solid oklch(from var(--bg-color) calc(l + 0.67) 0.02 240 / 0.04);
+    --border-divider: 0.5px solid var(--r-hr-background);
+
+    /* Typography tokens */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+
+    /* Component-specific tokens */
+    --card-padding: 1.2em;
+    --card-border-radius: var(--radius-md);
+    --grid-gap: 1rem;
+    --grid-gap-sm: 0.75rem;
+    --min-card-width: 220px;
+    --min-char-card-width: 80px;
+
+    /* Docusaurus specific overrides */
     --ifm-code-font-size: 95%;
-    --docusaurus-highlighted-code-line-bg: oklch(0.90 0.02 240 / 0.3);
+    --docusaurus-highlighted-code-line-bg: light-dark(oklch(0.90 0.02 240 / 0.3),
+            oklch(0.38 0.02 265 / 0.3));
 }
 
-[data-theme='dark'] {
-
-    --bg-color-h: 145;
-    --bg-color-l: 0.18;
-    --bg-color: oklch(0.18 0.02 240);
-    --bg-color-dark: oklch(0.25 0.02 240);
-    --bg-color-light: oklch(0.22 0.02 240);
-    --bg-color-lighter: oklch(0.28 0.02 240);
-
-    --text-color: oklch(0.93 0.02 240);
-    --text-color-dark: oklch(0.75 0.02 240);
-    --text-color-darker: oklch(0.65 0.02 240);
-    --text-color-darkest: oklch(0.55 0.02 240);
-
-    --ifm-color-primary: oklch(0.75 0.10 265);
-    --ifm-color-primary-dark: oklch(0.68 0.10 265);
-    --ifm-color-primary-darker: oklch(0.60 0.10 265);
-    --ifm-color-primary-darkest: oklch(0.48 0.10 265);
-    --ifm-color-primary-light: oklch(0.82 0.10 265);
-    --ifm-color-primary-lighter: oklch(0.88 0.10 265);
-    --ifm-color-primary-lightest: oklch(0.95 0.10 265);
-    --docusaurus-highlighted-code-line-bg: oklch(0.38 0.02 265 / 0.3);
-}
-
-html[data-theme='light'],
-html[data-theme='dark'] {
+/* if user picks a light theme */
+html[data-theme="light"] {
+    color-scheme: light;
+    --ifm-color-primary: var(--primary-base);
+    --ifm-color-primary-dark: oklch(from var(--primary-base) calc(l - 0.05) c h);
+    --ifm-color-primary-darker: oklch(from var(--primary-base) calc(l - 0.10) c h);
+    --ifm-color-primary-darkest: oklch(from var(--primary-base) calc(l - 0.17) c h);
+    --ifm-color-primary-light: oklch(from var(--primary-base) calc(l + 0.05) c h);
+    --ifm-color-primary-lighter: oklch(from var(--primary-base) calc(l + 0.13) c h);
+    --ifm-color-primary-lightest: oklch(from var(--primary-base) calc(l + 0.25) c h);
     --ifm-color-content: var(--text-color);
     --ifm-color-content-secondary: var(--text-color-darker);
     --ifm-background-color: var(--bg-color);
     --ifm-background-surface-color: var(--bg-color-light);
     --ifm-background-surface-color-light: var(--bg-color-lighter);
-    --ifm-color-primary-contrast-background: var(--bg-color-lignt);
+    --ifm-color-primary-contrast-background: var(--bg-color-light);
+    --ifm-hr-background-color: var(--color-hr-background);
 }
 
-[data-theme='dark'] hr {
+/* if user picks a dark theme */
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --ifm-color-primary: var(--primary-base);
+    --ifm-color-primary-dark: oklch(from var(--primary-base) calc(l - 0.05) c h);
+    --ifm-color-primary-darker: oklch(from var(--primary-base) calc(l - 0.10) c h);
+    --ifm-color-primary-darkest: oklch(from var(--primary-base) calc(l - 0.17) c h);
+    --ifm-color-primary-light: oklch(from var(--primary-base) calc(l + 0.05) c h);
+    --ifm-color-primary-lighter: oklch(from var(--primary-base) calc(l + 0.13) c h);
+    --ifm-color-primary-lightest: oklch(from var(--primary-base) calc(l + 0.25) c h);
+    --ifm-color-content: var(--text-color);
+    --ifm-color-content-secondary: var(--text-color-darker);
+    --ifm-background-color: var(--bg-color);
+    --ifm-background-surface-color: var(--bg-color-light);
+    --ifm-background-surface-color-light: var(--bg-color-lighter);
+    --ifm-color-primary-contrast-background: var(--bg-color-light);
+    --ifm-hr-background-color: var(--color-hr-background);
+}
+
+hr {
     border: none;
-    border-top: 1.5px solid oklch(0.38 0.02 265); /* matches your dark bg palette */
+    border-top: 1.5px solid var(--color-hr-background);
     margin: 2em 0;
 }
 
 [class*='docMainContainer'] {
-    > [class*='container'] {
+    >[class*='container'] {
         margin-left: auto;
         margin-right: auto;
         max-width: 1920px;
@@ -97,12 +154,12 @@ button {
     font-weight: 500;
     cursor: pointer;
     transition: background 0.2s, box-shadow 0.2s;
-    box-shadow: 0 2px 8px oklch(0.85 0.02 145 / 0.08);
+    box-shadow: 0 2px 8px oklch(from var(--bg-color) calc(l + 0.67) c h / 0.08);
 }
 
 button:disabled {
     background: oklch(0.50 0 0);
-    color: #aaa;
+    color: oklch(0.65 0 0);
     cursor: not-allowed;
     box-shadow: none;
 }
@@ -127,26 +184,11 @@ button:not(:disabled):focus {
     }
 }
 
-
-.markdown {
-    h1:first-child {
-        --ifm-h1-font-size: 32px;
-    }
-
-    h2 {
-        --ifm-h2-font-size: 24px;
-    }
-
-    h3 {
-        --ifm-h3-font-size: 20px;
-    }
-}
-
 .centered-viewer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40vh; /* adjust as needed */
+    min-height: 40vh;
+    /* adjust as needed */
     width: 100%;
 }
-

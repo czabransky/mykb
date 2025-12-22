@@ -1,16 +1,16 @@
 ﻿.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(var(--min-char-card-width), 1fr));
+    gap: var(--spacing-md);
     width: 100%;
     margin: 0 auto;
 }
 
 .card {
-    background: var(--ifm-background-surface-color);
-    border-radius: 8px;
-    box-shadow: 0 1px 4px oklch(0.85 0.02 145 / 0.04);
-    padding: 12px 6px 8px 6px;
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-md) var(--spacing-sm) var(--spacing-sm) var(--spacing-sm);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,32 +19,100 @@
 }
 
 .card:hover {
-    box-shadow: 0 2px 8px oklch(0.85 0.02 145 / 0.10),
-    0 0 0 2px color-mix(in oklab, var(--ifm-color-primary) 60%, oklch(0.85 0.02 145 / 0.10) 40%);
+    box-shadow: var(--shadow-lg),
+        0 0 0 2px color-mix(in oklab, var(--color-primary) 60%, transparent 40%);
 }
 
 .char {
-    font-size: 2rem;
+    font-size: var(--font-size-3xl);
     font-weight: 600;
-    color: var(--ifm-color-primary);
+    color: var(--color-primary);
     text-decoration: none;
-    margin-bottom: 4px;
+    margin-bottom: var(--spacing-xs);
     transition: color 0.15s;
 }
 
 .char:hover {
-    color: var(--ifm-color-primary-dark);
+    color: var(--color-primary-dark);
 }
 
 .pinyin {
-    font-size: 0.95em;
-    color: var(--ifm-color-content-secondary);
-    margin-bottom: 2px;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.notfound {
+    font-size: var(--font-size-sm);
+    color: oklch(from var(--ifm-color-warning) 95% c h);
+    margin-bottom: var(--spacing-xs);
 }
 
 .english {
-    font-size: 0.85em;
-    color: var(--ifm-color-content-secondary);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
     text-align: center;
     opacity: 0.85;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: oklch(from var(--bg-color) l c h / 0.8);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: var(--spacing-lg);
+}
+
+.modalContent {
+    background: var(--bg-color);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 32px oklch(from var(--bg-color) calc(l - 0.5) c h / 0.3);
+    max-width: 1200px;
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-bottom: var(--border-subtle);
+}
+
+.modalHeader h2 {
+    margin: 0;
+    font-size: var(--font-size-xl);
+    color: var(--text-color);
+}
+
+.modalClose {
+    background: transparent;
+    border: none;
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    border-radius: var(--radius-sm);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s;
+}
+
+.modalClose:hover {
+    background: var(--color-surface);
+    color: var(--text-color);
 }

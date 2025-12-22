@@ -1,5 +1,5 @@
-﻿import React, {ReactNode, useEffect} from 'react';
-import {FaArrowLeft, FaArrowRight} from 'react-icons/fa'
+﻿import React, { ReactNode, useEffect } from 'react';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import Card from '@site/src/components/core/card';
 import styles from './flash-card-viewer.module.css';
 
@@ -21,7 +21,7 @@ function shuffleArray<T>(array: T[]): T[] {
     return result;
 }
 
-export default function FlashCardViewer({cards}: FlashCardViewerProps): ReactNode {
+export default function FlashCardViewer({ cards }: FlashCardViewerProps): ReactNode {
     const [shuffledCards, setShuffledCards] = React.useState<QuestionAnswerPair[]>([]);
     const [currentIndex, setCurrentIndex] = React.useState(0);
     const [flipped, setFlipped] = React.useState(false);
@@ -43,7 +43,7 @@ export default function FlashCardViewer({cards}: FlashCardViewerProps): ReactNod
     };
 
     if (shuffledCards.length === 0) {
-        return <div>No cards available.</div>;
+        return null;
     }
 
     return (
@@ -73,7 +73,7 @@ export default function FlashCardViewer({cards}: FlashCardViewerProps): ReactNod
                     tabIndex={-1}
                     aria-label="Previous"
                 >
-                    <FaArrowLeft/>
+                    <FaArrowLeft />
                 </button>
                 <div
                     className={`${styles.flashCard} ${flipped ? styles.flipped : ''}`}
@@ -93,7 +93,7 @@ export default function FlashCardViewer({cards}: FlashCardViewerProps): ReactNod
                     tabIndex={-1}
                     aria-label="Next"
                 >
-                    <FaArrowRight/>
+                    <FaArrowRight />
                 </button>
                 <div className={styles.instructions}>
                     <span>tap or press space to reveal</span>

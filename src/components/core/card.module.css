@@ -1,10 +1,11 @@
 ﻿﻿.card {
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    border-radius: 8px;
-    padding: 1.2em;
-    background: var(--background, var(--ifm-background-surface-color));
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    height: 100%; /* Stretch card to fill grid cell */
+    border: var(--border-subtle);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    background: var(--background, var(--color-surface));
+    box-shadow: var(--shadow-md);
+    height: 100%;
+    /* Stretch card to fill grid cell */
 }
 
 .cardTitle {

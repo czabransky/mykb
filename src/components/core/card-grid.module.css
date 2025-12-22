@@ -1,15 +1,16 @@
 ﻿.cardGrid {
     display: grid;
-    grid-template-columns: repeat(var(--columns, 3), minmax(220px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(var(--columns, 3), minmax(var(--min-card-width), 1fr));
+    gap: var(--grid-gap);
     width: 100%;
-    align-items: stretch; /* Ensure all cards in a row have equal height */
-    margin-top: 16px;
-    margin-bottom: 16px;
+    align-items: stretch;
+    /* Ensure all cards in a row have equal height */
+    margin-top: var(--grid-gap);
+    margin-bottom: var(--grid-gap);
 }
 
 @media (max-width: 900px) {
     .cardGrid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(var(--min-card-width), 1fr));
     }
 }

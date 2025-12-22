@@ -82,5 +82,49 @@
       "pinyin": "qǐng gěi wǒ zhè ge",
       "english": "Please can you give me this."
     }
+  ],
+  "diary-2025-12-21": [
+    {
+      "chinese": "今天是十二月二十一号",
+      "pinyin": "jīntiān shí shí'èr yuè èrshíyī hào",
+      "english": "Today is December 21st"
+    },
+    {
+      "chinese": "我想练习弹钢琴",
+      "pinyin": "wǒ xiǎng liànxí tán gāngqín",
+      "english": "I want to practice playing the piano"
+    },
+    {
+      "chinese": "我在学一首叫'Alicia'的钢琴曲",
+      "pinyin": "wǒ zài xué yì shǒu jiào 'Alicia' de gāngqín qǔ",
+      "english": "I am learning a piano piece called 'Alicia'"
+    },
+    {
+      "chinese": "我很喜欢这首曲，但是它非常难",
+      "pinyin": "wǒ hěn xǐhuan zhè shǒu qǔ, dànshì tā fēicháng nán",
+      "english": "I really like this piece but it is very difficult"
+    },
+    {
+      "chinese": "圣诞节快乐",
+      "pinyin": "shèngdàn jié kuàilè",
+      "english": "Merry Christmas"
+    }
+  ],
+  "diary-2025-12-22": [
+    {
+      "chinese": "今天是十二月二十二号",
+      "pinyin": "jīntiān shí shí'èr yuè èrshí'èr hào",
+      "english": "Today is December 22nd"
+    },
+    {
+      "chinese": "昨天我练习弹钢琴",
+      "pinyin": "zuótiān wǒ liànxí tán gāngqín",
+      "english": "Yesterday I practiced playing the piano"
+    },
+    {
+      "chinese": "明天，我女朋友要去我家。",
+      "pinyin": "míngtiān, wǒ nǚpéngyǒu yào qù wǒ jiā.",
+      "english": "Tomorrow, my girlfriend will go to my house."
+    }
   ]
 }

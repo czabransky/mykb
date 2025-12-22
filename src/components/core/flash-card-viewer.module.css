@@ -8,7 +8,7 @@
 .flashCardViewersRow {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--spacing-2xl);
     align-items: flex-start;
 }
 
@@ -17,7 +17,7 @@
     grid-template-columns: auto 1fr auto;
     width: 100%;
     align-items: flex-start;
-    gap: 1rem;
+    gap: var(--spacing-lg);
 }
 
 .navButton {
@@ -25,14 +25,14 @@
     align-self: center;
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
-    background: var(--ifm-color-primary);
+    background: var(--color-primary);
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: var(--font-size-xl);
     transition: background 0.2s;
     padding: 0;
 }
@@ -43,7 +43,7 @@
 }
 
 .navButton:hover:not(:disabled) {
-    background: #e0e0e0;
+    background: var(--color-primary-dark);
 }
 
 .flashCard {
@@ -54,29 +54,30 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background: var(--background, var(--ifm-background-surface-color));
-    margin: 1rem 0;
+    background: var(--background, var(--color-surface));
+    margin: var(--spacing-lg) 0;
 }
 
 .flashCardQuestion {
-    font-size: 1.5rem;
+    font-size: var(--font-size-2xl);
     font-weight: bold;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-lg);
 }
 
 .flashCardAnswer {
-    font-size: 1.0rem;
+    font-size: var(--font-size-base);
     text-align: center;
-    min-height: 1.5em; /* Reserve space for answer */
-    margin-bottom: 1rem;
+    min-height: 1.5em;
+    /* Reserve space for answer */
+    margin-bottom: var(--spacing-lg);
     visibility: hidden;
 }
 
 .flashCardIndex {
-    font-size: 0.95rem;
-    color: var(--ifm-color-content-secondary);
-    margin-top: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-top: var(--spacing-sm);
     text-align: center;
 }
 
@@ -88,12 +89,12 @@
     grid-template-columns: auto;
     grid-column: 1 / -1;
     align-items: center;
-    border-top: 0.5px solid oklch(0.38 0.02 265);
+    border-top: var(--border-divider);
     text-align: center;
-    font-size: 0.95rem;
-    color: var(--ifm-color-content-secondary);
-    padding-top: 1rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    padding-top: var(--spacing-lg);
     padding-bottom: 0;
-    margin-top: 0.5rem;
+    margin-top: var(--spacing-sm);
     margin-bottom: 0;
 }

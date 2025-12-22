@@ -1,161 +1,286 @@
 ﻿{
-  "day1": [
-    {
-      "chinese": "你",
-      "pinyin": "nǐ",
-      "english": "you"
-    },
-    {
-      "chinese": "好",
-      "pinyin": "hǎo",
-      "english": "good"
-    },
-    {
-      "chinese": "早",
-      "pinyin": "zǎo",
-      "english": "morning/early"
-    },
-    {
-      "chinese": "上",
-      "pinyin": "shàng",
-      "english": "up"
-    },
-    {
-      "chinese": "久",
-      "pinyin": "jiǔ",
-      "english": "long (time)"
-    },
-    {
-      "chinese": "不",
-      "pinyin": "bù",
-      "english": "not"
-    },
-    {
-      "chinese": "见",
-      "pinyin": "jiàn",
-      "english": "see"
-    },
-    {
-      "chinese": "再",
-      "pinyin": "zài",
-      "english": "again"
-    },
-    {
-      "chinese": "拜",
-      "pinyin": "bài",
-      "english": "bye"
-    },
-    {
-      "chinese": "我",
-      "pinyin": "wǒ",
-      "english": "I/me"
-    },
-    {
-      "chinese": "先",
-      "pinyin": "xiān",
-      "english": "first"
-    },
-    {
-      "chinese": "走",
-      "pinyin": "zǒu",
-      "english": "walk/go"
-    },
-    {
-      "chinese": "了",
-      "pinyin": "le",
-      "english": "(particle)"
-    },
-    {
-      "chinese": "慢",
-      "pinyin": "màn",
-      "english": "slow"
-    },
-    {
-      "chinese": "晚",
-      "pinyin": "wǎn",
-      "english": "evening/late"
-    },
-    {
-      "chinese": "安",
-      "pinyin": "ān",
-      "english": "peace"
-    }
-  ],
-  "day2": [
-    {
-      "chinese": "的",
-      "pinyin": "de",
-      "english": "(possessive particle)"
-    },
-    {
-      "chinese": "这",
-      "pinyin": "zhè",
-      "english": "this"
-    },
-    {
-      "chinese": "个",
-      "pinyin": "ge",
-      "english": "(general measure word)"
-    },
-    {
-      "chinese": "谢",
-      "pinyin": "xiè",
-      "english": "thank"
-    },
-    {
-      "chinese": "请",
-      "pinyin": "qǐng",
-      "english": "please"
-    },
-    {
-      "chinese": "问",
-      "pinyin": "wèn",
-      "english": "ask"
-    },
-    {
-      "chinese": "多",
-      "pinyin": "duō",
-      "english": "many/much"
-    },
-    {
-      "chinese": "少",
-      "pinyin": "shǎo",
-      "english": "few/little"
-    },
-    {
-      "chinese": "钱",
-      "pinyin": "qián",
-      "english": "money"
-    },
-    {
-      "chinese": "会",
-      "pinyin": "huì",
-      "english": "can/know how"
-    },
-    {
-      "chinese": "说",
-      "pinyin": "shuō",
-      "english": "speak/say"
-    },
-    {
-      "chinese": "英",
-      "pinyin": "Yīng",
-      "english": "English (abbr.)"
-    },
-    {
-      "chinese": "文",
-      "pinyin": "wén",
-      "english": "language/script"
-    },
-    {
-      "chinese": "吗",
-      "pinyin": "ma",
-      "english": "(question particle)"
-    },
-    {
-      "chinese": "给",
-      "pinyin": "gěi",
-      "english": "give"
-    }
-  ]
+  "你": {
+    "pinyin": "nǐ",
+    "english": "you"
+  },
+  "好": {
+    "pinyin": "hǎo",
+    "english": "good"
+  },
+  "早": {
+    "pinyin": "zǎo",
+    "english": "morning/early"
+  },
+  "上": {
+    "pinyin": "shàng",
+    "english": "up"
+  },
+  "久": {
+    "pinyin": "jiǔ",
+    "english": "long (time)"
+  },
+  "不": {
+    "pinyin": "bù",
+    "english": "not"
+  },
+  "见": {
+    "pinyin": "jiàn",
+    "english": "see"
+  },
+  "再": {
+    "pinyin": "zài",
+    "english": "again"
+  },
+  "拜": {
+    "pinyin": "bài",
+    "english": "bye"
+  },
+  "我": {
+    "pinyin": "wǒ",
+    "english": "I/me"
+  },
+  "先": {
+    "pinyin": "xiān",
+    "english": "first"
+  },
+  "走": {
+    "pinyin": "zǒu",
+    "english": "walk/go"
+  },
+  "了": {
+    "pinyin": "le",
+    "english": "(particle)"
+  },
+  "慢": {
+    "pinyin": "màn",
+    "english": "slow"
+  },
+  "晚": {
+    "pinyin": "wǎn",
+    "english": "evening/late"
+  },
+  "安": {
+    "pinyin": "ān",
+    "english": "peace"
+  },
+  "的": {
+    "pinyin": "de",
+    "english": "(possessive particle)"
+  },
+  "这": {
+    "pinyin": "zhè",
+    "english": "this"
+  },
+  "个": {
+    "pinyin": "ge",
+    "english": "(general measure word)"
+  },
+  "谢": {
+    "pinyin": "xiè",
+    "english": "thank"
+  },
+  "请": {
+    "pinyin": "qǐng",
+    "english": "please"
+  },
+  "问": {
+    "pinyin": "wèn",
+    "english": "ask"
+  },
+  "多": {
+    "pinyin": "duō",
+    "english": "many/much"
+  },
+  "少": {
+    "pinyin": "shǎo",
+    "english": "few/little"
+  },
+  "钱": {
+    "pinyin": "qián",
+    "english": "money"
+  },
+  "会": {
+    "pinyin": "huì",
+    "english": "can/know how"
+  },
+  "说": {
+    "pinyin": "shuō",
+    "english": "speak/say"
+  },
+  "英": {
+    "pinyin": "Yīng",
+    "english": "English (abbr.)"
+  },
+  "文": {
+    "pinyin": "wén",
+    "english": "language/script"
+  },
+  "吗": {
+    "pinyin": "ma",
+    "english": "(question particle)"
+  },
+  "给": {
+    "pinyin": "gěi",
+    "english": "give"
+  },
+  "今": {
+    "pinyin": "jīn",
+    "english": "today/now"
+  },
+  "天": {
+    "pinyin": "tiān",
+    "english": "day/sky"
+  },
+  "是": {
+    "pinyin": "shì",
+    "english": "is/am/are"
+  },
+  "十": {
+    "pinyin": "shí",
+    "english": "ten"
+  },
+  "二": {
+    "pinyin": "èr",
+    "english": "two"
+  },
+  "月": {
+    "pinyin": "yuè",
+    "english": "month/moon"
+  },
+  "一": {
+    "pinyin": "yī",
+    "english": "one"
+  },
+  "号": {
+    "pinyin": "hào",
+    "english": "number/date"
+  },
+  "想": {
+    "pinyin": "xiǎng",
+    "english": "want/think"
+  },
+  "练": {
+    "pinyin": "liàn",
+    "english": "practice"
+  },
+  "习": {
+    "pinyin": "xí",
+    "english": "practice/study"
+  },
+  "弹": {
+    "pinyin": "tán",
+    "english": "play (instrument)"
+  },
+  "钢": {
+    "pinyin": "gāng",
+    "english": "steel"
+  },
+  "琴": {
+    "pinyin": "qín",
+    "english": "musical instrument"
+  },
+  "在": {
+    "pinyin": "zài",
+    "english": "at/in/be (doing)"
+  },
+  "学": {
+    "pinyin": "xué",
+    "english": "learn/study"
+  },
+  "首": {
+    "pinyin": "shǒu",
+    "english": "(measure word for songs/poems)"
+  },
+  "叫": {
+    "pinyin": "jiào",
+    "english": "call/be called"
+  },
+  "很": {
+    "pinyin": "hěn",
+    "english": "very"
+  },
+  "喜": {
+    "pinyin": "xǐ",
+    "english": "happy/like"
+  },
+  "欢": {
+    "pinyin": "huān",
+    "english": "joyful"
+  },
+  "曲": {
+    "pinyin": "qǔ",
+    "english": "song/melody"
+  },
+  "但": {
+    "pinyin": "dàn",
+    "english": "but"
+  },
+  "它": {
+    "pinyin": "tā",
+    "english": "it"
+  },
+  "非": {
+    "pinyin": "fēi",
+    "english": "non-/not"
+  },
+  "常": {
+    "pinyin": "cháng",
+    "english": "often/common"
+  },
+  "难": {
+    "pinyin": "nán",
+    "english": "difficult"
+  },
+  "圣": {
+    "pinyin": "shèng",
+    "english": "holy/saint"
+  },
+  "诞": {
+    "pinyin": "dàn",
+    "english": "birth"
+  },
+  "节": {
+    "pinyin": "jié",
+    "english": "festival/holiday"
+  },
+  "快": {
+    "pinyin": "kuài",
+    "english": "fast/quick"
+  },
+  "乐": {
+    "pinyin": "lè",
+    "english": "happy/joy"
+  },
+  "昨": {
+    "pinyin": "zuó",
+    "english": "yesterday"
+  },
+  "明": {
+    "pinyin": "míng",
+    "english": "bright/tomorrow"
+  },
+  "女": {
+    "pinyin": "nǚ",
+    "english": "woman/female"
+  },
+  "朋": {
+    "pinyin": "péng",
+    "english": "friend"
+  },
+  "友": {
+    "pinyin": "yǒu",
+    "english": "friend"
+  },
+  "要": {
+    "pinyin": "yào",
+    "english": "want/need"
+  },
+  "去": {
+    "pinyin": "qù",
+    "english": "go"
+  },
+  "家": {
+    "pinyin": "jiā",
+    "english": "home/family"
+  }
 }

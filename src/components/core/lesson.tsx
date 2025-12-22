@@ -11,12 +11,12 @@ import flashCardStyles from "@site/src/components/core/flash-card-viewer.module.
 
 
 interface Props {
-    day: number;
+    lessonKey: string | string[];
 }
 
-const Lesson: React.FC<Props> = ({day}) => {
-    const {phrases, loading: loadingPhrases} = usePhrases(day);
-    const {characters, loading: loadingCharacters} = useCharacters(day);
+const Lesson: React.FC<Props> = ({ lessonKey }) => {
+    const { phrases, loading: loadingPhrases } = usePhrases(lessonKey);
+    const { characters, loading: loadingCharacters } = useCharacters(phrases);
 
     if (loadingPhrases || loadingCharacters) return <div>Loading...</div>;
 
@@ -27,14 +27,26 @@ const Lesson: React.FC<Props> = ({day}) => {
         link: character.link,
     }));
 
+    const missingCharacters = characterGridData.filter(c => !c.pinyin || !c.english);
+
     return (
         <div>
             <Tabs>
-
                 <TabItem value="lesson" label="Lesson" default>
                     <h2>Characters</h2>
-                    <CharacterGrid characters={characterGridData}/>
-                    <hr/>
+                    <CharacterGrid characters={characterGridData} />
+                    {missingCharacters.length > 0 && (
+                        <>
+                            <hr />
+                            <div>
+                                <h2>Missing Characters</h2>
+                                <div>
+                                    {missingCharacters.map(c => c.char).join(', ')}
+                                </div>
+                            </div>
+                        </>
+                    )}
+                    <hr />
                     <h2>Phrases</h2>
                     <CardGrid>
                         {phrases.map((phrase, idx) => (
@@ -67,8 +79,7 @@ const Lesson: React.FC<Props> = ({day}) => {
                 </TabItem>
             </Tabs>
         </div>
-    )
-        ;
+    );
 };
 
 export default Lesson;

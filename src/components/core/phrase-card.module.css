@@ -1,44 +1,40 @@
 ﻿.cardRoot {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 2fr 1fr 0.5fr;
     min-height: 200px;
-    width: 100%;
-    padding-top: 16px;
-    box-sizing: border-box;
-    flex: 1;
     height: 100%;
 }
 
 .chinese {
-    flex: 1;
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(var(--font-size-2xl), 3vw, var(--font-size-4xl));
     font-weight: bold;
-    margin-bottom: 12px;
-    text-align: center;
+    margin-bottom: var(--spacing-md);
+    text-align: left;
     word-break: break-word;
-    display: flex;
 }
 
 .pinyinRow {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    width: 90%;
-    margin-bottom: 16px;
-    gap: 8px;
-    flex-shrink: 0;
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+
+    div {
+        margin-left: var(--spacing-sm);
+        cursor: pointer;
+    }
 }
 
 .englishFooter {
     width: 100%;
-    background: var(--ifm-background-surface-color-light);
-    color: var(--ifm-color-content-secondary);
+    background: var(--color-surface-light);
+    color: var(--color-text-secondary);
     text-align: left;
-    padding: 8px 20px;
-    border-radius: 0 0 8px 8px;
-    font-size: 1em;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
+    font-size: var(--font-size-base);
     font-weight: 500;
     margin-top: 0;
-    flex-shrink: 0;
 }

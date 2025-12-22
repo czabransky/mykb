@@ -1,7 +1,7 @@
 ﻿.ttsRoot {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--spacing-sm);
 }
 
 .ttsButton {
@@ -11,9 +11,9 @@
 .ttsSpinner {
     width: 18px;
     height: 18px;
-    border: 2px solid #ccc;
-    border-top: 2px solid #333;
-    border-radius: 50%;
+    border: 2px solid var(--color-text-secondary);
+    border-top: 2px solid var(--color-primary);
+    border-radius: var(--radius-full);
     display: inline-block;
     animation: tts-spin 1s linear infinite;
 }

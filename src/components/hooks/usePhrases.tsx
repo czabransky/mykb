@@ -1,8 +1,8 @@
-﻿import {useEffect, useState} from 'react';
+﻿import { useEffect, useState } from 'react';
 
 type Phrases = Record<string, any[]>;
 
-const usePhrases = (day: number | number[]) => {
+const usePhrases = (key: string | string[]) => {
     const [phrases, setPhrases] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
 
@@ -10,16 +10,16 @@ const usePhrases = (day: number | number[]) => {
         fetch('/mykb/data/phrases.json')
             .then(res => res.json())
             .then((data: Phrases) => {
-                const days = Array.isArray(day) ? day : [day];
-                const filtered = days
-                    .map(d => data[`day${d}`] || [])
+                const keys = Array.isArray(key) ? key : [key];
+                const filtered = keys
+                    .map(k => data[`${k}`] || [])
                     .flat();
                 setPhrases(filtered);
                 setLoading(false);
             });
-    }, [day]);
+    }, [key]);
 
-    return {phrases, loading};
+    return { phrases, loading };
 };
 
 export default usePhrases;
