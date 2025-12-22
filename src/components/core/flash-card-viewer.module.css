@@ -43,7 +43,7 @@
 }
 
 .navButton:hover:not(:disabled) {
-    background: var(--color-primary-dark);
+    background: var(--color-primary-hover);
 }
 
 .flashCard {
@@ -54,7 +54,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background: var(--background, var(--color-surface));
+    background: var(--background, var(--color-bg-elevated));
     margin: var(--spacing-lg) 0;
 }
 

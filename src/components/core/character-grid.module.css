@@ -7,7 +7,7 @@
 }
 
 .card {
-    background: var(--color-surface);
+    background: var(--color-bg-elevated);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
     padding: var(--spacing-md) var(--spacing-sm) var(--spacing-sm) var(--spacing-sm);
@@ -33,7 +33,7 @@
 }
 
 .char:hover {
-    color: var(--color-primary-dark);
+    color: var(--color-primary-hover);
 }
 
 .pinyin {
@@ -44,7 +44,7 @@
 
 .notfound {
     font-size: var(--font-size-sm);
-    color: oklch(from var(--ifm-color-warning) 95% c h);
+    color: var(--color-warning);
     margin-bottom: var(--spacing-xs);
 }
 
