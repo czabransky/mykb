@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
     title: "Colin's Knowledge Base",
     tagline: 'Collecting my knowledge in one place',
-    favicon: 'img/favicon.svg',
+    favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
     url: 'https://czabransky.github.io',
