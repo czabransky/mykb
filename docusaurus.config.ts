@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -41,6 +41,15 @@ const config: Config = {
                     // Remove this to remove the "edit this page" links.
                     editUrl:
                         'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                    async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
+                        const sidebarItems = await defaultSidebarItemsGenerator(args);
+                        return sidebarItems.map((item) => {
+                            if (item.type === 'category') {
+                                return { ...item, collapsed: false };
+                            }
+                            return item;
+                        });
+                    },
                 },
                 blog: {
                     showReadingTime: true,
