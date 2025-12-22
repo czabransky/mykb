@@ -27,7 +27,6 @@
     }
 }
 
-
 .englishFooter {
     width: 100%;
     background: var(--color-bg-accented);
@@ -52,7 +51,7 @@
 }
 
 .notes {
-    color: var(--color-warning);
+    color: var(--color-accent);
     font-style: italic;
     line-height: 1.4;
 }

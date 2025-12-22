@@ -44,7 +44,7 @@
 
 .note {
     font-size: var(--font-size-sm);
-    color: var(--color-warning);
+    color: var(--color-accent);
     background: var(--color-bg-accented);
     padding: var(--spacing-sm);
     border-radius: var(--radius-sm);

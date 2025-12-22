@@ -15,6 +15,10 @@
     --color-primary-hover: light-dark(oklch(0.50 0.18 240), oklch(0.70 0.10 265));
     --color-primary-active: light-dark(oklch(0.45 0.18 240), oklch(0.65 0.10 265));
 
+    /* Accent brand color */
+    --color-accent: light-dark(oklch(0.50 0.15 240), oklch(0.70 0.12 240));
+    --color-accent-secondary: light-dark(oklch(0.60 0.20 340), oklch(0.80 0.15 340));
+
     /* Background colors */
     --color-bg: light-dark(oklch(0.97 0.01 240), oklch(0.18 0.02 240));
     --color-bg-elevated: light-dark(oklch(0.99 0.00 240), oklch(0.22 0.02 240));
