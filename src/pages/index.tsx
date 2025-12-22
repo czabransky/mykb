@@ -24,7 +24,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className="button button--primary button--lg"
-              to="/docs/chinese/Diaries/2025-12-22">
+              to="/docs/chinese/Concepts/nominal-predicates">
               Start Learning →
             </Link>
           </div>
