@@ -1,302 +1,382 @@
 ﻿{
   "你": {
     "pinyin": "nǐ",
-    "english": "you"
+    "english": "you",
+    "type": "pronoun"
   },
   "好": {
     "pinyin": "hǎo",
-    "english": "good"
+    "english": "good",
+    "type": "adjective"
   },
   "早": {
     "pinyin": "zǎo",
-    "english": "morning/early"
+    "english": "morning/early",
+    "type": "adjective"
   },
   "上": {
     "pinyin": "shàng",
-    "english": "up"
+    "english": "up",
+    "type": "noun"
   },
   "久": {
     "pinyin": "jiǔ",
-    "english": "long (time)"
+    "english": "long (time)",
+    "type": "adjective"
   },
   "不": {
     "pinyin": "bù",
-    "english": "not"
+    "english": "not",
+    "type": "adverb"
   },
   "见": {
     "pinyin": "jiàn",
-    "english": "see"
+    "english": "see",
+    "type": "verb"
   },
   "再": {
     "pinyin": "zài",
-    "english": "again"
+    "english": "again",
+    "type": "adverb"
   },
   "拜": {
     "pinyin": "bài",
-    "english": "bye"
+    "english": "bye",
+    "type": "verb"
   },
   "我": {
     "pinyin": "wǒ",
-    "english": "I/me"
+    "english": "I/me",
+    "type": "pronoun"
   },
   "先": {
     "pinyin": "xiān",
-    "english": "first"
+    "english": "first",
+    "type": "adverb"
   },
   "走": {
     "pinyin": "zǒu",
-    "english": "walk/go"
+    "english": "walk/go",
+    "type": "verb"
   },
   "了": {
     "pinyin": "le",
-    "english": "(particle)"
+    "english": "(particle)",
+    "type": "particle"
   },
   "慢": {
     "pinyin": "màn",
-    "english": "slow"
+    "english": "slow",
+    "type": "adjective"
   },
   "晚": {
     "pinyin": "wǎn",
-    "english": "evening/late"
+    "english": "evening/late",
+    "type": "adjective"
   },
   "安": {
     "pinyin": "ān",
-    "english": "peace"
+    "english": "peace",
+    "type": "noun"
   },
   "的": {
     "pinyin": "de",
-    "english": "(possessive particle)"
+    "english": "(possessive particle)",
+    "type": "particle"
   },
   "这": {
     "pinyin": "zhè",
-    "english": "this"
+    "english": "this",
+    "type": "pronoun"
   },
   "个": {
     "pinyin": "ge",
-    "english": "(general measure word)"
+    "english": "(general measure word)",
+    "type": "measure word"
   },
   "谢": {
     "pinyin": "xiè",
-    "english": "thank"
+    "english": "thank",
+    "type": "verb"
   },
   "请": {
     "pinyin": "qǐng",
-    "english": "please"
+    "english": "please",
+    "type": "verb"
   },
   "问": {
     "pinyin": "wèn",
-    "english": "ask"
+    "english": "ask",
+    "type": "verb"
   },
   "多": {
     "pinyin": "duō",
-    "english": "many/much"
+    "english": "many/much",
+    "type": "adjective"
   },
   "少": {
     "pinyin": "shǎo",
-    "english": "few/little"
+    "english": "few/little",
+    "type": "adjective"
   },
   "钱": {
     "pinyin": "qián",
-    "english": "money"
+    "english": "money",
+    "type": "noun"
   },
   "会": {
     "pinyin": "huì",
-    "english": "can/know how"
+    "english": "can/know how",
+    "type": "auxiliary verb"
   },
   "说": {
     "pinyin": "shuō",
-    "english": "speak/say"
+    "english": "speak/say",
+    "type": "verb"
   },
   "英": {
     "pinyin": "Yīng",
-    "english": "English (abbr.)"
+    "english": "English (abbr.)",
+    "type": "proper noun"
   },
   "文": {
     "pinyin": "wén",
-    "english": "language/script"
+    "english": "language/script",
+    "type": "noun"
   },
   "吗": {
     "pinyin": "ma",
-    "english": "(question particle)"
+    "english": "(question particle)",
+    "type": "particle"
   },
   "给": {
     "pinyin": "gěi",
-    "english": "give"
+    "english": "give",
+    "type": "verb"
   },
   "今": {
     "pinyin": "jīn",
-    "english": "today/now"
+    "english": "today/now",
+    "type": "noun"
   },
   "天": {
     "pinyin": "tiān",
-    "english": "day/sky"
+    "english": "day/sky",
+    "type": "noun"
   },
   "是": {
     "pinyin": "shì",
-    "english": "is/am/are"
+    "english": "is/am/are",
+    "type": "verb"
   },
   "十": {
     "pinyin": "shí",
-    "english": "ten"
+    "english": "ten",
+    "type": "number"
   },
   "二": {
     "pinyin": "èr",
-    "english": "two"
+    "english": "two",
+    "type": "number"
   },
   "月": {
     "pinyin": "yuè",
-    "english": "month/moon"
+    "english": "month/moon",
+    "type": "noun"
   },
   "一": {
     "pinyin": "yī",
-    "english": "one"
+    "english": "one",
+    "type": "number"
   },
   "号": {
     "pinyin": "hào",
-    "english": "number/date"
+    "english": "number/date",
+    "type": "noun"
   },
   "想": {
     "pinyin": "xiǎng",
-    "english": "want/think"
+    "english": "want/think",
+    "type": "verb"
   },
   "练": {
     "pinyin": "liàn",
-    "english": "practice"
+    "english": "practice",
+    "type": "verb"
   },
   "习": {
     "pinyin": "xí",
-    "english": "practice/study"
+    "english": "practice/study",
+    "type": "verb"
   },
   "弹": {
     "pinyin": "tán",
-    "english": "play (instrument)"
+    "english": "play (instrument)",
+    "type": "verb"
   },
   "钢": {
     "pinyin": "gāng",
-    "english": "steel"
+    "english": "steel",
+    "type": "noun"
   },
   "琴": {
     "pinyin": "qín",
-    "english": "musical instrument"
+    "english": "musical instrument",
+    "type": "noun"
   },
   "在": {
     "pinyin": "zài",
-    "english": "at/in/be (doing)"
+    "english": "at/in/be (doing)",
+    "type": "preposition"
   },
   "学": {
     "pinyin": "xué",
-    "english": "learn/study"
+    "english": "learn/study",
+    "type": "verb"
   },
   "首": {
     "pinyin": "shǒu",
-    "english": "(measure word for songs/poems)"
+    "english": "(measure word for songs/poems)",
+    "type": "measure word"
   },
   "叫": {
     "pinyin": "jiào",
-    "english": "call/be called"
+    "english": "call/be called",
+    "type": "verb"
   },
   "很": {
     "pinyin": "hěn",
-    "english": "very"
+    "english": "very",
+    "type": "adverb"
   },
   "喜": {
     "pinyin": "xǐ",
-    "english": "happy/like"
+    "english": "happy/like",
+    "type": "verb"
   },
   "欢": {
     "pinyin": "huān",
-    "english": "joyful"
+    "english": "joyful",
+    "type": "adjective"
   },
   "曲": {
     "pinyin": "qǔ",
-    "english": "song/melody"
+    "english": "song/melody",
+    "type": "noun"
   },
   "但": {
     "pinyin": "dàn",
-    "english": "but"
+    "english": "but",
+    "type": "conjunction"
   },
   "它": {
     "pinyin": "tā",
-    "english": "it"
+    "english": "it",
+    "type": "pronoun"
   },
   "非": {
     "pinyin": "fēi",
-    "english": "non-/not"
+    "english": "non-/not",
+    "type": "adverb"
   },
   "常": {
     "pinyin": "cháng",
-    "english": "often/common"
+    "english": "often/common",
+    "type": "adverb"
   },
   "难": {
     "pinyin": "nán",
-    "english": "difficult"
+    "english": "difficult",
+    "type": "adjective"
   },
   "圣": {
     "pinyin": "shèng",
-    "english": "holy/saint"
+    "english": "holy/saint",
+    "type": "adjective"
   },
   "诞": {
     "pinyin": "dàn",
-    "english": "birth"
+    "english": "birth",
+    "type": "noun"
   },
   "节": {
     "pinyin": "jié",
-    "english": "festival/holiday"
+    "english": "festival/holiday",
+    "type": "noun"
   },
   "快": {
     "pinyin": "kuài",
-    "english": "fast/quick"
+    "english": "fast/quick",
+    "type": "adjective"
   },
   "乐": {
     "pinyin": "lè",
-    "english": "happy/joy"
+    "english": "happy/joy",
+    "type": "adjective"
   },
   "昨": {
     "pinyin": "zuó",
-    "english": "yesterday"
+    "english": "yesterday",
+    "type": "noun"
   },
   "明": {
     "pinyin": "míng",
-    "english": "bright/tomorrow"
+    "english": "bright/tomorrow",
+    "type": "adjective"
   },
   "女": {
     "pinyin": "nǚ",
-    "english": "woman/female"
+    "english": "woman/female",
+    "type": "noun"
   },
   "朋": {
     "pinyin": "péng",
-    "english": "friend"
+    "english": "friend",
+    "type": "noun"
   },
   "友": {
     "pinyin": "yǒu",
-    "english": "friend"
+    "english": "friend",
+    "type": "noun"
   },
   "要": {
     "pinyin": "yào",
-    "english": "want/need"
+    "english": "want/need",
+    "type": "auxiliary verb"
   },
   "去": {
     "pinyin": "qù",
-    "english": "go"
+    "english": "go",
+    "type": "verb"
   },
   "家": {
     "pinyin": "jiā",
-    "english": "home/family"
+    "english": "home/family",
+    "type": "noun"
   },
   "楠": {
     "pinyin": "nán",
-    "english": "nanmu tree"
+    "english": "nanmu tree",
+    "type": "noun"
   },
   "琪": {
     "pinyin": "qí",
-    "english": "fine jade/gem"
+    "english": "fine jade/gem",
+    "type": "noun"
   },
   "柯": {
     "pinyin": "kē",
-    "english": "axe handle/branch"
+    "english": "axe handle/branch",
+    "type": "noun"
   },
   "林": {
     "pinyin": "lín",
-    "english": "forest/woods"
+    "english": "forest/woods",
+    "type": "noun"
+  },
+  "来": {
+    "pinyin": "lái",
+    "english": "come",
+    "type": "verb"
   }
 }

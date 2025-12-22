@@ -137,9 +137,10 @@
       "english": "Yesterday I practiced playing the piano"
     },
     {
-      "chinese": "明天，我女朋友要去我家",
-      "pinyin": "míngtiān, wǒ nǚpéngyǒu yào qù wǒ jiā",
-      "english": "Tomorrow, my girlfriend will go to my house"
+      "chinese": "明天，我女朋友要来我家",
+      "pinyin": "míngtiān, wǒ nǚpéngyǒu yào lái wǒ jiā",
+      "english": "Tomorrow, my girlfriend will come to my home",
+      "notes": "For a softer future tense, use 会 hui instead of 要 yao."
     }
   ]
 }
