@@ -8,6 +8,8 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
+    "deploy:ssh": "cross-env USE_SSH=true docusaurus deploy",
+    "deploy:user": "cross-env GIT_USER=czabransky docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
@@ -29,6 +31,7 @@
     "@docusaurus/module-type-aliases": "3.7.0",
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "3.7.0",
+    "cross-env": "^10.1.0",
     "typescript": "~5.6.2"
   },
   "browserslist": {

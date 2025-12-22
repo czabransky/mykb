@@ -282,5 +282,21 @@
   "家": {
     "pinyin": "jiā",
     "english": "home/family"
+  },
+  "楠": {
+    "pinyin": "nán",
+    "english": "nanmu tree"
+  },
+  "琪": {
+    "pinyin": "qí",
+    "english": "fine jade/gem"
+  },
+  "柯": {
+    "pinyin": "kē",
+    "english": "axe handle/branch"
+  },
+  "林": {
+    "pinyin": "lín",
+    "english": "forest/woods"
   }
 }
