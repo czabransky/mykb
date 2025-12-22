@@ -1,18 +1,64 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: var(--spacing-4xl) 0;
+  padding: var(--spacing-4xl) var(--spacing-lg);
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg,
+      color-mix(in oklab, var(--color-primary) 10%, var(--color-bg) 90%) 0%,
+      var(--color-bg) 100%);
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.heroEmoji {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-info));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroTitle {
+  font-size: var(--font-size-4xl);
+  margin: 0;
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.heroSubtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0;
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: var(--spacing-2xl);
+    padding: var(--spacing-3xl) var(--spacing-md);
+    min-height: 400px;
+  }
+
+  .heroEmoji {
+    font-size: 4rem;
+  }
+
+  .heroTitle {
+    font-size: var(--font-size-3xl);
+  }
+
+  .heroSubtitle {
+    font-size: var(--font-size-base);
   }
 }
 
@@ -20,4 +66,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
 }

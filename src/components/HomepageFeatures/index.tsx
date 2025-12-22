@@ -1,57 +1,73 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  emoji: string;
   description: ReactNode;
+  link?: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Daily Practice',
+    emoji: '📝',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Track your Chinese learning journey with daily diary entries,
+        building vocabulary and grammar skills one day at a time.
+      </>
+    ),
+    link: '/docs/chinese/Logs/2025-12-22',
+  },
+  {
+    title: 'Interactive Lessons',
+    emoji: '🎓',
+    description: (
+      <>
+        Engage with interactive flashcards and audio pronunciation.
+        Learn characters, phrases, and essential grammar concepts.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Grammar Concepts',
+    emoji: '📚',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Deep dive into Chinese grammar with visual explanations and
+        real-world examples. Master the fundamentals step by step.
       </>
     ),
-  },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    link: '/docs/chinese/Concepts/nominal-predicates',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
-  return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
+function Feature({ title, emoji, description, link }: FeatureItem) {
+  const content = (
+    <>
+      <div className={styles.featureEmoji}>{emoji}</div>
+      <div className={styles.featureContent}>
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
+    </>
+  );
+
+  if (link) {
+    return (
+      <Link to={link} className={clsx(styles.featureCard, styles.featureCardLink)}>
+        {content}
+      </Link>
+    );
+  }
+
+  return (
+    <div className={styles.featureCard}>
+      {content}
     </div>
   );
 }
@@ -59,8 +75,11 @@ function Feature({title, Svg, description}: FeatureItem) {
 export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
-      <div className="container">
-        <div className="row">
+      <div className={styles.container}>
+        <Heading as="h2" className={styles.sectionTitle}>
+          Start Your Chinese Learning Journey
+        </Heading>
+        <div className={styles.featureGrid}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

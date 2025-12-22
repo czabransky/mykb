@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-    title: "Colin's Site",
-    tagline: 'Dinosaurs are cool',
-    favicon: 'img/favicon.ico',
+    title: "Colin's Knowledge Base",
+    tagline: 'Collecting my knowledge in one place',
+    favicon: 'img/favicon.svg',
 
     // Set the production url of your site here
     url: 'https://czabransky.github.io',
@@ -77,11 +77,12 @@ const config: Config = {
         colorMode: {
             defaultMode: 'dark',
         },
-        image: 'img/docusaurus-social-card.jpg',
         navbar: {
-            title: 'My Site',
+            title: 'Learn',
+            // SVG from this free MIT licensed site:
+            // https://www.svgrepo.com/svg/450197/language-alt
             logo: {
-                alt: 'My Site Logo',
+                alt: 'Learn',
                 src: 'img/logo.svg',
             },
             items: [
