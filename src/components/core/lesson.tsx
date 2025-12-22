@@ -55,6 +55,8 @@ const Lesson: React.FC<Props> = ({ lessonKey }) => {
                                 english={phrase.english}
                                 pinyin={phrase.pinyin}
                                 chinese={<span>{phrase.chinese}</span>}
+                                notes={phrase.notes}
+                                concept={phrase.concept}
                             />
                         ))}
                     </CardGrid>

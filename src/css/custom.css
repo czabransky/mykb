@@ -192,3 +192,26 @@ button:not(:disabled):focus {
     /* adjust as needed */
     width: 100%;
 }
+
+/* Utility Classes for use in Markdown files */
+.text-xl-bold {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.text-sm-muted {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.pl-xs {
+    padding-left: 0.25rem;
+}
+
+.mt-sm {
+    margin-top: 0.5rem;
+}
+
+.m-0 {
+    margin: 0;
+}

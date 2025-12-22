@@ -2,8 +2,19 @@
 
 type Phrases = Record<string, any[]>;
 
+export interface Phrase {
+    chinese: string;
+    pinyin: string;
+    english: string;
+    notes?: string;
+    concept?: {
+        label: string;
+        link: string;
+    };
+}
+
 const usePhrases = (key: string | string[]) => {
-    const [phrases, setPhrases] = useState<any[]>([]);
+    const [phrases, setPhrases] = useState<Phrase[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {

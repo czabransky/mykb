@@ -1,0 +1,75 @@
+.container {
+    border: 2px solid var(--ifm-color-emphasis-300);
+    border-radius: var(--card-border-radius);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    background: var(--ifm-background-surface-color);
+}
+
+.title {
+    font-size: var(--ifm-font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    color: var(--ifm-color-emphasis-600);
+    margin-bottom: var(--spacing-md);
+}
+
+.patternRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-md);
+}
+
+.patternPart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.partText {
+    font-size: var(--ifm-font-size-lg);
+    font-weight: 600;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--ifm-color-emphasis-100);
+    border-radius: 6px;
+    font-family: var(--ifm-font-family-monospace);
+}
+
+.partLabel {
+    font-size: var(--ifm-font-size-sm);
+    color: var(--ifm-color-emphasis-600);
+}
+
+.connector {
+    font-size: var(--ifm-font-size-lg);
+    color: var(--ifm-color-emphasis-500);
+    font-weight: 600;
+}
+
+.example {
+    border-top: 1px solid var(--ifm-color-emphasis-200);
+    padding-top: var(--spacing-md);
+    text-align: center;
+}
+
+.chinese {
+    font-size: var(--ifm-font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.pinyin {
+    font-size: var(--ifm-font-size-base);
+    color: var(--ifm-color-emphasis-700);
+    margin-bottom: var(--spacing-xs);
+}
+
+.english {
+    font-size: var(--ifm-font-size-sm);
+    color: var(--ifm-color-emphasis-600);
+}

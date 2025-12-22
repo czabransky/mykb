@@ -86,8 +86,13 @@
   "diary-2025-12-21": [
     {
       "chinese": "今天是十二月二十一号",
-      "pinyin": "jīntiān shí shí'èr yuè èrshíyī hào",
-      "english": "Today is December 21st"
+      "pinyin": "jīntiān shì shí'èr yuè èrshíyī hào",
+      "english": "Today is December 21st",
+      "notes": "It is common to omit 是 (shì) when stating dates.",
+      "concept": {
+        "label": "Nominal Predicates",
+        "link": "/mykb/docs/chinese/Concepts/nominal-predicates"
+      }
     },
     {
       "chinese": "我想练习弹钢琴",
@@ -112,9 +117,14 @@
   ],
   "diary-2025-12-22": [
     {
-      "chinese": "今天是十二月二十二号",
-      "pinyin": "jīntiān shí shí'èr yuè èrshí'èr hào",
-      "english": "Today is December 22nd"
+      "chinese": "今天十二月二十二号",
+      "pinyin": "jīntiān shí'èr yuè èrshí'èr hào",
+      "english": "Today is December 22nd",
+      "notes": "It is common to omit 是 (shì) when stating dates.",
+      "concept": {
+        "label": "Nominal Predicates",
+        "link": "/mykb/docs/chinese/Concepts/nominal-predicates"
+      }
     },
     {
       "chinese": "我叫柯林，我女朋友叫楠琪",
@@ -127,8 +137,8 @@
       "english": "Yesterday I practiced playing the piano"
     },
     {
-      "chinese": "明天，我女朋友楠琪要去我家",
-      "pinyin": "míngtiān, wǒ nǚpéngyǒu Nánqí yào qù wǒ jiā",
+      "chinese": "明天，我女朋友要去我家",
+      "pinyin": "míngtiān, wǒ nǚpéngyǒu yào qù wǒ jiā",
       "english": "Tomorrow, my girlfriend will go to my house"
     }
   ]

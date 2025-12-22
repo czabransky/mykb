@@ -14,6 +14,11 @@ type ChinesePhraseCardProps = {
     english: string;
     pinyin: string;
     chinese: React.ReactNode;
+    notes?: string;
+    concept?: {
+        label: string;
+        link: string;
+    };
 };
 
 function getChineseText(chinese: React.ReactNode): string {
@@ -24,7 +29,7 @@ function getChineseText(chinese: React.ReactNode): string {
     return '';
 }
 
-export default function PhraseCard({english, pinyin, chinese}: ChinesePhraseCardProps) {
+export default function PhraseCard({ english, pinyin, chinese, notes, concept }: ChinesePhraseCardProps) {
     const chineseText = getChineseText(chinese);
     const fileName = getFileName(chineseText);
     const audioPath = `/mykb/audio/${fileName}.mp3`;
@@ -35,9 +40,13 @@ export default function PhraseCard({english, pinyin, chinese}: ChinesePhraseCard
                 <div className={styles.chinese}>{chinese}</div>
                 <div className={styles.pinyinRow}>
                     <span className={styles.pinyin}>{pinyin}</span>
-                    <TextToSpeech lang="zh-CN" fallbackSrc={audioPath}/>
+                    <TextToSpeech lang="zh-CN" fallbackSrc={audioPath} />
                 </div>
                 <div className={styles.englishFooter}>{english}</div>
+                <div className={styles.extraInfo}>
+                    {<div className={styles.notes}>{notes ? notes : ''}</div>}
+                    {concept && <a href={concept.link} className={styles.conceptLink}>see {concept.label.toLowerCase()}</a>}
+                </div>
             </div>
         </Card>
     );
