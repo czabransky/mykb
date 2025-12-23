@@ -1,0 +1,174 @@
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--spacing-lg);
+    align-items: start;
+    margin: var(--spacing-xl) 0;
+}
+
+.svg {
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    background: var(--color-bg);
+    justify-self: center;
+}
+
+.connections line {
+    stroke: var(--color-border);
+    stroke-width: 2;
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+
+.connections line[data-type="compound"] {
+    stroke: var(--color-primary);
+    stroke-width: 2.5;
+}
+
+.connections line[data-type="synonym"] {
+    stroke: var(--color-info);
+    stroke-dasharray: 5, 5;
+}
+
+.connections line[data-type="component"] {
+    stroke: var(--color-success);
+    stroke-width: 1.5;
+}
+
+.node {
+    fill: var(--color-bg-elevated);
+    stroke: var(--color-border);
+    stroke-width: 2;
+    transition: all 0.3s ease;
+}
+
+.node:hover {
+    stroke: var(--color-primary);
+    stroke-width: 3;
+}
+
+.bubble {
+    fill: linear-gradient(135deg,
+            color-mix(in oklab, var(--color-primary) 10%, var(--color-bg-elevated) 90%),
+            var(--color-bg-elevated));
+}
+
+.centerNode {
+    fill: color-mix(in oklab, var(--color-primary) 20%, var(--color-bg-elevated) 80%);
+    stroke: var(--color-primary);
+    stroke-width: 3;
+}
+
+.selected {
+    stroke: var(--color-primary);
+    stroke-width: 3;
+    filter: drop-shadow(0 0 8px var(--color-primary));
+}
+
+.chinese {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    fill: var(--color-text);
+    pointer-events: none;
+    user-select: none;
+}
+
+.pinyin {
+    font-size: var(--font-size-xs);
+    fill: var(--color-text-secondary);
+    pointer-events: none;
+    user-select: none;
+}
+
+.english {
+    font-size: var(--font-size-md);
+    fill: var(--color-accent);
+    pointer-events: none;
+    user-select: none;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .svg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Legend Styles */
+.legend {
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-md);
+    background: var(--color-bg-elevated);
+    max-width: 300px;
+}
+
+.legendTitle {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.legendSection {
+    margin-bottom: var(--spacing-md);
+}
+
+.legendSection:last-child {
+    margin-bottom: 0;
+}
+
+.legendLabel {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+}
+
+.legendCenterNode {
+    fill: color-mix(in oklab, var(--color-primary) 20%, var(--color-bg-elevated) 80%);
+    stroke: var(--color-primary);
+    stroke-width: 2;
+}
+
+.legendRegularNode {
+    fill: var(--color-bg-elevated);
+    stroke: var(--color-border);
+    stroke-width: 2;
+}
+
+.legendConnectionRelated {
+    stroke: var(--color-border);
+    stroke-width: 2;
+}
+
+.legendConnectionCompound {
+    stroke: var(--color-primary);
+    stroke-width: 2.5;
+}
+
+.legendConnectionSynonym {
+    stroke: var(--color-info);
+    stroke-width: 2;
+    stroke-dasharray: 5, 5;
+}
+
+.legendConnectionComponent {
+    stroke: var(--color-success);
+    stroke-width: 1.5;
+}
