@@ -48,7 +48,19 @@ export default function WordGraph({
     const [showAllEnglish, setShowAllEnglish] = useState(false);
     const animationRef = useRef<number>();
 
-    const handleNodeClick = async (node: WordNode) => {
+    // Pan state
+    const [panOffset, setPanOffset] = useState({ x: 0, y: 0 });
+    const [isPanning, setIsPanning] = useState(false);
+    const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+    const panStartRef = useRef({ x: 0, y: 0 });
+
+    const handleNodeClick = async (node: WordNode, event: React.MouseEvent) => {
+        // Don't trigger node click if we were panning
+        if (isPanning) {
+            event.stopPropagation();
+            return;
+        }
+
         setSelectedNode(node.id);
 
         try {
@@ -58,6 +70,34 @@ export default function WordGraph({
         } catch (err) {
             console.error('Failed to copy text:', err);
         }
+    };
+
+    // Pan handlers
+    const handleMouseDown = (e: React.MouseEvent<SVGSVGElement>) => {
+        if (e.button !== 0) return; // Only left mouse button
+        setIsPanning(true);
+        setDragStart({ x: e.clientX, y: e.clientY });
+        panStartRef.current = { x: panOffset.x, y: panOffset.y };
+    };
+
+    const handleMouseMove = (e: React.MouseEvent<SVGSVGElement>) => {
+        if (!isPanning) return;
+
+        const dx = e.clientX - dragStart.x;
+        const dy = e.clientY - dragStart.y;
+
+        setPanOffset({
+            x: panStartRef.current.x + dx,
+            y: panStartRef.current.y + dy
+        });
+    };
+
+    const handleMouseUp = () => {
+        setIsPanning(false);
+    };
+
+    const handleMouseLeave = () => {
+        setIsPanning(false);
     };
 
     useEffect(() => {
@@ -332,6 +372,31 @@ export default function WordGraph({
         };
     }, [graphNodes.length, connections, centerNode, width, height]);
 
+    // Center the graph based on node positions
+    useEffect(() => {
+        if (graphNodes.length === 0) return;
+
+        // Calculate bounding box of all nodes
+        const nodeRadius = 50; // Max node radius
+        const minX = Math.min(...graphNodes.map(n => (n.x || 0) - nodeRadius));
+        const maxX = Math.max(...graphNodes.map(n => (n.x || 0) + nodeRadius));
+        const minY = Math.min(...graphNodes.map(n => (n.y || 0) - nodeRadius));
+        const maxY = Math.max(...graphNodes.map(n => (n.y || 0) + nodeRadius));
+
+        // Calculate the center of the bounding box
+        const boundingBoxCenterX = (minX + maxX) / 2;
+        const boundingBoxCenterY = (minY + maxY) / 2;
+
+        // Calculate offset needed to center the bounding box in the viewport
+        const viewportCenterX = width / 2;
+        const viewportCenterY = height / 2;
+
+        const offsetX = viewportCenterX - boundingBoxCenterX;
+        const offsetY = viewportCenterY - boundingBoxCenterY;
+
+        setPanOffset({ x: offsetX, y: offsetY });
+    }, [graphNodes, width, height]);
+
     const getNodeRadius = (node: WordNode) => {
         if (node.id === centerNode) return 50;
         return 35;
@@ -355,6 +420,11 @@ export default function WordGraph({
                 width={width}
                 height={height}
                 className={styles.svg}
+                onMouseDown={handleMouseDown}
+                onMouseMove={handleMouseMove}
+                onMouseUp={handleMouseUp}
+                onMouseLeave={handleMouseLeave}
+                style={{ cursor: isPanning ? 'grabbing' : 'grab' }}
             >
                 <defs>
                     <filter id="bubble-shadow" x="-50%" y="-50%" width="200%" height="200%">
@@ -396,7 +466,7 @@ export default function WordGraph({
                 </defs>
 
                 {/* Render connections */}
-                <g className={styles.connections}>
+                <g className={styles.connections} transform={`translate(${panOffset.x},${panOffset.y})`}>
                     {connections.map((conn, i) => {
                         const source = graphNodes.find(n => n.id === conn.source);
                         const target = graphNodes.find(n => n.id === conn.target);
@@ -437,15 +507,15 @@ export default function WordGraph({
                 </g>
 
                 {/* Render nodes */}
-                <g className={styles.nodes}>
+                <g className={styles.nodes} transform={`translate(${panOffset.x},${panOffset.y})`}>
                     {graphNodes.map(node => (
                         <g
                             key={node.id}
                             transform={`translate(${node.x},${node.y})`}
-                            onClick={() => handleNodeClick(node)}
+                            onClick={(e) => handleNodeClick(node, e)}
                             onMouseEnter={() => setSelectedNode(node.id)}
                             onMouseLeave={() => setSelectedNode(null)}
-                            style={{ cursor: 'pointer' }}
+                            style={{ cursor: isPanning ? 'grabbing' : 'pointer' }}
                         >
                             <circle
                                 r={getNodeRadius(node)}

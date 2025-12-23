@@ -164,16 +164,15 @@ This cluster is focused on cognitive processes, using natural conversational for
         { source: '记忆', target: '记得', type: ConnectionType.Synonym },
         { source: '记忆', target: '忘', type: ConnectionType.Related },
         { source: '记忆', target: '知道', type: ConnectionType.Related },
-        { source: '记忆', target: '学', type: ConnectionType.Related },
+        { source: '记忆', target: '学习', type: ConnectionType.Related },
         { source: '记得', target: '记', type: ConnectionType.Component },
         { source: '忘记', target: '记', type: ConnectionType.Component },
         { source: '知道', target: '道', type: ConnectionType.Component },
         { source: '知道', target: '懂', type: ConnectionType.Synonym },
         { source: '懂', target: '理解', type: ConnectionType.Synonym },
-        { source: '学', target: '学习', type: ConnectionType.Synonym },
         { source: '学习', target: '学', type: ConnectionType.Component },
     ]}
-    height={700}
+    height={850}
 />
 
 ### Practical Application: Memory Cluster
