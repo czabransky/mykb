@@ -79,11 +79,6 @@
     --font-size-4xl: 2.5rem;
 
     /* ========== Component Tokens ========== */
-    --card-padding: 1.2em;
-    --card-border-radius: var(--radius-md);
-    --grid-gap: 1rem;
-    --grid-gap-sm: 0.75rem;
-    --min-card-width: 220px;
     --min-char-card-width: 80px;
 
     /* ========== Docusaurus Integration ========== */

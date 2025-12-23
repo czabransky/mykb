@@ -1,8 +1,8 @@
 ﻿.cardRoot {
     display: grid;
-    grid-template-rows: 2fr 1fr 0.5fr 1fr;
+    grid-template-rows: 100px 100px 75px auto;
     min-height: 200px;
-    height: 100%;
+    height: 375px;
 }
 
 .chinese {
@@ -16,6 +16,7 @@
 .pinyinRow {
     display: grid;
     grid-template-columns: 1fr auto;
+    align-self: end;
     align-items: center;
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);
@@ -33,7 +34,7 @@
     color: var(--color-text-secondary);
     text-align: left;
     padding: var(--spacing-sm) var(--spacing-md);
-    border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
     font-size: var(--font-size-base);
     font-weight: 500;
     margin-top: 0;
@@ -47,7 +48,7 @@
     margin-top: var(--spacing-sm);
     padding: var(--spacing-md);
     background: var(--color-bg-accented);
-    border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
 }
 
 .notes {

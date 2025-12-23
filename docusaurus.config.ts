@@ -86,7 +86,12 @@ const config: Config = {
                 src: 'img/logo.svg',
             },
             items: [
-
+                {
+                    type: 'docSidebar',
+                    sidebarId: 'languageLearningSidebar',
+                    position: 'left',
+                    label: 'How to Learn',
+                },
                 {
                     type: 'docSidebar',
                     sidebarId: 'chineseSidebar',

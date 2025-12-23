@@ -1,10 +1,9 @@
 ﻿﻿.card {
     border: 1px solid var(--color-border-subtle);
     border-radius: var(--card-border-radius);
-    padding: var(--card-padding);
+    padding: 1.2em;
     background: var(--background, var(--color-bg-elevated));
     box-shadow: var(--shadow-md);
-    height: 100%;
 }
 
 .cardTitle {
