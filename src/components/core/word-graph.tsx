@@ -102,8 +102,9 @@ export default function WordGraph({
 
     useEffect(() => {
         // Initialize node positions
-        const centerX = width / 2;
-        const centerY = height / 2;
+        // Use fixed coordinate space, independent of viewport size
+        const centerX = 0;
+        const centerY = 0;
 
         // Build position map using BFS to place nodes near their parents
         const positionMap = new Map<string, { x: number, y: number }>();
@@ -223,7 +224,7 @@ export default function WordGraph({
         });
 
         setGraphNodes(initializedNodes);
-    }, [nodes, centerNode, width, height, connections]);
+    }, [nodes, centerNode, connections]);
 
     useEffect(() => {
         const velocityThreshold = 0.1;
@@ -275,8 +276,8 @@ export default function WordGraph({
 
                     // Center node stays in place
                     if (nodeA.id === centerNode) {
-                        nodeA.x = width / 2;
-                        nodeA.y = height / 2;
+                        nodeA.x = 0;
+                        nodeA.y = 0;
                         nodeA.vx = 0;
                         nodeA.vy = 0;
                     }
@@ -323,9 +324,9 @@ export default function WordGraph({
                 // Update positions and apply damping
                 newNodes.forEach(node => {
                     if (node.id !== centerNode) {
-                        // Gentle pull toward center
-                        const dx = width / 2 - node.x!;
-                        const dy = height / 2 - node.y!;
+                        // Gentle pull toward origin (0, 0)
+                        const dx = 0 - node.x!;
+                        const dy = 0 - node.y!;
                         node.vx! += dx * centerPull;
                         node.vy! += dy * centerPull;
 
@@ -340,11 +341,6 @@ export default function WordGraph({
                         // Stop very small movements
                         if (Math.abs(node.vx!) < velocityThreshold) node.vx = 0;
                         if (Math.abs(node.vy!) < velocityThreshold) node.vy = 0;
-
-                        // Keep within bounds
-                        const margin = 50;
-                        node.x! = Math.max(margin, Math.min(width - margin, node.x!));
-                        node.y! = Math.max(margin, Math.min(height - margin, node.y!));
                     }
                 });
 
@@ -370,7 +366,7 @@ export default function WordGraph({
                 cancelAnimationFrame(animationRef.current);
             }
         };
-    }, [graphNodes.length, connections, centerNode, width, height]);
+    }, [graphNodes.length, connections, centerNode]);
 
     // Center the graph based on node positions
     useEffect(() => {

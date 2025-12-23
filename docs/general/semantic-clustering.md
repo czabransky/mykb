@@ -172,7 +172,8 @@ This cluster is focused on cognitive processes, using natural conversational for
         { source: '懂', target: '理解', type: ConnectionType.Synonym },
         { source: '学习', target: '学', type: ConnectionType.Component },
     ]}
-    height={850}
+    width={400}
+    height={450}
 />
 
 ### Practical Application: Memory Cluster
