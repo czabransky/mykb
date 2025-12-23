@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import WordGraph from './word-graph';
+import WordGraph, { ConnectionType } from './word-graph';
 
 interface Connection {
     source: string;
     target: string;
-    type: 'related' | 'compound' | 'synonym' | 'component';
+    type: ConnectionType;
 }
 
 interface WordData {

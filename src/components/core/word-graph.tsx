@@ -1,6 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './word-graph.module.css';
 
+export enum ConnectionType {
+    Related = 'related',
+    Compound = 'compound',
+    Synonym = 'synonym',
+    Component = 'component'
+}
+
 interface WordNode {
     id: string;
     chinese: string;
@@ -16,7 +23,7 @@ interface WordNode {
 interface Connection {
     source: string;
     target: string;
-    type: 'related' | 'compound' | 'synonym' | 'component';
+    type: ConnectionType;
 }
 
 interface WordGraphProps {
@@ -37,7 +44,21 @@ export default function WordGraph({
     const svgRef = useRef<SVGSVGElement>(null);
     const [graphNodes, setGraphNodes] = useState<WordNode[]>([]);
     const [selectedNode, setSelectedNode] = useState<string | null>(null);
+    const [copiedNode, setCopiedNode] = useState<string | null>(null);
+    const [showAllEnglish, setShowAllEnglish] = useState(false);
     const animationRef = useRef<number>();
+
+    const handleNodeClick = async (node: WordNode) => {
+        setSelectedNode(node.id);
+
+        try {
+            await navigator.clipboard.writeText(node.chinese);
+            setCopiedNode(node.id);
+            setTimeout(() => setCopiedNode(null), 2000);
+        } catch (err) {
+            console.error('Failed to copy text:', err);
+        }
+    };
 
     useEffect(() => {
         // Initialize node positions
@@ -267,6 +288,10 @@ export default function WordGraph({
     const getNodeClass = (node: WordNode) => {
         const classes = [styles.node];
         if (node.id === centerNode) classes.push(styles.centerNode);
+        if (node.type) {
+            const typeClass = styles[`type${node.type.charAt(0).toUpperCase() + node.type.slice(1).replace(/\s+/g, '')}`];
+            if (typeClass) classes.push(typeClass);
+        }
         if (selectedNode === node.id) classes.push(styles.selected);
         return classes.join(' ');
     };
@@ -365,7 +390,7 @@ export default function WordGraph({
                         <g
                             key={node.id}
                             transform={`translate(${node.x},${node.y})`}
-                            onClick={() => setSelectedNode(node.id)}
+                            onClick={() => handleNodeClick(node)}
                             onMouseEnter={() => setSelectedNode(node.id)}
                             onMouseLeave={() => setSelectedNode(null)}
                             style={{ cursor: 'pointer' }}
@@ -390,13 +415,23 @@ export default function WordGraph({
                                 {node.pinyin}
                             </text>
 
-                            {selectedNode === node.id && (
+                            {(showAllEnglish || selectedNode === node.id) && (
                                 <text
                                     className={styles.english}
                                     textAnchor="middle"
                                     dy={node.id === centerNode ? "75" : "60"}
                                 >
                                     {node.english}
+                                </text>
+                            )}
+
+                            {copiedNode === node.id && (
+                                <text
+                                    className={styles.copied}
+                                    textAnchor="middle"
+                                    dy={node.id === centerNode ? "90" : "75"}
+                                >
+                                    ✓ Copied!
                                 </text>
                             )}
                         </g>
@@ -406,21 +441,45 @@ export default function WordGraph({
 
             <div className={styles.legend}>
                 <div className={styles.legendTitle}>Legend</div>
+
+                <label className={styles.checkboxLabel}>
+                    <input
+                        type="checkbox"
+                        checked={showAllEnglish}
+                        onChange={(e) => setShowAllEnglish(e.target.checked)}
+                        className={styles.checkbox}
+                    />
+                    <span>Show all English</span>
+                </label>
+
                 <div className={styles.legendSection}>
-                    <div className={styles.legendLabel}>Nodes:</div>
+                    <div className={styles.legendLabel}>Word Types:</div>
                     <div className={styles.legendItem}>
                         <svg width="30" height="20">
-                            <circle cx="10" cy="10" r="8" className={styles.legendCenterNode} />
+                            <circle cx="10" cy="10" r="6" className={styles.legendTypeVerb} />
                         </svg>
-                        <span>Central concept</span>
+                        <span>Verb</span>
                     </div>
                     <div className={styles.legendItem}>
                         <svg width="30" height="20">
-                            <circle cx="10" cy="10" r="6" className={styles.legendRegularNode} />
+                            <circle cx="10" cy="10" r="6" className={styles.legendTypeNoun} />
                         </svg>
-                        <span>Related word</span>
+                        <span>Noun</span>
+                    </div>
+                    <div className={styles.legendItem}>
+                        <svg width="30" height="20">
+                            <circle cx="10" cy="10" r="6" className={styles.legendTypeAdjective} />
+                        </svg>
+                        <span>Adjective</span>
+                    </div>
+                    <div className={styles.legendItem}>
+                        <svg width="30" height="20">
+                            <circle cx="10" cy="10" r="6" className={styles.legendTypeAdverb} />
+                        </svg>
+                        <span>Adverb</span>
                     </div>
                 </div>
+
                 <div className={styles.legendSection}>
                     <div className={styles.legendLabel}>Connections:</div>
                     <div className={styles.legendItem}>

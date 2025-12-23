@@ -2,7 +2,7 @@
 title: Word Graph Demo
 ---
 
-import WordGraph from '@site/src/components/core/word-graph';
+import WordGraph, { ConnectionType } from '@site/src/components/core/word-graph';
 import WordGraphFromData from '@site/src/components/core/word-graph-from-data';
 
 # Word Relationship Graph
@@ -13,22 +13,24 @@ Explore Chinese vocabulary through an interactive force-directed graph. Words co
 
 <WordGraphFromData
     centerNode="音乐"
-    nodeIds={['音乐', '音', '乐', '歌曲', '钢琴', '吉他', '小提琴', '乐器', '唱歌', '听', '弹', '弹奏', '旋律', '节奏']}
+    nodeIds={['音乐', '音', '乐', '歌曲', '钢琴', '吉他', '小提琴', '乐器', '唱歌', '听', '弹', '弹奏', '旋律', '节奏', '慢慢', '轻轻']}
     connections={[
-        { source: '音乐', target: '乐', type: 'component' },
-        { source: '音乐', target: '歌曲', type: 'related' },
-        { source: '歌曲', target: '唱歌', type: 'related' },
-        { source: '歌曲', target: '旋律', type: 'related' },
-        { source: '歌曲', target: '节奏', type: 'related' },
-        { source: '音乐', target: '音', type: 'component' },
-        { source: '音', target: '听', type: 'related' },
-        { source: '音乐', target: '乐器', type: 'related' },
-        { source: '乐器', target: '乐', type: 'component' },
-        { source: '乐器', target: '钢琴', type: 'compound' },
-        { source: '乐器', target: '吉他', type: 'compound' },
-        { source: '乐器', target: '小提琴', type: 'compound' },
-        { source: '乐器', target: '弹', type: 'related' },
-        { source: '弹', target: '弹奏', type: 'related' }
+        { source: '音乐', target: '乐', type: ConnectionType.Component },
+        { source: '音乐', target: '歌曲', type: ConnectionType.Related },
+        { source: '音乐', target: '唱歌', type: ConnectionType.Related },
+        { source: '歌曲', target: '旋律', type: ConnectionType.Related },
+        { source: '歌曲', target: '节奏', type: ConnectionType.Related },
+        { source: '音乐', target: '音', type: ConnectionType.Component },
+        { source: '音', target: '听', type: ConnectionType.Related },
+        { source: '音乐', target: '乐器', type: ConnectionType.Related },
+        { source: '乐器', target: '乐', type: ConnectionType.Component },
+        { source: '乐器', target: '钢琴', type: ConnectionType.Compound },
+        { source: '乐器', target: '吉他', type: ConnectionType.Compound },
+        { source: '乐器', target: '小提琴', type: ConnectionType.Compound },
+        { source: '乐器', target: '弹', type: ConnectionType.Related },
+        { source: '弹', target: '弹奏', type: ConnectionType.Related },
+        { source: '弹', target: '慢慢', type: ConnectionType.Related },
+        { source: '弹', target: '轻轻', type: ConnectionType.Related }
     ]}
     width={1024}
     height={1024}

@@ -11,12 +11,6 @@
     "english": "sound",
     "type": "noun"
   },
-  "乐": {
-    "id": "乐",
-    "pinyin": "yuè/lè",
-    "english": "joy/music",
-    "type": "noun"
-  },
   "歌曲": {
     "id": "歌曲",
     "pinyin": "gēqǔ",
@@ -59,12 +53,6 @@
     "english": "listen",
     "type": "verb"
   },
-  "弹": {
-    "id": "弹",
-    "pinyin": "tán",
-    "english": "play (stringed instrument)",
-    "type": "verb"
-  },
   "弹奏": {
     "id": "弹奏",
     "pinyin": "tánzòu",
@@ -82,6 +70,18 @@
     "pinyin": "jiézòu",
     "english": "rhythm",
     "type": "noun"
+  },
+  "慢慢": {
+    "id": "慢慢",
+    "pinyin": "mànmàn",
+    "english": "slowly/gradually",
+    "type": "adverb"
+  },
+  "轻轻": {
+    "id": "轻轻",
+    "pinyin": "qīngqīng",
+    "english": "softly/gently",
+    "type": "adverb"
   },
   "要": {
     "english": "want/need",
@@ -339,7 +339,7 @@
     "english": "happy/joy",
     "type": "adjective",
     "id": "乐",
-    "pinyin": "lè"
+    "pinyin": "lè/yuè"
   },
   "谢": {
     "english": "thank",

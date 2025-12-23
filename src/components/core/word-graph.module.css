@@ -54,6 +54,57 @@
     stroke-width: 3;
 }
 
+/* Word type colors */
+.typeVerb {
+    fill: color-mix(in oklab, #3b82f6 15%, var(--color-bg-elevated) 85%);
+    stroke: #3b82f6;
+}
+
+.typeNoun {
+    fill: color-mix(in oklab, #10b981 15%, var(--color-bg-elevated) 85%);
+    stroke: #10b981;
+}
+
+.typeAdjective {
+    fill: color-mix(in oklab, #f59e0b 15%, var(--color-bg-elevated) 85%);
+    stroke: #f59e0b;
+}
+
+.typeAdverb {
+    fill: color-mix(in oklab, #8b5cf6 15%, var(--color-bg-elevated) 85%);
+    stroke: #8b5cf6;
+}
+
+.typePronoun {
+    fill: color-mix(in oklab, #ec4899 15%, var(--color-bg-elevated) 85%);
+    stroke: #ec4899;
+}
+
+.typeParticle {
+    fill: color-mix(in oklab, #6b7280 15%, var(--color-bg-elevated) 85%);
+    stroke: #6b7280;
+}
+
+.typeMeasureWord {
+    fill: color-mix(in oklab, #14b8a6 15%, var(--color-bg-elevated) 85%);
+    stroke: #14b8a6;
+}
+
+.typeAuxiliaryVerb {
+    fill: color-mix(in oklab, #0ea5e9 15%, var(--color-bg-elevated) 85%);
+    stroke: #0ea5e9;
+}
+
+.typeConjunction {
+    fill: color-mix(in oklab, #a855f7 15%, var(--color-bg-elevated) 85%);
+    stroke: #a855f7;
+}
+
+.typePreposition {
+    fill: color-mix(in oklab, #f97316 15%, var(--color-bg-elevated) 85%);
+    stroke: #f97316;
+}
+
 .selected {
     stroke: var(--color-primary);
     stroke-width: 3;
@@ -83,6 +134,27 @@
     font-style: italic;
 }
 
+.copied {
+    font-size: var(--font-size-sm);
+    fill: var(--color-success);
+    pointer-events: none;
+    user-select: none;
+    font-weight: 600;
+    animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
@@ -110,13 +182,25 @@
     margin-bottom: var(--spacing-md);
 }
 
-.legendSection {
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
     margin-bottom: var(--spacing-md);
+    padding: var(--spacing-xs) 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    cursor: pointer;
+    user-select: none;
 }
 
-.legendSection:last-child {
-    margin-bottom: 0;
+.checkbox {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--color-primary);
 }
+
 
 .legendLabel {
     font-size: var(--font-size-sm);
@@ -134,15 +218,27 @@
     color: var(--color-text);
 }
 
-.legendCenterNode {
-    fill: color-mix(in oklab, var(--color-primary) 20%, var(--color-bg-elevated) 80%);
-    stroke: var(--color-primary);
+.legendTypeVerb {
+    fill: color-mix(in oklab, #3b82f6 15%, var(--color-bg-elevated) 85%);
+    stroke: #3b82f6;
     stroke-width: 2;
 }
 
-.legendRegularNode {
-    fill: var(--color-bg-elevated);
-    stroke: var(--color-border);
+.legendTypeNoun {
+    fill: color-mix(in oklab, #10b981 15%, var(--color-bg-elevated) 85%);
+    stroke: #10b981;
+    stroke-width: 2;
+}
+
+.legendTypeAdjective {
+    fill: color-mix(in oklab, #f59e0b 15%, var(--color-bg-elevated) 85%);
+    stroke: #f59e0b;
+    stroke-width: 2;
+}
+
+.legendTypeAdverb {
+    fill: color-mix(in oklab, #8b5cf6 15%, var(--color-bg-elevated) 85%);
+    stroke: #8b5cf6;
     stroke-width: 2;
 }
 
