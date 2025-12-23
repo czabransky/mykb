@@ -151,34 +151,73 @@ The key is to create clusters that are meaningful to **you** and reflect how you
 
 ---
 
-## Example: Music Vocabulary Cluster
+### Memory and Learning Cluster
 
-Below is a semantic cluster for music-related vocabulary. Notice how words connect through different relationship types: component parts (音, 乐), compound words (钢琴, 吉他), and related actions (听, 弹).
+This cluster is focused on cognitive processes, using natural conversational forms. Notice how 学 (learn) and 懂 (understand) are the everyday forms, while 学习 and 理解 are more formal variants.
 
 <WordGraphFromData
-    centerNode="音乐"
-    nodeIds={['音乐', '音', '乐', '歌曲', '钢琴', '吉他', '小提琴', '乐器', '唱歌', '听', '弹', '弹奏', '旋律', '节奏', '慢慢', '轻轻']}
+    centerNode="记忆"
+    nodeIds={['记忆', '记', '忆', '知道', '道', '记得', '忘', '懂', '理解', '学', '学习']}
     connections={[
-        { source: '音乐', target: '乐', type: ConnectionType.Component },
-        { source: '音乐', target: '歌曲', type: ConnectionType.Related },
-        { source: '歌曲', target: '唱歌', type: ConnectionType.Related },
-        { source: '歌曲', target: '旋律', type: ConnectionType.Related },
-        { source: '歌曲', target: '节奏', type: ConnectionType.Related },
-        { source: '音乐', target: '音', type: ConnectionType.Component },
-        { source: '音', target: '听', type: ConnectionType.Related },
-        { source: '音乐', target: '乐器', type: ConnectionType.Related },
-        { source: '乐器', target: '乐', type: ConnectionType.Component },
-        { source: '乐器', target: '钢琴', type: ConnectionType.Compound },
-        { source: '乐器', target: '吉他', type: ConnectionType.Compound },
-        { source: '乐器', target: '小提琴', type: ConnectionType.Compound },
-        { source: '乐器', target: '弹', type: ConnectionType.Related },
-        { source: '弹', target: '弹奏', type: ConnectionType.Related },
-        { source: '弹', target: '慢慢', type: ConnectionType.Related },
-        { source: '弹', target: '轻轻', type: ConnectionType.Related }
+        { source: '记忆', target: '记', type: ConnectionType.Component },
+        { source: '记忆', target: '忆', type: ConnectionType.Component },
+        { source: '记忆', target: '记得', type: ConnectionType.Synonym },
+        { source: '记忆', target: '忘', type: ConnectionType.Related },
+        { source: '记忆', target: '知道', type: ConnectionType.Related },
+        { source: '记忆', target: '学', type: ConnectionType.Related },
+        { source: '记得', target: '记', type: ConnectionType.Component },
+        { source: '忘记', target: '记', type: ConnectionType.Component },
+        { source: '知道', target: '道', type: ConnectionType.Component },
+        { source: '知道', target: '懂', type: ConnectionType.Synonym },
+        { source: '懂', target: '理解', type: ConnectionType.Synonym },
+        { source: '学', target: '学习', type: ConnectionType.Synonym },
+        { source: '学习', target: '学', type: ConnectionType.Component },
     ]}
-    width={900}
-    height={900}
+    height={700}
 />
+
+### Practical Application: Memory Cluster
+
+Using words from the memory cluster in natural conversation shows how these relationships work in practice.
+
+<ExampleGrid examples={[
+    {
+        chinese: '我记得这个字，但是忘了怎么写',
+        pinyin: 'wǒ jìde zhège zì, dànshì wàng le zěnme xiě',
+        english: 'I remember this character, but forgot how to write it',
+        note: 'Natural use of 记得 and 忘'
+    },
+    {
+        chinese: '你懂这个意思吗？',
+        pinyin: 'nǐ dǒng zhège yìsi ma?',
+        english: 'Do you understand this meaning?',
+        note: 'Casual form 懂 instead of formal 理解'
+    },
+    {
+        chinese: '我在学中文',
+        pinyin: 'wǒ zài xué Zhōngwén',
+        english: 'I am studying Chinese',
+        note: 'Natural spoken form 学, not 学习'
+    },
+    {
+        chinese: '你知道他的名字吗？',
+        pinyin: 'nǐ zhīdào tā de míngzi ma?',
+        english: 'Do you know his name?',
+        note: 'Common use of 知道 for factual knowledge'
+    },
+    {
+        chinese: '我不懂，你能再说一次吗？',
+        pinyin: 'wǒ bù dǒng, nǐ néng zài shuō yí cì ma?',
+        english: "I don't understand, can you say it again?",
+        note: 'Practical phrase combining 懂 with request'
+    },
+    {
+        chinese: '这个很难记',
+        pinyin: 'zhège hěn nán jì',
+        english: 'This is hard to remember',
+        note: 'Using core character 记 alone'
+    }
+]} />
 
 ---
 
@@ -211,39 +250,6 @@ Once you've built a semantic cluster, these techniques help solidify the connect
         Review entire clusters together at increasing intervals (1 day, 3 days, 1 week, etc.).
     </Card>
 </CardGrid>
-
----
-
-## Practical Application
-
-<ExampleGrid examples={[
-    {
-        chinese: '我想慢慢地学习弹钢琴',
-        pinyin: 'wǒ xiǎng mànmàn de xuéxí tán gāngqín',
-        english: 'I want to slowly learn to play piano',
-        note: 'Combines 慢慢, 弹, and 钢琴 from cluster'
-    },
-    {
-        chinese: '她轻轻地弹奏小提琴',
-        pinyin: 'tā qīngqīng de tánzòu xiǎotíqín',
-        english: 'She gently plays the violin',
-        note: 'Uses 轻轻, 弹奏, and 小提琴 together'
-    },
-    {
-        chinese: '这首歌曲的旋律很美',
-        pinyin: 'zhè shǒu gēqǔ de xuánlǜ hěn měi',
-        english: "This song's melody is beautiful",
-        note: 'Natural combination of 歌曲 and 旋律'
-    },
-    {
-        chinese: '我喜欢听音乐和唱歌',
-        pinyin: 'wǒ xǐhuan tīng yīnyuè hé chànggē',
-        english: 'I like listening to music and singing',
-        note: 'Links 听, 音乐, and 唱歌 in context'
-    }
-]} />
-
----
 
 ## Common Pitfalls to Avoid
 

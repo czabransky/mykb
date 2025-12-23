@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import WordGraph, { ConnectionType } from './word-graph';
 
 interface Connection {
@@ -18,7 +18,6 @@ interface WordGraphFromDataProps {
     centerNode: string;
     nodeIds: string[];
     connections: Connection[];
-    width?: number;
     height?: number;
 }
 
@@ -26,11 +25,12 @@ export default function WordGraphFromData({
     centerNode,
     nodeIds,
     connections,
-    width = 800,
     height = 600
 }: WordGraphFromDataProps) {
     const [nodes, setNodes] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const [width, setWidth] = useState(800);
 
     useEffect(() => {
         fetch('/mykb/data/words.json')
@@ -61,6 +61,19 @@ export default function WordGraphFromData({
             });
     }, [nodeIds]);
 
+    useEffect(() => {
+        if (!containerRef.current) return;
+
+        const resizeObserver = new ResizeObserver(entries => {
+            for (const entry of entries) {
+                setWidth(entry.contentRect.width);
+            }
+        });
+
+        resizeObserver.observe(containerRef.current);
+        return () => resizeObserver.disconnect();
+    }, []);
+
     if (loading) {
         return <div>Loading word graph...</div>;
     }
@@ -70,12 +83,14 @@ export default function WordGraphFromData({
     }
 
     return (
-        <WordGraph
-            nodes={nodes}
-            connections={connections}
-            centerNode={centerNode}
-            width={width}
-            height={height}
-        />
+        <div ref={containerRef} style={{ width: '100%' }}>
+            <WordGraph
+                nodes={nodes}
+                connections={connections}
+                centerNode={centerNode}
+                width={width}
+                height={height}
+            />
+        </div>
     );
 }

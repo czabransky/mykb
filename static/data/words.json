@@ -83,6 +83,108 @@
     "english": "softly/gently",
     "type": "adverb"
   },
+  "记忆": {
+    "id": "记忆",
+    "pinyin": "jìyì",
+    "english": "memory",
+    "type": "noun"
+  },
+  "记": {
+    "id": "记",
+    "pinyin": "jì",
+    "english": "remember/record",
+    "type": "verb"
+  },
+  "忆": {
+    "id": "忆",
+    "pinyin": "yì",
+    "english": "recall/memory",
+    "type": "verb"
+  },
+  "知道": {
+    "id": "知道",
+    "pinyin": "zhīdào",
+    "english": "know",
+    "type": "verb"
+  },
+  "知": {
+    "id": "知",
+    "pinyin": "zhī",
+    "english": "know/knowledge",
+    "type": "verb"
+  },
+  "道": {
+    "id": "道",
+    "pinyin": "dào",
+    "english": "way/path",
+    "type": "noun"
+  },
+  "记得": {
+    "id": "记得",
+    "pinyin": "jìde",
+    "english": "remember",
+    "type": "verb"
+  },
+  "忘记": {
+    "id": "忘记",
+    "pinyin": "wàngjì",
+    "english": "forget",
+    "type": "verb"
+  },
+  "忘": {
+    "id": "忘",
+    "pinyin": "wàng",
+    "english": "forget",
+    "type": "verb"
+  },
+  "理解": {
+    "id": "理解",
+    "pinyin": "lǐjiě",
+    "english": "understand",
+    "type": "verb"
+  },
+  "懂": {
+    "id": "懂",
+    "pinyin": "dǒng",
+    "english": "understand",
+    "type": "verb"
+  },
+  "知识": {
+    "id": "知识",
+    "pinyin": "zhīshi",
+    "english": "knowledge",
+    "type": "noun"
+  },
+  "识": {
+    "id": "识",
+    "pinyin": "shí",
+    "english": "recognize/knowledge",
+    "type": "verb"
+  },
+  "学习": {
+    "id": "学习",
+    "pinyin": "xuéxí",
+    "english": "study/learn (formal)",
+    "type": "verb"
+  },
+  "习": {
+    "id": "习",
+    "pinyin": "xí",
+    "english": "practice/review",
+    "type": "verb"
+  },
+  "思考": {
+    "id": "思考",
+    "pinyin": "sīkǎo",
+    "english": "think/ponder (formal)",
+    "type": "verb"
+  },
+  "想": {
+    "id": "想",
+    "pinyin": "xiǎng",
+    "english": "think/want",
+    "type": "verb"
+  },
   "要": {
     "english": "want/need",
     "type": "auxiliary verb",
