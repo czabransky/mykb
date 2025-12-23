@@ -102,13 +102,65 @@ export default function WordGraph({
                     angle = (firstLevelIndex / firstLevelNodes.length) * 2 * Math.PI;
                     distance = 150;
                     firstLevelIndex++;
+
+                    if (nodeId === '理解') {
+                        console.log('理解 - First level positioning:', {
+                            firstLevelIndex: firstLevelIndex - 1,
+                            totalFirstLevel: firstLevelNodes.length,
+                            angle,
+                            angleInDegrees: (angle * 180 / Math.PI).toFixed(2),
+                            distance
+                        });
+                    }
                 } else {
-                    // Deeper levels: place near parent with some spread
-                    const spread = Math.PI / 1.5; // Wider spread for better distribution
-                    const angleOffset = (index / Math.max(connectedNodes.length - 1, 1) - 0.5) * spread;
-                    angle = current.parentAngle + angleOffset;
-                    distance = 150 + (Math.log(current.depth) * 25);
-                    console.log('Deeper level node:', nodeId, 'Depth:', current.depth, 'Angle:', angle, 'Distance:', distance);
+                    // Deeper levels: position away from center
+                    // Calculate angle from center to parent
+                    const parentDx = current.parentX - centerX;
+                    const parentDy = current.parentY - centerY;
+                    const angleFromCenter = Math.atan2(parentDy, parentDx);
+
+                    // Use parent's angle from center as base (points outward from center)
+                    let baseAngle = angleFromCenter;
+
+                    // Calculate distance first
+                    distance = 150 + (Math.log(current.depth) * 30); // Increase distance for deeper levels
+
+                    // Spread siblings around the outward direction
+                    // Calculate spread based on number of siblings and node size
+                    const nodeRadius = 35;
+                    const gap = 20; // Gap between nodes
+                    const arcLengthNeeded = connectedNodes.length * (2 * nodeRadius + gap);
+                    const calculatedSpread = arcLengthNeeded / distance;
+
+                    // Cap the spread angle to avoid excessive spreading
+                    const maxSpread = Math.PI * 0.8; // Max 144 degrees
+                    const spreadAngle = Math.min(calculatedSpread, maxSpread);
+
+                    const angleOffset = (index / Math.max(connectedNodes.length - 1, 1) - 0.5) * spreadAngle;
+
+                    angle = baseAngle + angleOffset;
+
+                    if (nodeId === '理解') {
+                        console.log('理解 - Deeper level positioning:', {
+                            depth: current.depth,
+                            parent: current.id,
+                            index,
+                            parentX: current.parentX,
+                            parentY: current.parentY,
+                            centerX,
+                            centerY,
+                            angleFromCenter,
+                            angleFromCenterDegrees: (angleFromCenter * 180 / Math.PI).toFixed(2),
+                            totalSiblings: connectedNodes.length,
+                            angleOffset,
+                            angleOffsetInDegrees: (angleOffset * 180 / Math.PI).toFixed(2),
+                            finalAngle: angle,
+                            finalAngleInDegrees: (angle * 180 / Math.PI).toFixed(2),
+                            distance,
+                            calculatedX: current.parentX + Math.cos(angle) * distance,
+                            calculatedY: current.parentY + Math.sin(angle) * distance
+                        });
+                    }
                 }
 
                 const x = current.parentX + Math.cos(angle) * distance;
