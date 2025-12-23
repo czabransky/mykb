@@ -13,7 +13,7 @@ const useCharacters = (phrases: Phrase[]) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/mykb/data/characters.json')
+        fetch('/mykb/data/words.json')
             .then(res => res.json())
             .then((data: CharacterData) => {
                 // Extract unique Chinese characters from all phrases

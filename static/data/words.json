@@ -1,0 +1,542 @@
+{
+  "音乐": {
+    "id": "音乐",
+    "pinyin": "yīnyuè",
+    "english": "music",
+    "type": "noun"
+  },
+  "音": {
+    "id": "音",
+    "pinyin": "yīn",
+    "english": "sound",
+    "type": "noun"
+  },
+  "乐": {
+    "id": "乐",
+    "pinyin": "yuè/lè",
+    "english": "joy/music",
+    "type": "noun"
+  },
+  "歌曲": {
+    "id": "歌曲",
+    "pinyin": "gēqǔ",
+    "english": "song",
+    "type": "noun"
+  },
+  "钢琴": {
+    "id": "钢琴",
+    "pinyin": "gāngqín",
+    "english": "piano",
+    "type": "noun"
+  },
+  "吉他": {
+    "id": "吉他",
+    "pinyin": "jítā",
+    "english": "guitar",
+    "type": "noun"
+  },
+  "小提琴": {
+    "id": "小提琴",
+    "pinyin": "xiǎotíqín",
+    "english": "violin",
+    "type": "noun"
+  },
+  "乐器": {
+    "id": "乐器",
+    "pinyin": "yuèqì",
+    "english": "musical instrument",
+    "type": "noun"
+  },
+  "唱歌": {
+    "id": "唱歌",
+    "pinyin": "chànggē",
+    "english": "sing",
+    "type": "verb"
+  },
+  "听": {
+    "id": "听",
+    "pinyin": "tīng",
+    "english": "listen",
+    "type": "verb"
+  },
+  "弹": {
+    "id": "弹",
+    "pinyin": "tán",
+    "english": "play (stringed instrument)",
+    "type": "verb"
+  },
+  "弹奏": {
+    "id": "弹奏",
+    "pinyin": "tánzòu",
+    "english": "play (for performance)",
+    "type": "verb"
+  },
+  "旋律": {
+    "id": "旋律",
+    "pinyin": "xuánlǜ",
+    "english": "melody",
+    "type": "noun"
+  },
+  "节奏": {
+    "id": "节奏",
+    "pinyin": "jiézòu",
+    "english": "rhythm",
+    "type": "noun"
+  },
+  "要": {
+    "english": "want/need",
+    "type": "auxiliary verb",
+    "id": "要",
+    "pinyin": "yào"
+  },
+  "明": {
+    "english": "bright/tomorrow",
+    "type": "adjective",
+    "id": "明",
+    "pinyin": "míng"
+  },
+  "走": {
+    "english": "walk/go",
+    "type": "verb",
+    "id": "走",
+    "pinyin": "zǒu"
+  },
+  "钱": {
+    "english": "money",
+    "type": "noun",
+    "id": "钱",
+    "pinyin": "qián"
+  },
+  "练": {
+    "english": "practice",
+    "type": "verb",
+    "id": "练",
+    "pinyin": "liàn"
+  },
+  "给": {
+    "english": "give",
+    "type": "verb",
+    "id": "给",
+    "pinyin": "gěi"
+  },
+  "柯": {
+    "english": "axe handle/branch",
+    "type": "noun",
+    "id": "柯",
+    "pinyin": "kē"
+  },
+  "早": {
+    "english": "morning/early",
+    "type": "adjective",
+    "id": "早",
+    "pinyin": "zǎo"
+  },
+  "节": {
+    "english": "festival/holiday",
+    "type": "noun",
+    "id": "节",
+    "pinyin": "jié"
+  },
+  "楠": {
+    "english": "nanmu tree",
+    "type": "noun",
+    "id": "楠",
+    "pinyin": "nán"
+  },
+  "号": {
+    "english": "number/date",
+    "type": "noun",
+    "id": "号",
+    "pinyin": "hào"
+  },
+  "钢": {
+    "english": "steel",
+    "type": "noun",
+    "id": "钢",
+    "pinyin": "gāng"
+  },
+  "晚": {
+    "english": "evening/late",
+    "type": "adjective",
+    "id": "晚",
+    "pinyin": "wǎn"
+  },
+  "欢": {
+    "english": "joyful",
+    "type": "adjective",
+    "id": "欢",
+    "pinyin": "huān"
+  },
+  "再": {
+    "english": "again",
+    "type": "adverb",
+    "id": "再",
+    "pinyin": "zài"
+  },
+  "很": {
+    "english": "very",
+    "type": "adverb",
+    "id": "很",
+    "pinyin": "hěn"
+  },
+  "久": {
+    "english": "long (time)",
+    "type": "adjective",
+    "id": "久",
+    "pinyin": "jiǔ"
+  },
+  "文": {
+    "english": "language/script",
+    "type": "noun",
+    "id": "文",
+    "pinyin": "wén"
+  },
+  "它": {
+    "english": "it",
+    "type": "pronoun",
+    "id": "它",
+    "pinyin": "tā"
+  },
+  "在": {
+    "english": "at/in/be (doing)",
+    "type": "preposition",
+    "id": "在",
+    "pinyin": "zài"
+  },
+  "习": {
+    "english": "practice/study",
+    "type": "verb",
+    "id": "习",
+    "pinyin": "xí"
+  },
+  "上": {
+    "english": "up",
+    "type": "noun",
+    "id": "上",
+    "pinyin": "shàng"
+  },
+  "你": {
+    "english": "you",
+    "type": "pronoun",
+    "id": "你",
+    "pinyin": "nǐ"
+  },
+  "来": {
+    "english": "come",
+    "type": "verb",
+    "id": "来",
+    "pinyin": "lái"
+  },
+  "难": {
+    "english": "difficult",
+    "type": "adjective",
+    "id": "难",
+    "pinyin": "nán"
+  },
+  "友": {
+    "english": "friend",
+    "type": "noun",
+    "id": "友",
+    "pinyin": "yǒu"
+  },
+  "非": {
+    "english": "non-/not",
+    "type": "adverb",
+    "id": "非",
+    "pinyin": "fēi"
+  },
+  "去": {
+    "english": "go",
+    "type": "verb",
+    "id": "去",
+    "pinyin": "qù"
+  },
+  "多": {
+    "english": "many/much",
+    "type": "adjective",
+    "id": "多",
+    "pinyin": "duō"
+  },
+  "圣": {
+    "english": "holy/saint",
+    "type": "adjective",
+    "id": "圣",
+    "pinyin": "shèng"
+  },
+  "家": {
+    "english": "home/family",
+    "type": "noun",
+    "id": "家",
+    "pinyin": "jiā"
+  },
+  "见": {
+    "english": "see",
+    "type": "verb",
+    "id": "见",
+    "pinyin": "jiàn"
+  },
+  "十": {
+    "english": "ten",
+    "type": "number",
+    "id": "十",
+    "pinyin": "shí"
+  },
+  "我": {
+    "english": "I/me",
+    "type": "pronoun",
+    "id": "我",
+    "pinyin": "wǒ"
+  },
+  "拜": {
+    "english": "bye",
+    "type": "verb",
+    "id": "拜",
+    "pinyin": "bài"
+  },
+  "说": {
+    "english": "speak/say",
+    "type": "verb",
+    "id": "说",
+    "pinyin": "shuō"
+  },
+  "学": {
+    "english": "learn/study",
+    "type": "verb",
+    "id": "学",
+    "pinyin": "xué"
+  },
+  "昨": {
+    "english": "yesterday",
+    "type": "noun",
+    "id": "昨",
+    "pinyin": "zuó"
+  },
+  "弹": {
+    "english": "play (instrument)",
+    "type": "verb",
+    "id": "弹",
+    "pinyin": "tán"
+  },
+  "今": {
+    "english": "today/now",
+    "type": "noun",
+    "id": "今",
+    "pinyin": "jīn"
+  },
+  "好": {
+    "english": "good",
+    "type": "adjective",
+    "id": "好",
+    "pinyin": "hǎo"
+  },
+  "首": {
+    "english": "(measure word for songs/poems)",
+    "type": "measure word",
+    "id": "首",
+    "pinyin": "shǒu"
+  },
+  "乐": {
+    "english": "happy/joy",
+    "type": "adjective",
+    "id": "乐",
+    "pinyin": "lè"
+  },
+  "谢": {
+    "english": "thank",
+    "type": "verb",
+    "id": "谢",
+    "pinyin": "xiè"
+  },
+  "曲": {
+    "english": "song/melody",
+    "type": "noun",
+    "id": "曲",
+    "pinyin": "qǔ"
+  },
+  "女": {
+    "english": "woman/female",
+    "type": "noun",
+    "id": "女",
+    "pinyin": "nǚ"
+  },
+  "叫": {
+    "english": "call/be called",
+    "type": "verb",
+    "id": "叫",
+    "pinyin": "jiào"
+  },
+  "但": {
+    "english": "but",
+    "type": "conjunction",
+    "id": "但",
+    "pinyin": "dàn"
+  },
+  "吗": {
+    "english": "(question particle)",
+    "type": "particle",
+    "id": "吗",
+    "pinyin": "ma"
+  },
+  "不": {
+    "english": "not",
+    "type": "adverb",
+    "id": "不",
+    "pinyin": "bù"
+  },
+  "喜": {
+    "english": "happy/like",
+    "type": "verb",
+    "id": "喜",
+    "pinyin": "xǐ"
+  },
+  "琪": {
+    "english": "fine jade/gem",
+    "type": "noun",
+    "id": "琪",
+    "pinyin": "qí"
+  },
+  "的": {
+    "english": "(possessive particle)",
+    "type": "particle",
+    "id": "的",
+    "pinyin": "de"
+  },
+  "安": {
+    "english": "peace",
+    "type": "noun",
+    "id": "安",
+    "pinyin": "ān"
+  },
+  "一": {
+    "english": "one",
+    "type": "number",
+    "id": "一",
+    "pinyin": "yī"
+  },
+  "想": {
+    "english": "want/think",
+    "type": "verb",
+    "id": "想",
+    "pinyin": "xiǎng"
+  },
+  "会": {
+    "english": "can/know how",
+    "type": "auxiliary verb",
+    "id": "会",
+    "pinyin": "huì"
+  },
+  "英": {
+    "english": "English (abbr.)",
+    "type": "proper noun",
+    "id": "英",
+    "pinyin": "Yīng"
+  },
+  "琴": {
+    "english": "musical instrument",
+    "type": "noun",
+    "id": "琴",
+    "pinyin": "qín"
+  },
+  "诞": {
+    "english": "birth",
+    "type": "noun",
+    "id": "诞",
+    "pinyin": "dàn"
+  },
+  "是": {
+    "english": "is/am/are",
+    "type": "verb",
+    "id": "是",
+    "pinyin": "shì"
+  },
+  "了": {
+    "english": "(particle)",
+    "type": "particle",
+    "id": "了",
+    "pinyin": "le"
+  },
+  "少": {
+    "english": "few/little",
+    "type": "adjective",
+    "id": "少",
+    "pinyin": "shǎo"
+  },
+  "二": {
+    "english": "two",
+    "type": "number",
+    "id": "二",
+    "pinyin": "èr"
+  },
+  "慢": {
+    "english": "slow",
+    "type": "adjective",
+    "id": "慢",
+    "pinyin": "màn"
+  },
+  "快": {
+    "english": "fast/quick",
+    "type": "adjective",
+    "id": "快",
+    "pinyin": "kuài"
+  },
+  "问": {
+    "english": "ask",
+    "type": "verb",
+    "id": "问",
+    "pinyin": "wèn"
+  },
+  "朋": {
+    "english": "friend",
+    "type": "noun",
+    "id": "朋",
+    "pinyin": "péng"
+  },
+  "个": {
+    "english": "(general measure word)",
+    "type": "measure word",
+    "id": "个",
+    "pinyin": "ge"
+  },
+  "请": {
+    "english": "please",
+    "type": "verb",
+    "id": "请",
+    "pinyin": "qǐng"
+  },
+  "先": {
+    "english": "first",
+    "type": "adverb",
+    "id": "先",
+    "pinyin": "xiān"
+  },
+  "天": {
+    "english": "day/sky",
+    "type": "noun",
+    "id": "天",
+    "pinyin": "tiān"
+  },
+  "这": {
+    "english": "this",
+    "type": "pronoun",
+    "id": "这",
+    "pinyin": "zhè"
+  },
+  "林": {
+    "english": "forest/woods",
+    "type": "noun",
+    "id": "林",
+    "pinyin": "lín"
+  },
+  "常": {
+    "english": "often/common",
+    "type": "adverb",
+    "id": "常",
+    "pinyin": "cháng"
+  },
+  "月": {
+    "english": "month/moon",
+    "type": "noun",
+    "id": "月",
+    "pinyin": "yuè"
+  }
+}

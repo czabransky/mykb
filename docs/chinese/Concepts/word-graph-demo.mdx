@@ -3,6 +3,7 @@ title: Word Graph Demo
 ---
 
 import WordGraph from '@site/src/components/core/word-graph';
+import WordGraphFromData from '@site/src/components/core/word-graph-from-data';
 
 # Word Relationship Graph
 
@@ -10,117 +11,24 @@ Explore Chinese vocabulary through an interactive force-directed graph. Words co
 
 ## Music (音乐) - Central Concept
 
-<WordGraph
-    centerNode="music"
-    variant="circle"
-    nodes={[
-        {
-            id: 'music',
-            chinese: '音乐',
-            pinyin: 'yīnyuè',
-            english: 'music'
-        },
-        {
-            id: 'sound',
-            chinese: '音',
-            pinyin: 'yīn',
-            english: 'sound'
-        },
-        {
-            id: 'joy',
-            chinese: '乐',
-            pinyin: 'yuè/lè',
-            english: 'joy/music'
-        },
-        {
-            id: 'song',
-            chinese: '歌曲',
-            pinyin: 'gēqǔ',
-            english: 'song'
-        },
-        {
-            id: 'piano',
-            chinese: '钢琴',
-            pinyin: 'gāngqín',
-            english: 'piano'
-        },
-        {
-            id: 'guitar',
-            chinese: '吉他',
-            pinyin: 'jítā',
-            english: 'guitar'
-        },
-        {
-            id: 'violin',
-            chinese: '小提琴',
-            pinyin: 'xiǎotíqín',
-            english: 'violin'
-        },
-        {
-            id: 'instrument',
-            chinese: '乐器',
-            pinyin: 'yuèqì',
-            english: 'musical instrument'
-        },
-        {
-            id: 'sing',
-            chinese: '唱歌',
-            pinyin: 'chànggē',
-            english: 'sing'
-        },
-        {
-            id: 'listen',
-            chinese: '听',
-            pinyin: 'tīng',
-            english: 'listen'
-        },
-        {
-            id: 'play',
-            chinese: '弹',
-            pinyin: 'tán',
-            english: 'play (stringed instrument)'
-        },
-        {
-            id: 'perform',
-            chinese: '弹奏',
-            pinyin: 'tánzòu',
-            english: 'play (for performance)'
-        },
-        {
-            id: 'melody',
-            chinese: '旋律',
-            pinyin: 'xuánlǜ',
-            english: 'melody'
-        },
-        {
-            id: 'rhythm',
-            chinese: '节奏',
-            pinyin: 'jiézòu',
-            english: 'rhythm'
-        }
-    ]}
+<WordGraphFromData
+    centerNode="音乐"
+    nodeIds={['音乐', '音', '乐', '歌曲', '钢琴', '吉他', '小提琴', '乐器', '唱歌', '听', '弹', '弹奏', '旋律', '节奏']}
     connections={[
-
-        { source: 'music', target: 'joy', type: 'component' },
-
-        { source: 'music', target: 'song', type: 'related' },
-        { source: 'song', target: 'sing', type: 'related' },
-        { source: 'song', target: 'melody', type: 'related' },
-        { source: 'song', target: 'rhythm', type: 'related' },
-
-        { source: 'music', target: 'sound', type: 'component' },
-        { source: 'sound', target: 'listen', type: 'related' },
-
-
-        { source: 'music', target: 'instrument', type: 'related' },
-        { source: 'instrument', target: 'joy', type: 'component' },
-        { source: 'instrument', target: 'piano', type: 'compound' },
-        { source: 'instrument', target: 'guitar', type: 'compound' },
-        { source: 'instrument', target: 'violin', type: 'compound' },
-
-        { source: 'instrument', target: 'play', type: 'related' },
-        { source: 'play', target: 'perform', type: 'related' },
-
+        { source: '音乐', target: '乐', type: 'component' },
+        { source: '音乐', target: '歌曲', type: 'related' },
+        { source: '歌曲', target: '唱歌', type: 'related' },
+        { source: '歌曲', target: '旋律', type: 'related' },
+        { source: '歌曲', target: '节奏', type: 'related' },
+        { source: '音乐', target: '音', type: 'component' },
+        { source: '音', target: '听', type: 'related' },
+        { source: '音乐', target: '乐器', type: 'related' },
+        { source: '乐器', target: '乐', type: 'component' },
+        { source: '乐器', target: '钢琴', type: 'compound' },
+        { source: '乐器', target: '吉他', type: 'compound' },
+        { source: '乐器', target: '小提琴', type: 'compound' },
+        { source: '乐器', target: '弹', type: 'related' },
+        { source: '弹', target: '弹奏', type: 'related' }
     ]}
     width={1024}
     height={1024}
