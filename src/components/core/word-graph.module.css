@@ -1,7 +1,6 @@
 .container {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr auto;
+    display: flex;
     gap: var(--spacing-lg);
     align-items: start;
     margin: var(--spacing-xl) 0;
@@ -12,6 +11,7 @@
     border-radius: var(--radius-lg);
     background: var(--color-bg);
     justify-self: center;
+    flex-grow: 1;
 }
 
 .connections line {
