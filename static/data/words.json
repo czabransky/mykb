@@ -640,5 +640,29 @@
     "type": "noun",
     "id": "月",
     "pinyin": "yuè"
+  },
+  "清楚": {
+    "id": "清楚",
+    "pinyin": "qīngchu",
+    "english": "clear",
+    "type": "adjective"
+  },
+  "糊涂": {
+    "id": "糊涂",
+    "pinyin": "hútu",
+    "english": "confused/muddled",
+    "type": "adjective"
+  },
+  "模糊": {
+    "id": "模糊",
+    "pinyin": "móhu",
+    "english": "vague/unclear",
+    "type": "adjective"
+  },
+  "完全": {
+    "id": "完全",
+    "pinyin": "wánquán",
+    "english": "completely",
+    "type": "adverb"
   }
 }

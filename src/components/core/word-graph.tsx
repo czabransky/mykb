@@ -54,6 +54,9 @@ export default function WordGraph({
     const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
     const panStartRef = useRef({ x: 0, y: 0 });
 
+    // Zoom state
+    const [zoom, setZoom] = useState(1);
+
     const handleNodeClick = async (node: WordNode, event: React.MouseEvent) => {
         // Don't trigger node click if we were panning
         if (isPanning) {
@@ -99,6 +102,41 @@ export default function WordGraph({
     const handleMouseLeave = () => {
         setIsPanning(false);
     };
+
+    // Add native wheel event listener with passive: false to prevent default
+    useEffect(() => {
+        const svg = svgRef.current;
+        if (!svg) return;
+
+        const handleWheelNative = (e: WheelEvent) => {
+            e.preventDefault();
+
+            const zoomSensitivity = 0.001;
+            const delta = -e.deltaY * zoomSensitivity;
+            const newZoom = Math.max(0.1, Math.min(5, zoom + delta));
+
+            const rect = svg.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+
+            // Calculate the point in graph space that's under the mouse
+            const graphX = (mouseX - panOffset.x) / zoom;
+            const graphY = (mouseY - panOffset.y) / zoom;
+
+            // Adjust pan offset so the point under mouse stays in the same place
+            const newPanX = mouseX - graphX * newZoom;
+            const newPanY = mouseY - graphY * newZoom;
+
+            setZoom(newZoom);
+            setPanOffset({ x: newPanX, y: newPanY });
+        };
+
+        svg.addEventListener('wheel', handleWheelNative, { passive: false });
+
+        return () => {
+            svg.removeEventListener('wheel', handleWheelNative);
+        };
+    }, [zoom, panOffset]);
 
     useEffect(() => {
         // Initialize node positions
@@ -374,22 +412,37 @@ export default function WordGraph({
 
         // Calculate bounding box of all nodes
         const nodeRadius = 50; // Max node radius
+        const padding = 10; // Comfortable padding from viewport edges
         const minX = Math.min(...graphNodes.map(n => (n.x || 0) - nodeRadius));
         const maxX = Math.max(...graphNodes.map(n => (n.x || 0) + nodeRadius));
         const minY = Math.min(...graphNodes.map(n => (n.y || 0) - nodeRadius));
         const maxY = Math.max(...graphNodes.map(n => (n.y || 0) + nodeRadius));
 
+        // Calculate the size of the bounding box
+        const boundingBoxWidth = maxX - minX;
+        const boundingBoxHeight = maxY - minY;
+
         // Calculate the center of the bounding box
         const boundingBoxCenterX = (minX + maxX) / 2;
         const boundingBoxCenterY = (minY + maxY) / 2;
+
+        // Available space for content (viewport minus padding on both sides)
+        const availableWidth = width - (padding * 2);
+        const availableHeight = height - (padding * 2);
+
+        // Calculate zoom to fit with padding
+        const scaleX = availableWidth / boundingBoxWidth;
+        const scaleY = availableHeight / boundingBoxHeight;
+        const fitZoom = Math.min(scaleX, scaleY, 1); // Don't zoom in beyond 1x
 
         // Calculate offset needed to center the bounding box in the viewport
         const viewportCenterX = width / 2;
         const viewportCenterY = height / 2;
 
-        const offsetX = viewportCenterX - boundingBoxCenterX;
-        const offsetY = viewportCenterY - boundingBoxCenterY;
+        const offsetX = viewportCenterX - boundingBoxCenterX * fitZoom;
+        const offsetY = viewportCenterY - boundingBoxCenterY * fitZoom;
 
+        setZoom(fitZoom);
         setPanOffset({ x: offsetX, y: offsetY });
     }, [graphNodes, width, height]);
 
@@ -462,7 +515,7 @@ export default function WordGraph({
                 </defs>
 
                 {/* Render connections */}
-                <g className={styles.connections} transform={`translate(${panOffset.x},${panOffset.y})`}>
+                <g className={styles.connections} transform={`translate(${panOffset.x},${panOffset.y}) scale(${zoom})`}>
                     {connections.map((conn, i) => {
                         const source = graphNodes.find(n => n.id === conn.source);
                         const target = graphNodes.find(n => n.id === conn.target);
@@ -503,7 +556,7 @@ export default function WordGraph({
                 </g>
 
                 {/* Render nodes */}
-                <g className={styles.nodes} transform={`translate(${panOffset.x},${panOffset.y})`}>
+                <g className={styles.nodes} transform={`translate(${panOffset.x},${panOffset.y}) scale(${zoom})`}>
                     {graphNodes.map(node => (
                         <g
                             key={node.id}
