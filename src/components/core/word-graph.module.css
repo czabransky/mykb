@@ -37,7 +37,7 @@
 }
 
 .node {
-    fill: var(--color-bg-elevated);
+    fill: color-mix(in oklab, var(--color-primary) 10%, var(--color-bg-elevated) 90%);
     stroke: var(--color-border);
     stroke-width: 2;
     transition: all 0.3s ease;
@@ -46,12 +46,6 @@
 .node:hover {
     stroke: var(--color-primary);
     stroke-width: 3;
-}
-
-.bubble {
-    fill: linear-gradient(135deg,
-            color-mix(in oklab, var(--color-primary) 10%, var(--color-bg-elevated) 90%),
-            var(--color-bg-elevated));
 }
 
 .centerNode {

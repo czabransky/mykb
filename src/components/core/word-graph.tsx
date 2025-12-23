@@ -23,7 +23,6 @@ interface WordGraphProps {
     nodes: WordNode[];
     connections: Connection[];
     centerNode: string;
-    variant?: 'circle' | 'bubble';
     width?: number;
     height?: number;
 }
@@ -32,7 +31,6 @@ export default function WordGraph({
     nodes,
     connections,
     centerNode,
-    variant = 'bubble',
     width = 800,
     height = 600
 }: WordGraphProps) {
@@ -268,7 +266,6 @@ export default function WordGraph({
 
     const getNodeClass = (node: WordNode) => {
         const classes = [styles.node];
-        if (variant === 'bubble') classes.push(styles.bubble);
         if (node.id === centerNode) classes.push(styles.centerNode);
         if (selectedNode === node.id) classes.push(styles.selected);
         return classes.join(' ');
@@ -376,7 +373,7 @@ export default function WordGraph({
                             <circle
                                 r={getNodeRadius(node)}
                                 className={getNodeClass(node)}
-                                filter={variant === 'bubble' ? 'url(#bubble-shadow)' : undefined}
+                                filter="url(#bubble-shadow)"
                             />
                             <text
                                 className={styles.chinese}
@@ -397,7 +394,7 @@ export default function WordGraph({
                                 <text
                                     className={styles.english}
                                     textAnchor="middle"
-                                    dy="60"
+                                    dy={node.id === centerNode ? "75" : "60"}
                                 >
                                     {node.english}
                                 </text>
