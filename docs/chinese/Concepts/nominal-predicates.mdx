@@ -33,12 +33,13 @@ Chinese often **omits** the copula 是 (shì) where English requires it, creatin
 <ComparisonBox
     left={{
         label: 'Omit 是 (More Common)',
-        accent: 'natural',
+        accent: 'ok',
         content: (
             <div>
               <ul className={styles.comparisonList}>
                   <li>Dates and time expressions</li>
                   <li>Weather and temperature</li>
+                  <li>Money</li>
                   <li>Casual conversation</li>
               </ul>
             </div>
@@ -46,7 +47,7 @@ Chinese often **omits** the copula 是 (shì) where English requires it, creatin
     }}
     right={{
         label: 'Include 是 (When Needed)',
-        accent: 'emphatic',
+        accent: 'neutral',
         content: (
             <div>
               <ul className={styles.comparisonList}>
@@ -64,7 +65,7 @@ Chinese often **omits** the copula 是 (shì) where English requires it, creatin
 <ComparisonBox
     left={{
         label: 'Natural (Without 是)',
-        accent: 'natural',
+        accent: 'ok',
         content: (
             <div>
                 <div className={styles.comparisonChinese}>今天十二月二十二号</div>
@@ -75,7 +76,7 @@ Chinese often **omits** the copula 是 (shì) where English requires it, creatin
     }}
     right={{
         label: 'Emphatic (With 是)',
-        accent: 'emphatic',
+        accent: 'neutral',
         content: (
             <div>
                 <div className={styles.comparisonChinese}>今天是十二月二十二号</div>
@@ -94,20 +95,26 @@ Chinese often **omits** the copula 是 (shì) where English requires it, creatin
     {
         chinese: '今天星期一',
         pinyin: 'jīntiān xīngqī yī',
-        english: 'Today Monday',
+        english: 'Today is Monday',
         note: 'Natural without 是'
     },
     {
         chinese: '今天很热',
         pinyin: 'jīntiān hěn rè',
-        english: 'Today very hot',
+        english: 'Today is very hot',
         note: 'Adjective predicate'
     },
     {
         chinese: '现在三点',
         pinyin: 'xiànzài sān diǎn',
-        english: "Now 3 o'clock",
+        english: "It's 3 o'clock",
         note: 'Time expression'
+    },
+    {
+        english: 'This book costs 32 dollars',
+        pinyin: "zhè běn shū sānshí'èr kuài qián",
+        chinese: '这本书三十二块钱',
+        note: 'No 是 or verb needed'
     },
     {
         chinese: '他是学生',

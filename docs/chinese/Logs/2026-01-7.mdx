@@ -1,0 +1,52 @@
+﻿import ExampleGrid from '@site/src/components/core/example-grid';
+import Conversation from '@site/src/components/core/conversation';
+import Lesson from '@site/src/components/core/lesson'
+
+#  2026年01月07日
+
+## Homework
+
+Write some sentences about what you buy and how much things cost.
+
+### Example Dialogue
+
+<Conversation
+    title="Buying Apples"
+    speakerA="Customer"
+    speakerB="Merchant"
+    dialog={[
+        {
+            speaker: 'A',
+            english: 'I want to go to the store to buy apples.',
+            pinyin: 'wǒ xiǎng qù shāngdiàn mǎi píngguǒ.',
+            chinese: '我想去商店买苹果',
+        },
+        {
+            speaker: 'A',
+            english: 'Hello, how much does this apple cost?',
+            pinyin: ' nǐ hǎo, zhège píngguǒ duōshǎo qián?',
+            chinese: '这个苹果多少钱？',
+            note: 'Uses 这个 (this) to specify which apple, though normally apples are sold by weight. Here it is singular for simplicity.'
+        },
+        {
+            speaker: 'B',
+            english: '25 dollars.',
+            pinyin: 'èrshíwǔ kuài.',
+            chinese: '二十五块。',
+        },
+        {
+            speaker: 'A',
+            english: 'What about that one?',
+            pinyin: 'nàgè duōshǎo qián?',
+            chinese: '那个多少钱？',
+        },
+        {
+            speaker: 'B',
+            english: '10 dollars.',
+            pinyin: 'shí kuài.',
+            chinese: '十块。',
+        }
+    ]}
+/>
+
+<Lesson lessonKey="diary-2026-01-07" />

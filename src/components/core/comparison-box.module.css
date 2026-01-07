@@ -14,14 +14,24 @@
     transition: all 0.2s ease;
 }
 
-.box[data-accent="natural"] {
+.box[data-accent="ok"] {
     border-color: var(--color-success);
     background: color-mix(in oklab, var(--color-success) 5%, var(--color-bg-elevated) 95%);
 }
 
-.box[data-accent="emphatic"] {
+.box[data-accent="neutral"] {
     border-color: var(--color-info);
     background: color-mix(in oklab, var(--color-info) 5%, var(--color-bg-elevated) 95%);
+}
+
+.box[data-accent="warning"] {
+    border-color: var(--color-warning);
+    background: color-mix(in oklab, var(--color-warning) 5%, var(--color-bg-elevated) 95%);
+}
+
+.box[data-accent="error"] {
+    border-color: var(--color-error);
+    background: color-mix(in oklab, var(--color-error) 5%, var(--color-bg-elevated) 95%);
 }
 
 .label {

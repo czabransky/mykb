@@ -142,5 +142,34 @@
       "english": "Tomorrow, my girlfriend will come to my home",
       "notes": "For a softer future tense, use 会 hui instead of 要 yao."
     }
+  ],
+  "diary-2025-12-23": [
+    {
+      "pinyin": "jintian ershisan yue shi'er hao",
+      "chinese": "今天二十三号",
+      "english": "Today is December 23rd"
+    }
+  ],
+  "diary-2026-01-07": [
+    {
+      "chinese": "我去商店买苹果",
+      "pinyin": "wǒ qù shāngdiàn mǎi píngguǒ",
+      "english": "I went to the store to buy apples"
+    },
+    {
+      "chinese": "我买了三个苹果",
+      "pinyin": "wǒ mǎi le sān ge píngguǒ",
+      "english": "I bought three apples"
+    },
+    {
+      "pinyin": "wǒ qù shāngdiàn mǎi le san ge píngguǒ",
+      "chinese": "我去商店买了三个苹果",
+      "english": "I went to the store and bought three apples"
+    },
+    {
+      "pinyin": "zhege pingguo duoshao qian",
+      "chinese": "这个苹果多少钱？",
+      "english": "How much does this apple cost?"
+    }
   ]
 }

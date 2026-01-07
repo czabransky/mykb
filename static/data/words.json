@@ -664,5 +664,41 @@
     "pinyin": "wánquán",
     "english": "completely",
     "type": "adverb"
+  },
+  "三": {
+    "id": "三",
+    "pinyin": "sān",
+    "english": "three",
+    "type": "number"
+  },
+  "商": {
+    "id": "商",
+    "pinyin": "shāng",
+    "english": "commerce; merchant",
+    "type": "noun"
+  },
+  "店": {
+    "id": "店",
+    "pinyin": "diàn",
+    "english": "shop; store",
+    "type": "noun"
+  },
+  "买": {
+    "id": "买",
+    "pinyin": "mǎi",
+    "english": "to buy",
+    "type": "verb"
+  },
+  "苹": {
+    "id": "苹",
+    "pinyin": "píng",
+    "english": "(used in 苹果 apple)",
+    "type": "noun"
+  },
+  "果": {
+    "id": "果",
+    "pinyin": "guǒ",
+    "english": "fruit; result",
+    "type": "noun"
   }
 }

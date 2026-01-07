@@ -25,7 +25,7 @@ Our brains are wired to recognize patterns and relationships. When you learn iso
 <ComparisonBox
     left={{
         label: 'Semantic Clustering',
-        accent: 'natural',
+        accent: 'ok',
         content: (
             <div>
                 <ul>
@@ -40,7 +40,7 @@ Our brains are wired to recognize patterns and relationships. When you learn iso
     }}
     right={{
         label: 'Traditional Memorization',
-        accent: 'emphatic',
+        accent: 'neutral',
         content: (
             <div>
                 <ul>
@@ -121,7 +121,7 @@ The key is to create clusters that are meaningful to **you** and reflect how you
 <ComparisonBox
     left={{
         label: 'Optimal Range',
-        accent: 'natural',
+        accent: 'ok',
         content: (
             <div>
                 <div>7-15 words per cluster</div>
@@ -135,7 +135,7 @@ The key is to create clusters that are meaningful to **you** and reflect how you
     }}
     right={{
         label: 'Too Small',
-        accent: 'emphatic',
+        accent: 'neutral',
         content: (
             <div>
                 <div>2-3 words per cluster</div>
@@ -160,8 +160,8 @@ This cluster is focused on cognitive processes, using natural conversational for
     nodeIds={['记忆', '记', '忆', '知道', '道', '记得', '忘', '懂', '理解', '学', '学习']}
     connections={[
         { source: '记忆', target: '记', type: ConnectionType.Component },
-        { source: '记忆', target: '忆', type: ConnectionType.Component },
         { source: '记忆', target: '记得', type: ConnectionType.Synonym },
+        { source: '记忆', target: '忆', type: ConnectionType.Component },
         { source: '记忆', target: '忘', type: ConnectionType.Related },
         { source: '记忆', target: '知道', type: ConnectionType.Related },
         { source: '记忆', target: '学习', type: ConnectionType.Related },
@@ -255,7 +255,7 @@ Once you've built a semantic cluster, these techniques help solidify the connect
 <ComparisonBox
     left={{
         label: 'More Effective',
-        accent: 'natural',
+        accent: 'ok',
         content: (
             <div>
                 <ul>
@@ -270,7 +270,7 @@ Once you've built a semantic cluster, these techniques help solidify the connect
     }}
     right={{
         label: 'Less Effective',
-        accent: 'emphatic',
+        accent: 'neutral',
         content: (
             <div>
                 <ul>
