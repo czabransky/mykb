@@ -157,19 +157,19 @@
       "english": "I went to the store to buy apples"
     },
     {
-      "chinese": "我买了三个苹果",
-      "pinyin": "wǒ mǎi le sān ge píngguǒ",
-      "english": "I bought three apples"
+      "english": "I bought three carrots",
+      "chinese": "我买了三个胡萝卜",
+      "pinyin": "wǒ mǎi le sān ge húluóbo"
     },
     {
-      "pinyin": "wǒ qù shāngdiàn mǎi le sān gè píngguǒ",
-      "chinese": "我去商店买了三个苹果",
-      "english": "I went to the store and bought three apples"
+      "english": "I went to the store and bought three bananas",
+      "pinyin": "wǒ qù shāngdiàn mǎi le sān gè xiāngjiāo",
+      "chinese": "我去商店买了三个香蕉"
     },
     {
-      "pinyin": "zhège píngguǒ duōshǎo qián?",
-      "chinese": "这个苹果多少钱？",
-      "english": "How much does this apple cost?"
+      "english": "How much does this bread cost?",
+      "pinyin": "zhège miànbāo duōshǎo qián?",
+      "chinese": "这个面包多少钱？"
     }
   ]
 }

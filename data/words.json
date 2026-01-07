@@ -692,13 +692,55 @@
   "苹": {
     "id": "苹",
     "pinyin": "píng",
-    "english": "(used in 苹果 apple)",
+    "english": "apple",
     "type": "noun"
   },
   "果": {
     "id": "果",
     "pinyin": "guǒ",
     "english": "fruit; result",
+    "type": "noun"
+  },
+  "胡": {
+    "id": "胡",
+    "pinyin": "hú",
+    "english": "reckless; barbarous",
+    "type": "noun"
+  },
+  "萝": {
+    "id": "萝",
+    "pinyin": "luó",
+    "english": "trailing plant; vine",
+    "type": "noun"
+  },
+  "卜": {
+    "id": "卜",
+    "pinyin": "bǔ",
+    "english": "to divine; to predict",
+    "type": "verb"
+  },
+  "香": {
+    "id": "香",
+    "pinyin": "xiāng",
+    "english": "fragrant; aromatic",
+    "type": "adjective"
+  },
+  "蕉": {
+    "id": "蕉",
+    "pinyin": "jiāo",
+    "english": "banana plant",
+    "type": "noun"
+  },
+  "面": {
+    "id": "面",
+    "pinyin": "miàn",
+    "english": "face; flour; noodles",
+    "type": "noun"
+  },
+  "包": {
+    "id": "包",
+    "pinyin": "bāo",
+    "english": "bag; wrap; bun",
     "type": "noun"
   }
 }
