@@ -742,5 +742,17 @@
     "pinyin": "bāo",
     "english": "bag; wrap; bun",
     "type": "noun"
+  },
+  "五": {
+    "id": "五",
+    "pinyin": "wǔ",
+    "english": "five",
+    "type": "number"
+  },
+  "块": {
+    "id": "块",
+    "pinyin": "kuài",
+    "english": "piece; lump; dollar (informal)",
+    "type": "measureword"
   }
 }
