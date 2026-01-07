@@ -170,6 +170,11 @@
       "english": "How much does this bread cost?",
       "pinyin": "zhège miànbāo duōshǎo qián?",
       "chinese": "这个面包多少钱？"
+    },
+    {
+      "english": "This bread costs five yuan",
+      "pinyin": "zhège miànbāo wǔ kuài",
+      "chinese": "这个面包五块"
     }
   ]
 }
