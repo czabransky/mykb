@@ -194,9 +194,9 @@
       "chinese": "书右面有一只兔子"
     },
     {
-      "pinyin": "tùzi zuǒmiàn yǒu yí gè bēizi",
-      "english": "There is a cup to the left of the rabbit",
-      "chinese": "兔子左面有一个杯子"
+      "pinyin": "bēizi zài tùzi zuǒmiàn",
+      "english": "The cup is to the left of the rabbit",
+      "chinese": "杯子在兔子左面"
     },
     {
       "pinyin": "wǒ de bēizi lǐ yǒu shuǐ",
