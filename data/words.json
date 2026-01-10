@@ -754,5 +754,23 @@
     "pinyin": "kuài",
     "english": "piece; lump; dollar (informal)",
     "type": "measureword"
+  },
+  "车": {
+    "id": "车",
+    "pinyin": "chē",
+    "english": "vehicle; car",
+    "type": "noun"
+  },
+  "哪": {
+    "id": "哪",
+    "pinyin": "nǎ",
+    "english": "which; where",
+    "type": "pronoun"
+  },
+  "儿": {
+    "id": "儿",
+    "pinyin": "ér",
+    "english": "child; suffix (erization)",
+    "type": "noun"
   }
 }
