@@ -145,7 +145,7 @@
   ],
   "diary-2025-12-23": [
     {
-      "pinyin": "jintian ershisan yue shi'er hao",
+      "pinyin": "jīntiān èrshísān yuè shí'èr hào",
       "chinese": "今天二十三号",
       "english": "Today is December 23rd"
     }
@@ -159,7 +159,7 @@
     {
       "english": "I bought three carrots",
       "chinese": "我买了三个胡萝卜",
-      "pinyin": "wǒ mǎi le sān ge húluóbo"
+      "pinyin": "wǒ mǎi le sān gè húluóbo"
     },
     {
       "english": "I went to the store and bought three bananas",
@@ -179,9 +179,29 @@
   ],
   "diary-2026-01-10": [
     {
-      "english": "Where is my car?",
-      "pinyin": "wǒ de chē zài nǎr?",
-      "chinese": "我的车在哪儿？"
+      "pinyin": "fángjiān lǐ yǒu wǒ de zhuōzi",
+      "english": "My desk is in the room",
+      "chinese": "房间里有我的桌子"
+    },
+    {
+      "pinyin": "zhuōzi shàng yǒu yì běn shū",
+      "english": "There is a book on the desk",
+      "chinese": "桌子上有一本书"
+    },
+    {
+      "pinyin": "shū yòumiàn yǒu yì zhī tùzi",
+      "english": "There is a rabbit to the right of the book",
+      "chinese": "书右面有一只兔子"
+    },
+    {
+      "pinyin": "tùzi zuǒmiàn yǒu yí gè bēizi",
+      "english": "There is a cup to the left of the rabbit",
+      "chinese": "兔子左面有一个杯子"
+    },
+    {
+      "pinyin": "wǒ de bēizi lǐ yǒu shuǐ",
+      "english": "There is water in my cup",
+      "chinese": "我的杯子里有水"
     }
   ]
 }

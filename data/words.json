@@ -772,5 +772,89 @@
     "pinyin": "ér",
     "english": "child; suffix (erization)",
     "type": "noun"
+  },
+  "房": {
+    "id": "房",
+    "pinyin": "fáng",
+    "english": "house; room",
+    "type": "noun"
+  },
+  "间": {
+    "id": "间",
+    "pinyin": "jiān",
+    "english": "room; between; measure word for rooms",
+    "type": "measureword"
+  },
+  "里": {
+    "id": "里",
+    "pinyin": "lǐ",
+    "english": "inside; in",
+    "type": "noun"
+  },
+  "有": {
+    "id": "有",
+    "pinyin": "yǒu",
+    "english": "to have; there is/are",
+    "type": "verb"
+  },
+  "桌": {
+    "id": "桌",
+    "pinyin": "zhuō",
+    "english": "table; desk",
+    "type": "noun"
+  },
+  "子": {
+    "id": "子",
+    "pinyin": "zi",
+    "english": "child; suffix; seed",
+    "type": "noun"
+  },
+  "本": {
+    "id": "本",
+    "pinyin": "běn",
+    "english": "measure word for books; root; origin",
+    "type": "measureword"
+  },
+  "书": {
+    "id": "书",
+    "pinyin": "shū",
+    "english": "book",
+    "type": "noun"
+  },
+  "右": {
+    "id": "右",
+    "pinyin": "yòu",
+    "english": "right",
+    "type": "noun"
+  },
+  "只": {
+    "id": "只",
+    "pinyin": "zhī",
+    "english": "measure word for animals; only",
+    "type": "measureword"
+  },
+  "兔": {
+    "id": "兔",
+    "pinyin": "tù",
+    "english": "rabbit",
+    "type": "noun"
+  },
+  "左": {
+    "id": "左",
+    "pinyin": "zuǒ",
+    "english": "left",
+    "type": "noun"
+  },
+  "杯": {
+    "id": "杯",
+    "pinyin": "bēi",
+    "english": "cup; glass",
+    "type": "noun"
+  },
+  "水": {
+    "id": "水",
+    "pinyin": "shuǐ",
+    "english": "water",
+    "type": "noun"
   }
 }
