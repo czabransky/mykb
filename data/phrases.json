@@ -203,5 +203,27 @@
       "english": "There is water in my cup",
       "chinese": "我的杯子里有水"
     }
+  ],
+  "diary-2026-01-28": [
+    {
+      "pinyin": "wǒ huì shuōhuà, dànshì wǒ bùnéng chànggē",
+      "english": "I can speak, but I can't sing",
+      "chinese": "我会说话，但是我不能唱歌"
+    },
+    {
+      "pinyin": "wǒ huì mǎi dōngxi, dànshì wǒ bùnéng zuò fàn",
+      "english": "I can buy things, but I can't cook",
+      "chinese": "我会买东西，但是我不能做饭"
+    },
+    {
+      "pinyin": "wǒ huì zǒulù, dànshì wǒ bùnéng pǎobù",
+      "english": "I can walk, but I can't run",
+      "chinese": "我会走路，但是我不能跑步"
+    },
+    {
+      "pinyin": "wǒ huì tīng, dànshì wǒ bùnéng dǒng",
+      "english": "I can listen, but I can't understand",
+      "chinese": "我会听，但是我不能懂"
+    }
   ]
 }

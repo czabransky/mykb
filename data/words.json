@@ -856,5 +856,191 @@
     "pinyin": "shuǐ",
     "english": "water",
     "type": "noun"
+  },
+  "厨房": {
+    "id": "厨房",
+    "pinyin": "chúfáng",
+    "english": "kitchen",
+    "type": "noun"
+  },
+  "冰箱": {
+    "id": "冰箱",
+    "pinyin": "bīngxiāng",
+    "english": "refrigerator",
+    "type": "noun"
+  },
+  "炉子": {
+    "id": "炉子",
+    "pinyin": "lúzi",
+    "english": "stove",
+    "type": "noun"
+  },
+  "烤箱": {
+    "id": "烤箱",
+    "pinyin": "kǎoxiāng",
+    "english": "oven",
+    "type": "noun"
+  },
+  "微波炉": {
+    "id": "微波炉",
+    "pinyin": "wēibōlú",
+    "english": "microwave",
+    "type": "noun"
+  },
+  "水槽": {
+    "id": "水槽",
+    "pinyin": "shuǐcáo",
+    "english": "sink",
+    "type": "noun"
+  },
+  "碗": {
+    "id": "碗",
+    "pinyin": "wǎn",
+    "english": "bowl",
+    "type": "noun"
+  },
+  "盘子": {
+    "id": "盘子",
+    "pinyin": "pánzi",
+    "english": "plate",
+    "type": "noun"
+  },
+  "杯子": {
+    "id": "杯子",
+    "pinyin": "bēizi",
+    "english": "cup",
+    "type": "noun"
+  },
+  "筷子": {
+    "id": "筷子",
+    "pinyin": "kuàizi",
+    "english": "chopsticks",
+    "type": "noun"
+  },
+  "叉子": {
+    "id": "叉子",
+    "pinyin": "chāzi",
+    "english": "fork",
+    "type": "noun"
+  },
+  "刀": {
+    "id": "刀",
+    "pinyin": "dāo",
+    "english": "knife",
+    "type": "noun"
+  },
+  "勺子": {
+    "id": "勺子",
+    "pinyin": "sháozi",
+    "english": "spoon",
+    "type": "noun"
+  },
+  "锅": {
+    "id": "锅",
+    "pinyin": "guō",
+    "english": "pot",
+    "type": "noun"
+  },
+  "平底锅": {
+    "id": "平底锅",
+    "pinyin": "píngdǐguō",
+    "english": "frying pan",
+    "type": "noun"
+  },
+  "桌子": {
+    "id": "桌子",
+    "pinyin": "zhuōzi",
+    "english": "table",
+    "type": "noun"
+  },
+  "椅子": {
+    "id": "椅子",
+    "pinyin": "yǐzi",
+    "english": "chair",
+    "type": "noun"
+  },
+  "柜子": {
+    "id": "柜子",
+    "pinyin": "guìzi",
+    "english": "cabinet",
+    "type": "noun"
+  },
+  "抽屉": {
+    "id": "抽屉",
+    "pinyin": "chōuti",
+    "english": "drawer",
+    "type": "noun"
+  },
+  "食物": {
+    "id": "食物",
+    "pinyin": "shíwù",
+    "english": "food",
+    "type": "noun"
+  },
+  "话": {
+    "id": "话",
+    "pinyin": "huà",
+    "english": "speech; words; talk",
+    "type": "noun"
+  },
+  "能": {
+    "id": "能",
+    "pinyin": "néng",
+    "english": "can; able to",
+    "type": "auxiliary verb"
+  },
+  "唱": {
+    "id": "唱",
+    "pinyin": "chàng",
+    "english": "to sing",
+    "type": "verb"
+  },
+  "歌": {
+    "id": "歌",
+    "pinyin": "gē",
+    "english": "song",
+    "type": "noun"
+  },
+  "东": {
+    "id": "东",
+    "pinyin": "dōng",
+    "english": "east",
+    "type": "noun"
+  },
+  "西": {
+    "id": "西",
+    "pinyin": "xī",
+    "english": "west; thing (in 东西)",
+    "type": "noun"
+  },
+  "做": {
+    "id": "做",
+    "pinyin": "zuò",
+    "english": "to do; to make",
+    "type": "verb"
+  },
+  "饭": {
+    "id": "饭",
+    "pinyin": "fàn",
+    "english": "rice; meal",
+    "type": "noun"
+  },
+  "跑": {
+    "id": "跑",
+    "pinyin": "pǎo",
+    "english": "to run",
+    "type": "verb"
+  },
+  "路": {
+    "id": "路",
+    "pinyin": "lù",
+    "english": "road; path; way",
+    "type": "noun"
+  },
+  "步": {
+    "id": "步",
+    "pinyin": "bù",
+    "english": "step; walk",
+    "type": "noun"
   }
 }
