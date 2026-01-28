@@ -1,0 +1,132 @@
+
+import ExampleGrid from '@site/src/components/core/example-grid';
+import Conversation from '@site/src/components/core/conversation';
+import Lesson from '@site/src/components/core/lesson'
+import VocabShowcase from '@site/src/components/core/vocab-showcase';
+import PatternBox from '@site/src/components/core/pattern-box';
+import CharacterGrid from '@site/src/components/core/character-grid';
+
+
+#  2026年01月10日
+
+
+### Asking for Directions or Locations
+
+In Chinese, basic direction words are single characters. These can be used alone or combined with **面** (miàn) meaning "side" or "surface".
+
+<CharacterGrid
+    characters={[
+        { char: '哪', pinyin: 'nǎ', english: 'where' },
+        { char: '那', pinyin: 'nà', english: 'that' },
+        { char: '那儿', pinyin: 'nàr', english: 'there' },
+        { char: '上', pinyin: 'shàng', english: 'up' },
+        { char: '下', pinyin: 'xià', english: 'down' },
+        { char: '左', pinyin: 'zuǒ', english: 'left' },
+        { char: '右', pinyin: 'yòu', english: 'right' },
+        { char: '面', pinyin: 'miàn', english: 'side' },
+    ]}
+/>
+
+#### Adding 面 (miàn)
+
+The suffix **面** is *optional* and adds the meaning of "side" or "direction":
+
+- **左** (zuǒ) = left → **左面** (zuǒmiàn) = left side
+- **右** (yòu) = right → **右面** (yòumiàn) = right side
+
+<PatternBox
+    pattern={[
+        { part: '上/下/左/右', label: 'direction' },
+        { part: '面', label: 'optional' },
+    ]}
+    example={{
+        chinese: '左 / 左面',
+        pinyin: 'zuǒ / zuǒmiàn',
+        english: 'left / left side'
+    }}
+/>
+
+### Phrases Using Where / There / That
+
+<ExampleGrid examples={[
+    {
+        chinese: '你在哪里？',
+        pinyin: 'nǐ zài nǎlǐ?',
+        english: 'Where are you?',
+        note: '哪里 (nǎlǐ) and 哪儿 (nǎr) both mean "where"'
+    },
+    {
+        chinese: '我在这里。',
+        pinyin: 'wǒ zài zhèlǐ.',
+        english: 'I am here.',
+    },
+    {
+        chinese: '那是什么？',
+        pinyin: 'nà shì shénme?',
+        english: 'What is that?',
+    },
+    {
+        chinese: '书在那儿。',
+        pinyin: 'shū zài nàr.',
+        english: 'The book is there.',
+    },
+    {
+        chinese: '厕所在哪儿？',
+        pinyin: 'cèsuǒ zài nǎr?',
+        english: 'Where is the bathroom?',
+        note: '哪里 (nǎlǐ) and 哪儿 (nǎr) both mean "where"'
+    },
+    {
+        chinese: '在那面。',
+        pinyin: 'zài nàmiàn.',
+        english: 'Over there.',
+    },
+]} />
+
+### Example Dialogue
+
+<Conversation
+    title="Asking for Directions"
+    speakerA="Tourist"
+    speakerB="Local"
+    dialog={[
+        {
+            speaker: 'A',
+            chinese: '你好，银行在哪里？',
+            pinyin: 'nǐ hǎo, yínháng zài nǎlǐ?',
+            english: 'Hello, where is the bank?',
+        },
+        {
+            speaker: 'B',
+            chinese: '银行在左面。',
+            pinyin: 'yínháng zài zuǒmiàn.',
+            english: 'The bank is on the left.',
+        },
+        {
+            speaker: 'A',
+            chinese: '商店呢？',
+            pinyin: 'shāngdiàn ne?',
+            english: 'What about the store?',
+            note: '呢 (ne) is used to ask "what about...?"'
+        },
+        {
+            speaker: 'B',
+            chinese: '商店在右面。',
+            pinyin: 'shāngdiàn zài yòumiàn.',
+            english: 'The store is on the right.',
+        },
+        {
+            speaker: 'A',
+            chinese: '谢谢！',
+            pinyin: 'xièxiè!',
+            english: 'Thank you!',
+        }
+    ]}
+/>
+
+
+---
+
+**Homework**: Write some sentences about your room and where things are located.
+
+<Lesson lessonKey="diary-2026-01-10" />

@@ -145,7 +145,7 @@
   ],
   "diary-2025-12-23": [
     {
-      "pinyin": "jintian ershisan yue shi'er hao",
+      "pinyin": "jīntiān èrshísān yuè shí'èr hào",
       "chinese": "今天二十三号",
       "english": "Today is December 23rd"
     }
@@ -157,19 +157,73 @@
       "english": "I went to the store to buy apples"
     },
     {
-      "chinese": "我买了三个苹果",
-      "pinyin": "wǒ mǎi le sān ge píngguǒ",
-      "english": "I bought three apples"
+      "english": "I bought three carrots",
+      "chinese": "我买了三个胡萝卜",
+      "pinyin": "wǒ mǎi le sān gè húluóbo"
     },
     {
-      "pinyin": "wǒ qù shāngdiàn mǎi le san ge píngguǒ",
-      "chinese": "我去商店买了三个苹果",
-      "english": "I went to the store and bought three apples"
+      "english": "I went to the store and bought three bananas",
+      "pinyin": "wǒ qù shāngdiàn mǎi le sān gè xiāngjiāo",
+      "chinese": "我去商店买了三个香蕉"
     },
     {
-      "pinyin": "zhege pingguo duoshao qian",
-      "chinese": "这个苹果多少钱？",
-      "english": "How much does this apple cost?"
+      "english": "How much does this bread cost?",
+      "pinyin": "zhège miànbāo duōshǎo qián?",
+      "chinese": "这个面包多少钱？"
+    },
+    {
+      "english": "This bread costs five yuan",
+      "pinyin": "zhège miànbāo wǔ kuài",
+      "chinese": "这个面包五块"
+    }
+  ],
+  "diary-2026-01-10": [
+    {
+      "pinyin": "fángjiān lǐ yǒu wǒ de zhuōzi",
+      "english": "My desk is in the room",
+      "chinese": "房间里有我的桌子"
+    },
+    {
+      "pinyin": "zhuōzi shàng yǒu yì běn shū",
+      "english": "There is a book on the desk",
+      "chinese": "桌子上有一本书"
+    },
+    {
+      "pinyin": "shū yòumiàn yǒu yì zhī tùzi",
+      "english": "There is a rabbit to the right of the book",
+      "chinese": "书右面有一只兔子"
+    },
+    {
+      "pinyin": "bēizi zài tùzi zuǒmiàn",
+      "english": "The cup is to the left of the rabbit",
+      "chinese": "杯子在兔子左面"
+    },
+    {
+      "pinyin": "wǒ de bēizi lǐ yǒu shuǐ",
+      "english": "There is water in my cup",
+      "chinese": "我的杯子里有水"
+    }
+  ],
+  "diary-2026-01-28": [
+    {
+      "pinyin": "wǒ huì shuōhuà, dànshì wǒ bùnéng chànggē",
+      "english": "I can speak, but I can't sing",
+      "chinese": "我会说话，但是我不能唱歌"
+    },
+    {
+      "pinyin": "wǒ huì mǎi dōngxi, dànshì wǒ bùnéng zuò fàn",
+      "english": "I can buy things, but I can't cook",
+      "chinese": "我会买东西，但是我不能做饭"
+    },
+    {
+      "pinyin": "wǒ huì zǒulù, dànshì wǒ bùnéng pǎobù",
+      "english": "I can walk, but I can't run",
+      "chinese": "我会走路，但是我不能跑步"
+    },
+    {
+      "pinyin": "wǒ huì tīng, dànshì wǒ bùnéng dǒng",
+      "english": "I can listen, but I can't understand",
+      "chinese": "我会听，但是我不能懂"
     }
   ]
 }

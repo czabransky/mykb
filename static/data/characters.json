@@ -378,5 +378,40 @@
     "pinyin": "lái",
     "english": "come",
     "type": "verb"
+  },
+  "胡": {
+    "pinyin": "hú",
+    "english": "reckless; (used in 胡萝卜 carrot)",
+    "type": "noun"
+  },
+  "萝": {
+    "pinyin": "luó",
+    "english": "(used in 萝卜 radish/carrot)",
+    "type": "noun"
+  },
+  "卜": {
+    "pinyin": "bo",
+    "english": "(used in 萝卜 radish)",
+    "type": "noun"
+  },
+  "香": {
+    "pinyin": "xiāng",
+    "english": "fragrant; (used in 香蕉 banana)",
+    "type": "adjective"
+  },
+  "蕉": {
+    "pinyin": "jiāo",
+    "english": "(used in 香蕉 banana)",
+    "type": "noun"
+  },
+  "面": {
+    "pinyin": "miàn",
+    "english": "face; flour; noodles",
+    "type": "noun"
+  },
+  "包": {
+    "pinyin": "bāo",
+    "english": "bag; wrap; bun",
+    "type": "noun"
   }
 }

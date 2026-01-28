@@ -7,7 +7,6 @@
     background: var(--color-bg-elevated);
     border: 2px solid var(--color-border-subtle);
     border-radius: var(--card-border-radius);
-    max-width: 600px;
 }
 
 .header {

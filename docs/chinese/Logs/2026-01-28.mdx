@@ -1,0 +1,67 @@
+
+import ExampleGrid from '@site/src/components/core/example-grid';
+import Conversation from '@site/src/components/core/conversation';
+import Lesson from '@site/src/components/core/lesson'
+import VocabShowcase from '@site/src/components/core/vocab-showcase';
+import PatternBox from '@site/src/components/core/pattern-box';
+import CharacterGrid from '@site/src/components/core/character-grid';
+import WordGraphFromData from '@site/src/components/core/word-graph-from-data';
+import { ConnectionType } from '@site/src/components/core/word-graph';
+
+
+#  2026年01月28日
+
+
+## Expressing Ability vs Physical Capability
+
+In Chinese, there are two different verbs to express "can": **会** (huì) and **能** (néng).
+
+<CharacterGrid
+    characters={[
+        { char: '会', pinyin: 'huì', english: 'can (ability)' },
+        { char: '能', pinyin: 'néng', english: 'can (physical capability)' },
+    ]}
+/>
+
+<PatternBox
+    pattern={[
+        { part: '我', label: 'I' },
+        { part: '会', label: 'can (ability)' },
+        { part: '____', label: 'verb (ability)' },
+        { part: '但是', label: 'but' },
+        { part: '我', label: 'I' },
+        { part: '不能', label: 'cannot (physical capability)' },
+        { part: '____', label: 'verb (physical capability)' },
+    ]}
+    example={{
+        chinese: '我会游泳，但是我不能跑步。',
+        pinyin: 'wǒ huì yóuyǒng, dànshì wǒ bùnéng pǎobù.',
+        english: 'I can swim, but I cannot run.'
+    }}
+/>
+
+<Lesson lessonKey="diary-2026-01-28" />
+
+
+## More Nouns!
+
+<WordGraphFromData
+    centerNode="厨房"
+    nodeIds={['厨房', '冰箱', '炉子', '水槽', '碗', '盘子', '杯子', '筷子', '刀', '锅', '桌子', '食物', '水']}
+    connections={[
+        { source: '厨房', target: '冰箱', type: ConnectionType.Related },
+        { source: '厨房', target: '炉子', type: ConnectionType.Related },
+        { source: '厨房', target: '水槽', type: ConnectionType.Related },
+        { source: '厨房', target: '桌子', type: ConnectionType.Related },
+        { source: '桌子', target: '碗', type: ConnectionType.Related },
+        { source: '桌子', target: '盘子', type: ConnectionType.Related },
+        { source: '桌子', target: '杯子', type: ConnectionType.Related },
+        { source: '桌子', target: '筷子', type: ConnectionType.Related },
+        { source: '桌子', target: '刀', type: ConnectionType.Related },
+        { source: '炉子', target: '锅', type: ConnectionType.Related },
+        { source: '冰箱', target: '食物', type: ConnectionType.Related },
+        { source: '水槽', target: '水', type: ConnectionType.Related },
+    ]}
+    width={800}
+    height={800}
+/>

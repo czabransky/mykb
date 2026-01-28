@@ -1,0 +1,60 @@
+.container {
+    margin: var(--spacing-xl) 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-lg);
+    background: var(--color-bg-elevated);
+    border: 2px solid var(--color-border-subtle);
+    border-radius: var(--card-border-radius);
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.chinese {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+}
+
+.pinyin {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    font-style: italic;
+    margin-bottom: var(--spacing-xs);
+}
+
+.english {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
+    padding-top: var(--spacing-sm);
+    border-top: 1px dashed var(--color-border-subtle);
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chinese {
+        font-size: var(--font-size-2xl);
+    }
+}

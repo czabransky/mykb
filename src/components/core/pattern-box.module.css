@@ -32,12 +32,11 @@
 }
 
 .partText {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
     font-weight: 600;
     padding: var(--spacing-sm) var(--spacing-md);
     background: color-mix(in oklab, var(--color-border) 50%, var(--color-bg) 50%);
     border-radius: 6px;
-    font-family: var(--ifm-font-family-monospace);
 }
 
 .partLabel {
