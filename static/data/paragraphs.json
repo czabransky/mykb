@@ -1,0 +1,34 @@
+{
+    "2026-02-04": [
+        {
+            "pinyin": "Jīntiān èr yuè sì hào. Xiànzài shì bā diǎn bàn. Zǎoshang wǒ yào chī zǎofàn le.",
+            "english": "Today is February 4th. It is now 8:30am. This morning I am going to eat breakfast.",
+            "chinese": "今天二月四号。现在是八点半。早上我要吃早饭了。"
+        },
+        {
+            "pinyin": "Shàngwǔ shì jiǔ diǎn. Wǒ zài gōngzuò.",
+            "english": "It's 9am in the morning. I am working.",
+            "chinese": "上午是九点。我在工作。"
+        },
+        {
+            "pinyin": "Zhōngwǔ shí'èr diǎn. Wǒ chī wǔfàn le.",
+            "english": "It's 12 o'clock noon. I ate lunch.",
+            "chinese": "中午十二点。我吃午饭了。"
+        },
+        {
+            "pinyin": "Xiàwǔ sān diǎn. Wǒ hái zài gōngzuò.",
+            "english": "It's 3pm in the afternoon. I am still working.",
+            "chinese": "下午三点。我还在工作。"
+        },
+        {
+            "pinyin": "Xiàwǔ wǔ diǎn. Wǒ qù jiàn wǒ de péngyǒu Chris.",
+            "english": "It's 5pm in the evening. I am going to meet my friend Chris.",
+            "chinese": "下午五点。我去见我的朋友Chris。"
+        },
+        {
+            "pinyin": "Wǎnshang wǒmen chī wǎnfàn le. Xiànzài shì bā diǎn.",
+            "english": "In the evening we ate dinner. It is now 8 o'clock.",
+            "chinese": "晚上我们吃晚饭了。现在是八点。"
+        }
+    ]
+}

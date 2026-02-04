@@ -1,0 +1,86 @@
+.container {
+    margin: 2rem 0;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.toggleButton {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--ifm-color-emphasis-400);
+    background: transparent;
+    color: var(--ifm-color-emphasis-700);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.toggleButton:hover {
+    background: var(--ifm-color-emphasis-200);
+}
+
+.toggleButton.active {
+    background: var(--ifm-color-emphasis-300);
+    color: var(--ifm-color-emphasis-900);
+    border-color: var(--ifm-color-emphasis-500);
+}
+
+.paragraphGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.chinese {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--ifm-color-content);
+}
+
+.pinyin {
+    font-size: 1rem;
+    color: var(--ifm-color-content-secondary);
+    font-style: italic;
+}
+
+.english {
+    font-size: 1rem;
+    color: var(--ifm-color-content-secondary);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .chinese {
+        font-size: 1.1rem;
+    }
+
+    .pinyin,
+    .english {
+        font-size: 0.9rem;
+    }
+}

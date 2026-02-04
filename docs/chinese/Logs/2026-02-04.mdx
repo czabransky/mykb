@@ -1,0 +1,41 @@
+import PatternBox from '@site/src/components/core/pattern-box';
+import CharacterGrid from '@site/src/components/core/character-grid';
+import Paragraph from '@site/src/components/core/paragraph';
+// import Lesson from '@site/src/components/core/lesson'
+
+#  2026年01月04日
+
+## Telling Time
+
+<CharacterGrid
+    characters={[
+        { char: '点', pinyin: 'diǎn', english: 'o\'clock; hour' },
+        { char: '分', pinyin: 'fēn', english: 'minute' },
+        { char: '半', pinyin: 'bàn', english: 'half' },
+        { char: '刻', pinyin: 'kè', english: 'quarter' },
+    ]}
+/>
+
+
+<PatternBox
+    pattern={[
+        { part: '现在', label: 'now' },
+        { part: '是', label: 'is' },
+        { part: '____', label: 'hour' },
+        { part: '点', label: 'o\'clock' },
+        { part: '____', label: 'minute (optional)' },
+        { part: '分', label: 'minute (optional)' },
+    ]}
+    example={{
+        chinese: '现在是三点十五分。',
+        pinyin: 'xiànzài shì sān diǎn shíwǔ fēn.',
+        english: 'It is now 3:15.'
+    }}
+    />
+
+## Homework
+
+Describe the day I met Chris for the first time, including the time of day.
+
+
+<Paragraph paragraphKey="2026-02-04" />
