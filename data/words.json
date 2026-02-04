@@ -1042,5 +1042,83 @@
     "pinyin": "bù",
     "english": "step; walk",
     "type": "noun"
+  },
+  "时间": {
+    "id": "时间",
+    "pinyin": "shíjiān",
+    "english": "time",
+    "type": "noun"
+  },
+  "早上": {
+    "id": "早上",
+    "pinyin": "zǎoshang",
+    "english": "morning; early morning",
+    "type": "noun"
+  },
+  "上午": {
+    "id": "上午",
+    "pinyin": "shàngwǔ",
+    "english": "morning; forenoon (before noon)",
+    "type": "noun"
+  },
+  "中午": {
+    "id": "中午",
+    "pinyin": "zhōngwǔ",
+    "english": "noon; midday",
+    "type": "noun"
+  },
+  "下午": {
+    "id": "下午",
+    "pinyin": "xiàwǔ",
+    "english": "afternoon",
+    "type": "noun"
+  },
+  "晚上": {
+    "id": "晚上",
+    "pinyin": "wǎnshang",
+    "english": "evening; night",
+    "type": "noun"
+  },
+  "早饭": {
+    "id": "早饭",
+    "pinyin": "zǎofàn",
+    "english": "breakfast",
+    "type": "noun"
+  },
+  "午饭": {
+    "id": "午饭",
+    "pinyin": "wǔfàn",
+    "english": "lunch",
+    "type": "noun"
+  },
+  "晚饭": {
+    "id": "晚饭",
+    "pinyin": "wǎnfàn",
+    "english": "dinner; supper",
+    "type": "noun"
+  },
+  "吃": {
+    "id": "吃",
+    "pinyin": "chī",
+    "english": "to eat",
+    "type": "verb"
+  },
+  "点": {
+    "id": "点",
+    "pinyin": "diǎn",
+    "english": "o'clock; point",
+    "type": "measure word"
+  },
+  "分": {
+    "id": "分",
+    "pinyin": "fēn",
+    "english": "minute; divide",
+    "type": "measure word"
+  },
+  "现在": {
+    "id": "现在",
+    "pinyin": "xiànzài",
+    "english": "now; current",
+    "type": "noun"
   }
 }
