@@ -1,0 +1,59 @@
+
+import PatternBox from '@site/src/components/core/pattern-box';
+import CharacterGrid from '@site/src/components/core/character-grid';
+import Paragraph from '@site/src/components/core/paragraph';
+import WordGraphFromData from '@site/src/components/core/word-graph-from-data';
+import { ConnectionType } from '@site/src/components/core/word-graph';
+
+#  2026年01月07日
+
+## Asking What Time Something Happens
+
+
+<CharacterGrid
+    characters={[
+        { char: '什么时候', pinyin: 'shénme shíhòu', english: 'when' },
+    ]}/>
+
+<div style={{ marginBottom: '1em' }} />
+
+:::info
+Notice that these characters of `shénme shíhòu` (when) are not written here separately as `shénme` (what) and `shíhòu` (time), but instead are combined together into a single word. This is because the meaning of `shénme shíhòu` is not just the sum of the meanings of `shénme` and `shíhòu`. Instead, `shénme shíhòu` has a specific meaning of "when", which cannot be easily inferred from the meanings of `shénme` and `shíhòu` alone.
+:::
+
+## Using When In A Sentence
+
+<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginBottom: '2rem' }}>
+<PatternBox
+    pattern={[
+        { part: '你', label: 'you' },
+        { part: '什么时候', label: 'when' },
+        { part: '____', label: 'verb' },
+        { part: '？', label: '?' },
+    ]}
+    example={{
+        chinese: '你什么时候吃饭？',
+        pinyin: 'nǐ shénme shíhòu chīfàn?',
+        english: 'When do you eat?'
+    }}/>
+
+<PatternBox
+    pattern={[
+        { part: '我', label: 'I' },
+        { part: '____', label: 'time' },
+        { part: '____', label: 'verb' },
+    ]}
+    example={{
+        chinese: '我八点吃饭。',
+        pinyin: 'wǒ bā diǎn chīfàn.',
+        english: 'I eat at 8 o\'clock.'
+    }}/>
+</div>
+
+
+## Homework
+
+Ask some questions about when things happen in my life, and answer them.
+
+<Paragraph paragraphKey="2026-02-07" />
+

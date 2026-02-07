@@ -30,5 +30,27 @@
             "english": "In the evening we ate dinner. It is now 8 o'clock.",
             "chinese": "晚上我们吃晚饭了。现在是八点。"
         }
+    ],
+    "2026-02-07": [
+        {
+            "pinyin": "Nǐ shénme shíhòu chī zǎofàn？ Wǒ bā diǎn bàn chī zǎofàn.",
+            "english": "When do you eat breakfast? I eat breakfast at 8:30.",
+            "chinese": "你什么时候吃早饭？我八点半吃早饭。"
+        },
+        {
+            "pinyin": "Nǐ shénme shíhòu qǐchuáng? Wǒ bā diǎn qǐchuáng.",
+            "english": "When do you wake up? I wake up at 8 o'clock.",
+            "chinese": "你什么时候起床？我八点起床。"
+        },
+        {
+            "pinyin": "Nǐ shénme shíhòu qù gōngzuò? Wǒ zǎoshang jiǔ diǎn qù gōngzuò.",
+            "english": "When do you go to work? I go to work at 9am in the morning.",
+            "chinese": "你什么时候去工作？我早上九点去工作。"
+        },
+        {
+            "pinyin": "Nǐ shénme shíhòu huí jiā? Wǒ wǎnshang huí jiā.",
+            "english": "When do you go home? I go home in the evening.",
+            "chinese": "你什么时候回家？我晚上回家。"
+        }
     ]
 }

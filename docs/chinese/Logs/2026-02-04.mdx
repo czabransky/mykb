@@ -1,7 +1,8 @@
 import PatternBox from '@site/src/components/core/pattern-box';
 import CharacterGrid from '@site/src/components/core/character-grid';
 import Paragraph from '@site/src/components/core/paragraph';
-// import Lesson from '@site/src/components/core/lesson'
+import WordGraphFromData from '@site/src/components/core/word-graph-from-data';
+import { ConnectionType } from '@site/src/components/core/word-graph';
 
 #  2026年01月04日
 
@@ -15,7 +16,6 @@ import Paragraph from '@site/src/components/core/paragraph';
         { char: '刻', pinyin: 'kè', english: 'quarter' },
     ]}
 />
-
 
 <PatternBox
     pattern={[
@@ -31,7 +31,28 @@ import Paragraph from '@site/src/components/core/paragraph';
         pinyin: 'xiànzài shì sān diǎn shíwǔ fēn.',
         english: 'It is now 3:15.'
     }}
-    />
+/>
+
+## Time and Meals Vocabulary
+
+<WordGraphFromData
+    centerNode="时间"
+    nodeIds={['时间', '早上', '上午', '中午', '下午', '晚上', '早饭', '午饭', '晚饭', '点', '分', '现在']}
+    connections={[
+        { source: '时间', target: '早上', type: ConnectionType.Related },
+        { source: '时间', target: '上午', type: ConnectionType.Related },
+        { source: '时间', target: '中午', type: ConnectionType.Related },
+        { source: '时间', target: '下午', type: ConnectionType.Related },
+        { source: '时间', target: '晚上', type: ConnectionType.Related },
+        { source: '早上', target: '早饭', type: ConnectionType.Related },
+        { source: '中午', target: '午饭', type: ConnectionType.Related },
+        { source: '晚上', target: '晚饭', type: ConnectionType.Related },
+        { source: '时间', target: '点', type: ConnectionType.Related },
+        { source: '时间', target: '分', type: ConnectionType.Related },
+        { source: '时间', target: '现在', type: ConnectionType.Related },
+    ]}
+/>
+
 
 ## Homework
 
