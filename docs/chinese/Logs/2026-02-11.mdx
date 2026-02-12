@@ -1,0 +1,68 @@
+import PatternBox from '@site/src/components/core/pattern-box';
+import CharacterGrid from '@site/src/components/core/character-grid';
+import Paragraph from '@site/src/components/core/paragraph';
+import WordGraphFromData from '@site/src/components/core/word-graph-from-data';
+import { ConnectionType } from '@site/src/components/core/word-graph';
+
+#  2026年01月10日
+
+## Using 前 (qián) for Time
+
+<CharacterGrid
+    characters={[
+        { char: '前', pinyin: 'qián', english: 'before' },
+        { char: '住', pinyin: 'zhù', english: 'to live/stay' },
+    ]}/>
+
+<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginBottom: '2rem' }}>
+<PatternBox
+    title='Before A Certain Time'
+    pattern={[
+    { part: '____', label: 'time' },
+    { part: '前', label: 'before' },
+    { part: '____', label: 'verb' },
+    ]}
+    example={{
+        chinese: '我三点前吃饭。',
+        pinyin: 'wǒ sān diǎn qián chīfàn.',
+        english: 'I eat before 3 o\'clock.'
+    }}/>
+
+<PatternBox
+title='Certain Time Ago'
+pattern={[
+    { part: '____', label: 'time' },
+    { part: '前', label: 'ago' },
+    { part: '____', label: 'verb' },
+]}
+example={{
+    chinese: '我三天前吃了中国菜。',
+    pinyin: 'wǒ sān tiān qián chīle zhōngguó cài.',
+    english: 'I ate Chinese food three days ago.'
+}}/>
+</div>
+
+## Homework
+
+Write some sentences using 前 (qián), and use the verb (住, zhù).
+
+<Paragraph data= {[
+    {
+        pinyin:'Wǒ sì gè yuè qián kāishǐ xué Zhōngwén.',
+        chinese:'我四个月前开始学中文。',
+        english:'I started learning Chinese four months ago.',
+        teacherNotes: 'Wǒ sì yuè (我四月) is technically correct, but could be interpreted as "the 4th month". Use gè (个) to clarify that it is a duration of time, not a number of people or things.'
+    },
+    {
+        pinyin: 'Wǒ liǎng tiān qián huí jiā le.',
+        english: 'I went home two days ago.',
+        chinese: '我两天前回家了。',
+        teacherNotes: 'Wǒ liǎng (我两) is used for the number 2, and no need for gè (个) here because it is clear that it is a number of days, not people or things.' 
+    },
+    {
+        pinyin: 'Wǒ xīngqīliù qù Duōlúnduō. Nǐ xiǎng zài Duōlúnduō zhù jǐ tiān? Zhù liǎng tiān.',
+        english: 'I am going to Toronto on Saturday. How many days do you want to stay in Toronto? Stay for two days.',
+        chinese: '我星期六去多伦多。你想在多伦多住几天？住两天。',
+        teacherNotes: 'Zhù liǎng (住两) is used for the number 2, is used for the number, and no need for gè (个) here because it is clear that it is a number of days, not people or things.'
+    }
+]}/>
