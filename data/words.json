@@ -1120,5 +1120,119 @@
     "pinyin": "xiànzài",
     "english": "now; current",
     "type": "noun"
+  },
+  "天气": {
+    "id": "天气",
+    "pinyin": "tiānqì",
+    "english": "weather",
+    "type": "noun"
+  },
+  "晴天": {
+    "id": "晴天",
+    "pinyin": "qíngtiān",
+    "english": "sunny day",
+    "type": "noun"
+  },
+  "雨天": {
+    "id": "雨天",
+    "pinyin": "yǔtiān",
+    "english": "rainy day",
+    "type": "noun"
+  },
+  "雪天": {
+    "id": "雪天",
+    "pinyin": "xuětiān",
+    "english": "snowy day",
+    "type": "noun"
+  },
+  "风天": {
+    "id": "风天",
+    "pinyin": "fēngtiān",
+    "english": "windy day",
+    "type": "noun"
+  },
+  "热": {
+    "id": "热",
+    "pinyin": "rè",
+    "english": "hot",
+    "type": "adjective"
+  },
+  "冷": {
+    "id": "冷",
+    "pinyin": "lěng",
+    "english": "cold",
+    "type": "adjective"
+  },
+  "暖和": {
+    "id": "暖和",
+    "pinyin": "nuǎnhuo",
+    "english": "warm (weather)",
+    "type": "adjective"
+  },
+  "晴": {
+    "id": "晴",
+    "pinyin": "qíng",
+    "english": "clear; sunny",
+    "type": "adjective"
+  },
+  "雨": {
+    "id": "雨",
+    "pinyin": "yǔ",
+    "english": "rain",
+    "type": "noun"
+  },
+  "雪": {
+    "id": "雪",
+    "pinyin": "xuě",
+    "english": "snow",
+    "type": "noun"
+  },
+  "风": {
+    "id": "风",
+    "pinyin": "fēng",
+    "english": "wind",
+    "type": "noun"
+  },
+  "下雨": {
+    "id": "下雨",
+    "pinyin": "xiàyǔ",
+    "english": "to rain",
+    "type": "verb"
+  },
+  "下雪": {
+    "id": "下雪",
+    "pinyin": "xiàxuě",
+    "english": "to snow",
+    "type": "verb"
+  },
+  "刮风": {
+    "id": "刮风",
+    "pinyin": "guāfēng",
+    "english": "to be windy; the wind blows",
+    "type": "verb"
+  },
+  "非常": {
+    "id": "非常",
+    "pinyin": "fēicháng",
+    "english": "very; extremely",
+    "type": "adverb"
+  },
+  "有点": {
+    "id": "有点",
+    "pinyin": "yǒudiǎn",
+    "english": "a bit; somewhat",
+    "type": "adverb"
+  },
+  "太": {
+    "id": "太",
+    "pinyin": "tài",
+    "english": "too; extremely",
+    "type": "adverb"
+  },
+  "变": {
+    "id": "变",
+    "pinyin": "biàn",
+    "english": "to change; become",
+    "type": "verb"
   }
 }
