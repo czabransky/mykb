@@ -1,0 +1,99 @@
+---
+title: Date and Time Anchors
+sidebar_position: 2
+---
+
+import PatternBox from '@site/src/components/core/pattern-box';
+import ExampleGrid from '@site/src/components/core/example-grid';
+import RuleChecklist from '@site/src/components/core/rule-checklist';
+import ComparisonBox from '@site/src/components/core/comparison-box';
+
+# Date and Time Anchors
+
+This page combines core patterns for dates, times, and daily schedule writing.
+
+<RuleChecklist
+    title="Core Rules"
+    rules={[
+        {
+            rule: 'Date statements often omit 是 naturally.',
+            why: 'Dates act like nominal predicates in many everyday lines.',
+            right: '今天十二月二十二号。',
+            wrong: '今天是十二月二十二号。 (grammatical, but often less natural in casual speech)'
+        },
+        {
+            rule: 'Use 是 more for identity or explicit emphasis.',
+            why: 'Identity links are where 是 is required most consistently.',
+            right: '他是学生。',
+            wrong: '他学生。'
+        },
+        {
+            rule: 'Use 点 / 分 / 半 to anchor exact times.',
+            why: 'Timeline writing improves when each event has a clear time anchor.',
+            right: '现在是八点半。'
+        }
+    ]}
+/>
+
+<PatternBox
+    title="Core Time Sentence"
+    pattern={[
+        { part: '现在', label: 'now' },
+        { part: '是', label: 'optional in some contexts' },
+        { part: '____点', label: 'hour' },
+        { part: '____分 / 半', label: 'minute' },
+    ]}
+    example={{
+        chinese: '现在是八点半。',
+        pinyin: 'xiànzài shì bā diǎn bàn.',
+        english: 'It is 8:30 now.'
+    }}
+/>
+
+## Log-Based Examples
+
+<ExampleGrid examples={[
+    {
+        chinese: '今天二月四号。现在是八点半。',
+        pinyin: 'jīntiān èr yuè sì hào. xiànzài shì bā diǎn bàn.',
+        english: 'Today is February 4th. It is 8:30 now.',
+        note: 'Strong timeline framing with clear time progression.'
+    },
+    {
+        chinese: '中午十二点。我吃午饭了。',
+        pinyin: 'zhōngwǔ shíèr diǎn. wǒ chī wǔfàn le.',
+        english: 'At noon 12 o clock, I ate lunch.',
+        note: 'Time anchor plus completed event marker <c:particle>了</c>.'
+    },
+    {
+        chinese: '下午三点。我还在工作。',
+        pinyin: 'xiàwǔ sān diǎn. wǒ hái zài gōngzuò.',
+        english: 'At 3pm, I am still working.',
+        note: 'Combines time anchor with progressive frame.'
+    }
+]} />
+
+<ComparisonBox
+    left={{
+        label: 'Clear Timeline Writing',
+        accent: 'ok',
+        content: (
+            <ul>
+                <li>Time first, then event</li>
+                <li>Use morning/noon/evening markers</li>
+                <li>Keep one event focus per sentence</li>
+            </ul>
+        )
+    }}
+    right={{
+        label: 'Unclear Timeline Writing',
+        accent: 'neutral',
+        content: (
+            <ul>
+                <li>Event without time anchor</li>
+                <li>Too many actions in one sentence</li>
+                <li>No contrast markers like 还 / 已经</li>
+            </ul>
+        )
+    }}
+/>

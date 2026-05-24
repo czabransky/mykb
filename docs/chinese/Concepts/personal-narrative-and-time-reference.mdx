@@ -1,0 +1,69 @@
+---
+title: Personal Narrative and Time Reference
+sidebar_position: 10
+---
+
+import PatternBox from '@site/src/components/core/pattern-box';
+import ExampleGrid from '@site/src/components/core/example-grid';
+import RuleChecklist from '@site/src/components/core/rule-checklist';
+
+# Personal Narrative and Time Reference
+
+This page gathers diary-style sentence patterns: self-introduction, past reference, and upcoming plans.
+
+<RuleChecklist
+    title="Core Rules"
+    rules={[
+        {
+            rule: 'Use 叫 for names and introductions.',
+            right: '我叫柯林，我女朋友叫楠琪。'
+        },
+        {
+            rule: 'Use 昨天 / 明天 as strong sentence anchors.',
+            right: '昨天我练习弹钢琴。 明天我女朋友要来我家。'
+        },
+        {
+            rule: 'Use 但是 to add contrast naturally.',
+            right: '我很喜欢这首曲，但是它非常难。'
+        }
+    ]}
+/>
+
+<PatternBox
+    title="Simple Diary Line"
+    pattern={[
+        { part: 'Time anchor', label: '昨天 / 今天 / 明天' },
+        { part: 'Subject', label: '我 / 他 / 我们' },
+        { part: 'Action', label: 'verb phrase' },
+    ]}
+    example={{
+        chinese: '昨天我练习弹钢琴。',
+        pinyin: 'zuótiān wǒ liànxí tán gāngqín.',
+        english: 'Yesterday I practiced playing the piano.'
+    }}
+/>
+
+## Log-Based Examples
+
+<ExampleGrid examples={[
+    {
+        chinese: '我叫柯林，我女朋友叫楠琪。',
+        pinyin: 'wǒ jiào Kēlín, wǒ nǚpéngyǒu jiào Nánqí.',
+        english: 'My name is Colin, and my girlfriend is named Nanqi.'
+    },
+    {
+        chinese: '我在学一首叫 Alicia 的钢琴曲。',
+        pinyin: 'wǒ zài xué yì shǒu jiào Alicia de gāngqín qǔ.',
+        english: 'I am learning a piano piece called Alicia.'
+    },
+    {
+        chinese: '我很喜欢这首曲，但是它非常难。',
+        pinyin: 'wǒ hěn xǐhuan zhè shǒu qǔ, dànshì tā fēicháng nán.',
+        english: 'I really like this piece, but it is very difficult.'
+    },
+    {
+        chinese: '明天，我女朋友要来我家。',
+        pinyin: 'míngtiān, wǒ nǚpéngyǒu yào lái wǒ jiā.',
+        english: 'Tomorrow, my girlfriend will come to my home.'
+    }
+]} />

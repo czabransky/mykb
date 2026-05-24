@@ -1,0 +1,68 @@
+.container {
+    margin: 1.5rem 0 2rem;
+}
+
+.title {
+    margin: 0 0 0.9rem;
+    font-size: 1.1rem;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.ruleCard {
+    border: 1px solid var(--ifm-color-emphasis-200);
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
+    background: linear-gradient(180deg, var(--ifm-background-surface-color) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.ruleHeading {
+    font-size: 0.76rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ifm-color-emphasis-700);
+    margin-bottom: 0.35rem;
+}
+
+.ruleText {
+    font-weight: 600;
+    margin-bottom: 0.45rem;
+}
+
+.why {
+    font-size: 0.92rem;
+    color: var(--ifm-color-emphasis-700);
+    margin-bottom: 0.7rem;
+}
+
+.examples {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.rightExample,
+.wrongExample {
+    border-radius: 8px;
+    padding: 0.5rem 0.65rem;
+    font-size: 0.92rem;
+}
+
+.rightExample {
+    background: rgba(34, 197, 94, 0.11);
+    border: 1px solid rgba(34, 197, 94, 0.22);
+}
+
+.wrongExample {
+    background: rgba(239, 68, 68, 0.09);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+@media (max-width: 740px) {
+    .list {
+        grid-template-columns: 1fr;
+    }
+}

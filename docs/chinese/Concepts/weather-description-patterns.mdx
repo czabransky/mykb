@@ -1,0 +1,80 @@
+---
+title: Weather Description Patterns
+sidebar_position: 6
+---
+
+import PatternBox from '@site/src/components/core/pattern-box';
+import ExampleGrid from '@site/src/components/core/example-grid';
+import RuleChecklist from '@site/src/components/core/rule-checklist';
+import ComparisonBox from '@site/src/components/core/comparison-box';
+
+# Weather Description Patterns
+
+This page focuses on one clear weather decision rule: adjective weather vs noun weather.
+
+<RuleChecklist
+    title="Core Rules"
+    rules={[
+        {
+            rule: 'With weather adjectives, do not force 是.',
+            right: '今天天气很冷。',
+            wrong: '今天天气是很冷。'
+        },
+        {
+            rule: 'With weather nouns (晴天/雨天), 是 is natural.',
+            right: '星期一是晴天。'
+        },
+        {
+            rule: 'Use action verbs for events: 下雨, 下雪, 刮风.',
+            right: '明天会下雨。'
+        }
+    ]}
+/>
+
+<PatternBox
+    title="Baseline Weather Pattern"
+    pattern={[
+        { part: '今天天气', label: 'today weather' },
+        { part: '很', label: 'degree marker' },
+        { part: '____', label: 'adjective' },
+    ]}
+    example={{
+        chinese: '今天天气很热。',
+        pinyin: 'jīntiān tiānqì hěn rè.',
+        english: 'The weather is hot today.'
+    }}
+/>
+
+<ComparisonBox
+    left={{
+        label: 'Adjective Predicate',
+        accent: 'ok',
+        content: <div>星期三天气很热。</div>
+    }}
+    right={{
+        label: 'Noun Label Pattern',
+        accent: 'neutral',
+        content: <div>星期二是雨天。</div>
+    }}
+/>
+
+## Log-Based Examples
+
+<ExampleGrid examples={[
+    {
+        chinese: '明天天气怎么样？明天天气也很冷。',
+        pinyin: 'míngtiān tiānqì zěnmeyàng? míngtiān tiānqì yě hěn lěng.',
+        english: 'How is the weather tomorrow? Tomorrow is also cold.'
+    },
+    {
+        chinese: '星期一是晴天，但是星期二是雨天。',
+        pinyin: 'xīngqī yī shì qíngtiān, dànshì xīngqī èr shì yǔtiān.',
+        english: 'Monday is sunny, but Tuesday is rainy.'
+    },
+    {
+        chinese: '星期四天气很暖和。',
+        pinyin: 'xīngqī sì tiānqì hěn nuǎnhuo.',
+        english: 'Thursday is warm.',
+        note: 'Natural adjective predicate without 是.'
+    }
+]} />

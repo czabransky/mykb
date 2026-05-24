@@ -1,0 +1,96 @@
+---
+title: Location and Existence (在 vs 有)
+sidebar_position: 3
+---
+
+import PatternBox from '@site/src/components/core/pattern-box';
+import ExampleGrid from '@site/src/components/core/example-grid';
+import CharacterGrid from '@site/src/components/core/character-grid';
+import RuleChecklist from '@site/src/components/core/rule-checklist';
+
+# Location and Existence (在 vs 有)
+
+This concept focuses on room descriptions and direction-based location patterns.
+
+<CharacterGrid
+    characters={[
+        { char: '在', pinyin: 'zài', english: 'to be at / in; ongoing marker in other patterns' },
+        { char: '有', pinyin: 'yǒu', english: 'to have / there is' },
+        { char: '里', pinyin: 'lǐ', english: 'inside' },
+        { char: '上', pinyin: 'shàng', english: 'on top of' },
+        { char: '左面', pinyin: 'zuǒmiàn', english: 'left side' },
+        { char: '右面', pinyin: 'yòumiàn', english: 'right side' },
+    ]}
+/>
+
+<RuleChecklist
+    title="Core Rules"
+    rules={[
+        {
+            rule: 'Use 有 to introduce existence of something.',
+            right: '桌子上有一本书。',
+            wrong: '桌子上在一本书。'
+        },
+        {
+            rule: 'Use 在 to locate known objects.',
+            right: '杯子在兔子左面。'
+        },
+        {
+            rule: 'Choose one perspective per sentence: location or existence.',
+            why: 'Switching between 在 and 有 without structure causes confusion.'
+        }
+    ]}
+/>
+
+<PatternBox
+    title="Existence Pattern"
+    pattern={[
+        { part: 'Place', label: 'where' },
+        { part: '有', label: 'there is/are' },
+        { part: 'Object', label: 'what exists' },
+    ]}
+    example={{
+        chinese: '房间里有我的桌子。',
+        pinyin: 'fángjiān lǐ yǒu wǒ de zhuōzi.',
+        english: 'There is my desk in the room.'
+    }}
+/>
+
+<PatternBox
+    title="Location Pattern"
+    pattern={[
+        { part: 'Object', label: 'known thing' },
+        { part: '在', label: 'is located' },
+        { part: 'Place', label: 'location phrase' },
+    ]}
+    example={{
+        chinese: '杯子在兔子左面。',
+        pinyin: 'bēizi zài tùzi zuǒmiàn.',
+        english: 'The cup is to the left of the rabbit.'
+    }}
+/>
+
+## Log-Based Examples
+
+<ExampleGrid examples={[
+    {
+        chinese: '房间里有我的桌子。',
+        pinyin: 'fángjiān lǐ yǒu wǒ de zhuōzi.',
+        english: 'There is my desk in the room.'
+    },
+    {
+        chinese: '桌子上有一本书。',
+        pinyin: 'zhuōzi shàng yǒu yì běn shū.',
+        english: 'There is a book on the desk.'
+    },
+    {
+        chinese: '书右面有一只兔子。',
+        pinyin: 'shū yòumiàn yǒu yì zhī tùzi.',
+        english: 'There is a rabbit to the right of the book.'
+    },
+    {
+        chinese: '我的杯子里有水。',
+        pinyin: 'wǒ de bēizi lǐ yǒu shuǐ.',
+        english: 'There is water in my cup.'
+    }
+]} />

@@ -1,0 +1,82 @@
+---
+title: Ongoing Actions and Natural Progressive
+sidebar_position: 7
+---
+
+import PatternBox from '@site/src/components/core/pattern-box';
+import ExampleGrid from '@site/src/components/core/example-grid';
+import RuleChecklist from '@site/src/components/core/rule-checklist';
+import ComparisonBox from '@site/src/components/core/comparison-box';
+
+# Ongoing Actions and Natural Progressive
+
+This concept focuses on asking and answering about actions in progress.
+
+<RuleChecklist
+    title="Core Rules"
+    rules={[
+        {
+            rule: 'Use 在 before a verb to show an action in progress.',
+            right: '我在工作。'
+        },
+        {
+            rule: 'Use 呢 optionally to keep a conversational tone.',
+            right: '我在做饭呢。'
+        },
+        {
+            rule: 'Do not use 在 + 去 for planned future movement.',
+            why: 'For planned movement, 要去 is usually better.',
+            right: '我们要去多伦多。',
+            wrong: '我们在去多伦多呢。'
+        }
+    ]}
+/>
+
+<PatternBox
+    title="Question + Answer"
+    pattern={[
+        { part: '你', label: 'you' },
+        { part: '在', label: 'ongoing marker' },
+        { part: '做什么', label: 'do what' },
+        { part: '？', label: 'question' },
+    ]}
+    example={{
+        chinese: '你在做什么？我在学中文呢。',
+        pinyin: 'nǐ zài zuò shénme? wǒ zài xué Zhōngwén ne.',
+        english: 'What are you doing? I am studying Chinese.'
+    }}
+/>
+
+<ComparisonBox
+    left={{
+        label: 'Action Happening Now',
+        accent: 'ok',
+        content: <div>我在家喝咖啡呢。</div>
+    }}
+    right={{
+        label: 'Future Plan',
+        accent: 'neutral',
+        content: <div>星期六，我们要去多伦多。</div>
+    }}
+/>
+
+## Log-Based Examples
+
+<ExampleGrid examples={[
+    {
+        chinese: '我在工作。',
+        pinyin: 'wǒ zài gōngzuò.',
+        english: 'I am working.'
+    },
+    {
+        chinese: '我还在工作。',
+        pinyin: 'wǒ hái zài gōngzuò.',
+        english: 'I am still working.',
+        note: '还 adds continuity and is very useful in routines.'
+    },
+    {
+        chinese: '今天我在家喝咖啡呢。',
+        pinyin: 'jīntiān wǒ zài jiā hē kāfēi ne.',
+        english: 'Today I am drinking coffee at home.'
+    }
+]} />

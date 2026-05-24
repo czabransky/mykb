@@ -1,0 +1,70 @@
+---
+title: Survival Interaction and Shopping
+sidebar_position: 9
+---
+
+import PatternBox from '@site/src/components/core/pattern-box';
+import ExampleGrid from '@site/src/components/core/example-grid';
+import RuleChecklist from '@site/src/components/core/rule-checklist';
+
+# Survival Interaction and Shopping
+
+This page focuses on foundational interaction and shopping dialogue patterns.
+
+<RuleChecklist
+    title="Core Rules"
+    rules={[
+        {
+            rule: 'Start polite requests with 请问 when asking strangers.',
+            right: '请问，这个多少钱？'
+        },
+        {
+            rule: 'Use 这个 / 那个 to point clearly before asking price.',
+            right: '这个面包多少钱？'
+        },
+        {
+            rule: 'Price responses are often noun phrases without extra verbs.',
+            right: '这个面包五块。'
+        }
+    ]}
+/>
+
+<PatternBox
+    title="Polite Price Question"
+    pattern={[
+        { part: '请问', label: 'polite opener' },
+        { part: '这个 / 那个', label: 'this / that' },
+        { part: '多少钱', label: 'how much' },
+        { part: '？', label: 'question' },
+    ]}
+    example={{
+        chinese: '请问这个多少钱？',
+        pinyin: 'qǐngwèn zhè ge duōshǎo qián?',
+        english: 'May I ask how much this is?'
+    }}
+/>
+
+## Log-Based Examples
+
+<ExampleGrid examples={[
+    {
+        chinese: '你好。请问这个多少钱？',
+        pinyin: 'nǐ hǎo. qǐngwèn zhè ge duōshǎo qián?',
+        english: 'Hello. May I ask how much this is?'
+    },
+    {
+        chinese: '这个苹果多少钱？二十五块。',
+        pinyin: 'zhège píngguǒ duōshǎo qián? èrshíwǔ kuài.',
+        english: 'How much is this apple? Twenty-five yuan.'
+    },
+    {
+        chinese: '那个多少钱？十块。',
+        pinyin: 'nàgè duōshǎo qián? shí kuài.',
+        english: 'How much is that one? Ten yuan.'
+    },
+    {
+        chinese: '请给我这个。',
+        pinyin: 'qǐng gěi wǒ zhè ge.',
+        english: 'Please give me this.'
+    }
+]} />

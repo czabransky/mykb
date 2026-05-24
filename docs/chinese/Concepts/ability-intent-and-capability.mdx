@@ -1,0 +1,79 @@
+---
+title: Ability, Intent, and Capability
+sidebar_position: 5
+---
+
+import PatternBox from '@site/src/components/core/pattern-box';
+import ExampleGrid from '@site/src/components/core/example-grid';
+import CharacterGrid from '@site/src/components/core/character-grid';
+import RuleChecklist from '@site/src/components/core/rule-checklist';
+
+# Ability, Intent, and Capability
+
+This page unifies three high-frequency modal patterns: 会, 能, and 要.
+
+<CharacterGrid
+    characters={[
+        { char: '会', pinyin: 'huì', english: 'know how to; can (learned ability)' },
+        { char: '能', pinyin: 'néng', english: 'be able to; can (capacity/condition)' },
+        { char: '要', pinyin: 'yào', english: 'to want / going to' },
+    ]}
+/>
+
+<RuleChecklist
+    title="Core Rules"
+    rules={[
+        {
+            rule: 'Use 会 for acquired skill.',
+            right: '我会游泳。'
+        },
+        {
+            rule: 'Use 能 for capability in current conditions.',
+            right: '我今天不能跑步。'
+        },
+        {
+            rule: 'Use 要 for plan/intention; 会 for softer prediction.',
+            right: '明天我女朋友要来我家。 / 明天会下雨。'
+        }
+    ]}
+/>
+
+<PatternBox
+    title="Contrast Pattern"
+    pattern={[
+        { part: '我', label: 'I' },
+        { part: '会', label: 'skill' },
+        { part: '____', label: 'verb' },
+        { part: '但是', label: 'but' },
+        { part: '我', label: 'I' },
+        { part: '不能', label: 'current capability limit' },
+        { part: '____', label: 'verb' },
+    ]}
+    example={{
+        chinese: '我会走路，但是我不能跑步。',
+        pinyin: 'wǒ huì zǒulù, dànshì wǒ bùnéng pǎobù.',
+        english: 'I can walk, but I cannot run.'
+    }}
+/>
+
+## Log-Based Examples
+
+<ExampleGrid examples={[
+    {
+        chinese: '我会说话，但是我不能唱歌。',
+        pinyin: 'wǒ huì shuōhuà, dànshì wǒ bùnéng chànggē.',
+        english: 'I can speak, but I cannot sing.'
+    },
+    {
+        chinese: '我会听，但是我不能听懂。',
+        pinyin: 'wǒ huì tīng, dànshì wǒ bùnéng tīng dǒng.',
+        english: 'I can hear, but I cannot understand.',
+        note: 'Great distinction between hearing and comprehension.'
+    },
+    {
+        chinese: '明天，我女朋友要来我家。',
+        pinyin: 'míngtiān, wǒ nǚpéngyǒu yào lái wǒ jiā.',
+        english: 'Tomorrow, my girlfriend is coming to my home.',
+        note: '会 can make future statements sound softer and less fixed.'
+    }
+]} />

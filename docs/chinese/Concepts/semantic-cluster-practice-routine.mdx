@@ -1,0 +1,64 @@
+---
+title: Semantic Cluster Practice Routine
+sidebar_position: 8
+---
+
+import PatternBox from '@site/src/components/core/pattern-box';
+import CardGrid from '@site/src/components/core/card-grid';
+import Card from '@site/src/components/core/card';
+import WordGraphFromData from '@site/src/components/core/word-graph-from-data';
+import { ConnectionType } from '@site/src/components/core/word-graph';
+
+# Semantic Cluster Practice Routine
+
+This page adapts semantic clustering into a practical routine for Chinese study.
+
+<PatternBox
+    title="Three-Layer Cluster Method"
+    pattern={[
+        { part: 'Theme', label: 'kitchen / weather / routine' },
+        { part: 'Core verbs', label: 'do with the theme' },
+        { part: 'Sentence loop', label: 'ask + answer + variation' },
+    ]}
+/>
+
+## Example Cluster: Daily Routine
+
+<WordGraphFromData
+    centerNode="日常"
+    nodeIds={['日常', '早上', '中午', '晚上', '起床', '工作', '吃饭', '回家', '什么时候', '前', '在', '要']}
+    connections={[
+        { source: '日常', target: '早上', type: ConnectionType.Related },
+        { source: '日常', target: '中午', type: ConnectionType.Related },
+        { source: '日常', target: '晚上', type: ConnectionType.Related },
+        { source: '早上', target: '起床', type: ConnectionType.Related },
+        { source: '中午', target: '吃饭', type: ConnectionType.Related },
+        { source: '晚上', target: '回家', type: ConnectionType.Related },
+        { source: '日常', target: '什么时候', type: ConnectionType.Related },
+        { source: '日常', target: '前', type: ConnectionType.Related },
+        { source: '日常', target: '在', type: ConnectionType.Related },
+        { source: '日常', target: '要', type: ConnectionType.Related },
+        { source: '工作', target: '在', type: ConnectionType.Related },
+    ]}
+    height={720}
+/>
+
+## Practice Loop
+
+<CardGrid columns={3}>
+    <Card title="Step 1: Build Cluster">
+        Choose 8-12 words from one theme and link by meaning, not by alphabet.
+    </Card>
+    <Card title="Step 2: Build Patterns">
+        Write one question pattern and two answer patterns with those words.
+    </Card>
+    <Card title="Step 3: Build Variation">
+        Rewrite each sentence with a time phrase, then with a contrast marker like 但是 or 还.
+    </Card>
+</CardGrid>
+
+## Weekly Output Target
+
+1. Two mini-clusters from old logs.
+2. One new paragraph combining both clusters.
+3. One correction pass that labels each error as: word choice, grammar frame, or naturalness.

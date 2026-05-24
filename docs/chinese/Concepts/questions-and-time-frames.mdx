@@ -1,0 +1,82 @@
+---
+title: Questions and Time Frames
+sidebar_position: 4
+---
+
+import PatternBox from '@site/src/components/core/pattern-box';
+import ExampleGrid from '@site/src/components/core/example-grid';
+import RuleChecklist from '@site/src/components/core/rule-checklist';
+import ComparisonBox from '@site/src/components/core/comparison-box';
+
+# Questions and Time Frames
+
+This concept merges 什么时候 usage with 前 (before/ago) time framing.
+
+<RuleChecklist
+    title="Core Rules"
+    rules={[
+        {
+            rule: 'Treat 什么时候 as one lexical chunk meaning "when".',
+            why: 'It is not built fresh each time from 什么 + 时候 in usage.'
+        },
+        {
+            rule: '前 can mean either "before" or "ago" depending on position.',
+            right: '三点前吃饭。 / 三天前吃了中国菜。'
+        },
+        {
+            rule: 'Use duration classifiers only when needed for clarity.',
+            why: 'Use 四个月 for explicit month duration, while 两天 is already clear without a classifier.'
+        }
+    ]}
+/>
+
+<PatternBox
+    title="When Question"
+    pattern={[
+        { part: '你', label: 'you' },
+        { part: '什么时候', label: 'when' },
+        { part: '____', label: 'verb phrase' },
+        { part: '？', label: 'question' },
+    ]}
+    example={{
+        chinese: '你什么时候吃早饭？',
+        pinyin: 'nǐ shénme shíhòu chī zǎofàn?',
+        english: 'When do you eat breakfast?'
+    }}
+/>
+
+<ComparisonBox
+    left={{
+        label: 'Before A Time',
+        accent: 'ok',
+        content: <div>我三点前吃饭。 (I eat before 3:00.)</div>
+    }}
+    right={{
+        label: 'Ago From Now',
+        accent: 'neutral',
+        content: <div>我三天前吃了中国菜。 (I ate Chinese food three days ago.)</div>
+    }}
+/>
+
+## Log-Based Examples
+
+<ExampleGrid examples={[
+    {
+        chinese: '你什么时候去工作？我早上九点去工作。',
+        pinyin: 'nǐ shénme shíhòu qù gōngzuò? wǒ zǎoshang jiǔ diǎn qù gōngzuò.',
+        english: 'When do you go to work? I go to work at 9am.',
+        note: 'Strong question-answer pair with matched verb phrase.'
+    },
+    {
+        chinese: '我四个月前开始学中文。',
+        pinyin: 'wǒ sì gè yuè qián kāishǐ xué Zhōngwén.',
+        english: 'I started learning Chinese four months ago.',
+        note: 'Duration clarified with <c:measureword>个</c>.'
+    },
+    {
+        chinese: '你想在多伦多住几天？住两天。',
+        pinyin: 'nǐ xiǎng zài Duōlúnduō zhù jǐ tiān? zhù liǎng tiān.',
+        english: 'How many days do you want to stay in Toronto? Stay two days.',
+        note: 'No classifier needed because 天 already marks duration.'
+    }
+]} />
