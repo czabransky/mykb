@@ -1,0 +1,62 @@
+import PatternBox from '@site/src/components/core/pattern-box';
+import CharacterGrid from '@site/src/components/core/character-grid';
+import Paragraph from '@site/src/components/core/paragraph';
+import WordGraphFromData from '@site/src/components/core/word-graph-from-data';
+import { ConnectionType } from '@site/src/components/core/word-graph';
+
+# 2026年03月04日
+
+## What Are You Doing?
+
+When asking someone what they are doing in Chinese, you can use the phrase `你在做什么？`.
+
+
+<CharacterGrid
+    characters={[ 
+        { char: '你', pinyin: 'nǐ', english: 'you' },
+        { char: '在', pinyin: 'zài', english: 'indicates ongoing action' },
+        { char: '做', pinyin: 'zuò', english: 'to do' },
+        { char: '什么', pinyin: 'shénme', english: 'what' },
+    ]}/>
+    
+    
+Answers to this question can vary widely depending on the context. For example, if someone is cooking, they might say `我在做饭` (Wǒ zài zuò fàn) which means "I am cooking". If they are working, they might say `我在工作` (Wǒ zài gōngzuò) which means "I am working". The key is to use the structure of the question and fill in the appropriate verb and object to describe what you are doing.
+
+<PatternBox
+    pattern={[
+        { part: '我在做', label: 'I am doing' },
+        { part: '____', label: 'activity' },
+        { part: '呢', label: 'indicates a positive response' },
+    ]}
+    example={{
+        chinese: '我在做饭呢。',
+        pinyin: 'Wǒ zài zuò fàn ne.',
+        english: 'I am cooking.'
+    }}/>
+    
+## Homework
+
+Choose a day and describe what you are doing on that day.
+
+<Paragraph data= {[
+    {
+        pinyin:'xīngqī liù, wǒmen yào qù duōlúnduō.',
+        english: 'On Saturday, we are going to Toronto.',
+        chinese: '星期六，我们要去多伦多。'
+    },
+    {
+        pinyin: 'wǒmen zài qù duōlúnduō ne.',
+        english: 'We are going to Toronto.',
+        chinese: '我们在去多伦多呢。'
+    },
+    {
+        pinyin: 'jīntiān wǒ zài jiā hē kāfēi ne.',
+        english: 'Today, I am drinking coffee at home.',
+        chinese: '今天我在家喝咖啡呢。'
+    },
+    {
+        pinyin: 'wǒ zài xué zhōngwén ne.',
+        english: 'I am studying Chinese.',
+        chinese: '我在学中文呢。'
+    }
+]}/>
