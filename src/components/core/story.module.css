@@ -1,0 +1,192 @@
+.container {
+    margin: 2rem auto;
+    max-width: 920px;
+    --story-border: var(--ifm-color-emphasis-300);
+    --story-surface: var(--ifm-background-surface-color);
+    --story-hover: var(--ifm-hover-overlay);
+    --story-text: var(--ifm-font-color-base);
+    --story-muted: var(--ifm-color-content-secondary);
+    --story-accent: var(--ifm-color-primary);
+    --story-soft: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid var(--story-border);
+    border-radius: 16px;
+    padding: 1rem 1.1rem;
+    background:
+        radial-gradient(circle at 85% 20%, var(--story-soft), transparent 55%),
+        linear-gradient(180deg, var(--story-surface), color-mix(in srgb, var(--story-surface) 86%, var(--story-soft)));
+}
+
+.title {
+    margin: 0;
+    font-size: 1.45rem;
+    letter-spacing: 0.01em;
+}
+
+.theme {
+    margin-top: 0.35rem;
+    color: var(--story-muted);
+    font-size: 0.95rem;
+}
+
+.audioWrap {
+    flex-shrink: 0;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.1rem;
+    position: sticky;
+    top: 0.5rem;
+    z-index: 2;
+    padding: 0.6rem;
+    border-radius: 12px;
+    border: 1px solid var(--story-border);
+    backdrop-filter: blur(6px);
+    background: color-mix(in srgb, var(--story-surface) 88%, transparent);
+}
+
+.toggleButton {
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--story-border);
+    background: transparent;
+    color: var(--story-text);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.toggleButton:hover {
+    background: var(--story-hover);
+}
+
+.toggleButton.active {
+    border-color: var(--story-accent);
+    color: var(--story-accent);
+    background: var(--story-hover);
+}
+
+.copyButton {
+    margin-left: auto;
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.5rem;
+    border: 1px solid color-mix(in srgb, var(--story-accent) 40%, var(--story-border));
+    background: transparent;
+    color: var(--story-text);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.copyButton:hover {
+    background: var(--story-hover);
+}
+
+.copyButton.copied {
+    color: #166534;
+    border-color: #16a34a;
+    background: rgba(22, 163, 74, 0.12);
+}
+
+.storyGrid {
+    border: 1px solid var(--story-border);
+    border-radius: 14px;
+    background: var(--story-surface);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.lineRow {
+    display: grid;
+    grid-template-columns: 2.4rem minmax(0, 1fr);
+    gap: 0.7rem;
+    border-radius: 12px;
+    padding: 0.8rem 0.7rem;
+    border: 1px solid transparent;
+}
+
+.lineRow:hover {
+    background: var(--story-hover);
+    border-color: color-mix(in srgb, var(--story-accent) 26%, var(--story-border));
+}
+
+.lineIndex {
+    font-size: 0.76rem;
+    color: var(--story-muted);
+    line-height: 1.1;
+    text-align: center;
+    padding-top: 0.4rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.lineContent {
+    min-width: 0;
+}
+
+.hanyu {
+    font-size: 1.38rem;
+    line-height: 1.85;
+    font-weight: 500;
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', 'STSong', 'Songti SC', serif;
+    margin: 0;
+}
+
+.pinyin,
+.english {
+    color: var(--story-muted);
+    line-height: 1.65;
+    margin-top: 0.35rem;
+    animation: reveal 180ms ease-out;
+}
+
+.pinyin {
+    font-style: italic;
+    font-family: 'Noto Serif', 'Source Serif 4', Georgia, serif;
+}
+
+@media (max-width: 760px) {
+    .header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hanyu {
+        font-size: 1.2rem;
+    }
+
+    .copyButton {
+        margin-left: 0;
+    }
+
+    .lineRow {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+
+    .lineIndex {
+        text-align: left;
+        padding-top: 0;
+    }
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateY(-2px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
